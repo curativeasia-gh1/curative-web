@@ -1,0 +1,12 @@
+# Cloudflare Pages redirects
+/businessunits /about.html 301
+/businessunits/ /about.html 301
+/businessunits/aesthetics /medical-aesthetics.html 301
+/businessunits/aesthetics/ /medical-aesthetics.html 301
+/products-solutions / 301
+/products-solutions/ / 301
+/hoya-iols.html /ophthalmology.html 301
+/voptica.html /ophthalmology.html 301
+/facecast.html /medical-aesthetics.html 301
+/skinclinic.html /dermocosmetics.html 301
+/privacy.html /privacy.html 200

@@ -1,0 +1,9 @@
+CURATIVE.ASIA — FIXED WEBSITE PACKAGE
+
+Upload every file in this folder to the root of the Cloudflare Pages project, replacing the current files.
+
+Important:
+1. Keep the _redirects filename exactly as shown.
+2. Confirm the production domain redirects to https://www.curative.asia/
+3. After deployment, submit https://www.curative.asia/sitemap.xml in Google Search Console.
+4. Inspect and request indexing for the homepage and each new .html page.
