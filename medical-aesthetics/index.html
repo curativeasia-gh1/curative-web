@@ -40,12 +40,12 @@
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-FWHEV0CL1D"></script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Syne:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
 /* ======================================================
    DESIGN SYSTEM — CURATIVE GROUP
    Cobalt #0057B8 primary | Purple #5C2D82 accent
-   Libre Baskerville display | Outfit body
+   Syne display | Inter body
    ====================================================== */
 :root {
   --cobalt:        #0057B8;
@@ -70,8 +70,8 @@
   --border-mid:    #D1D5DB;
   --cream:         #F9FAFB;
   --white:         #FFFFFF;
-  --ff-serif:      'Libre Baskerville', Georgia, serif;
-  --ff-sans:       'Outfit', system-ui, sans-serif;
+  --ff-serif:      'Syne', system-ui, sans-serif;
+  --ff-sans:       'Inter', system-ui, sans-serif;
   --radius-sm:     4px;
   --radius:        8px;
   --radius-lg:     12px;
@@ -349,7 +349,7 @@ footer{background:var(--slate);color:rgba(255,255,255,0.7);padding:64px 0 32px}
 }
 
 /* Ensure nav-toggle always hidden on desktop */
-@media(min-width:769px){ .nav-toggle{ display:none !important } }
+@media(min-width:601px){ .nav-toggle{ display:none !important } }
 
 /* === SEPARATOR === */
 .sep{height:1px;background:var(--border)}
@@ -368,9 +368,9 @@ footer{background:var(--slate);color:rgba(255,255,255,0.7);padding:64px 0 32px}
 }
 
 /* ======================================================
-   RESPONSIVE — SMALL TABLET (≤900px)
+   RESPONSIVE — SMALL TABLET (≤860px)
    ====================================================== */
-@media(max-width:900px){
+@media(max-width:860px){
   /* Nav — keep desktop nav but tighten */
   .nav-btn{ padding:6px 9px;font-size:0.8rem }
   .nav-cta{ padding:7px 14px;font-size:0.8rem }
@@ -421,9 +421,9 @@ footer{background:var(--slate);color:rgba(255,255,255,0.7);padding:64px 0 32px}
 }
 
 /* ======================================================
-   RESPONSIVE — MOBILE (≤768px)
+   RESPONSIVE — MOBILE (≤600px)
    ====================================================== */
-@media(max-width:768px){
+@media(max-width:600px){
   /* Nav */
   .nav-menu,.nav-cta{ display:none !important }
   .nav-toggle{ display:flex }
