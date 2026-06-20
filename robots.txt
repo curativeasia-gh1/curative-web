@@ -1,20 +1,24 @@
-# robots.txt — Curative Group
 User-agent: *
 Allow: /
-Disallow: /admin/
-Disallow: /private/
-Disallow: /preview/
-Disallow: /*?preview=
 
+# AI crawlers - allow indexing
 User-agent: GPTBot
 Allow: /
-User-agent: ChatGPT-User
-Allow: /
+
 User-agent: ClaudeBot
 Allow: /
-User-agent: PerplexityBot
-Allow: /
+
 User-agent: Google-Extended
 Allow: /
 
-Sitemap: https://www.curative.asia/sitemap.xml
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: Amazonbot
+Allow: /
+
+# Sitemap
+Sitemap: https://curative.asia/sitemap.xml
