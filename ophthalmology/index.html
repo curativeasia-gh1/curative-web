@@ -3,328 +3,594 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Curative Medical Aesthetics | Professional Skincare, Facial Imaging and Injection Solutions</title>
-<meta name="description" content="Curative Aesthetics provides SkinClinic dermocosmetics, FaceCast MPS 3D facial scanning and TSK injection accessories for aesthetic clinics across Singapore, Malaysia, Thailand and Hong Kong.">
-<link rel="canonical" href="https://curative.asia/aesthetics">
+<title>Curative Ophthalmology | Cataract, Retina and Eye Surgery Solutions Across Asia</title>
+<meta name="description" content="Curative Ophthalmology provides IOLs, cataract and vitreoretinal systems, surgical instruments, OVDs and procedure kits across Singapore, Malaysia, Thailand and Hong Kong.">
+<meta property="og:title" content="Curative Ophthalmology | Cataract, Retina and Eye Surgery Solutions">
+<meta property="og:type" content="website">
+<link rel="canonical" href="https://curative.asia/ophthalmology">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
-:root{--c-primary:#004aad;--c-primary-dark:#003888;--c-primary-light:#EAF4FB;--c-secondary:#27A9E1;--c-aesth:#5C2D82;--c-aesth-light:#F3EEF9;--c-navy:#0D2D44;--c-text:#1A2C3D;--c-text-muted:#5A7285;--c-white:#FFFFFF;--c-bg:#F5F8FB;--c-border:#D6E4EE;--radius:6px;--radius-lg:12px;--shadow-md:0 4px 20px rgba(92,45,130,0.10);--shadow-lg:0 12px 40px rgba(92,45,130,0.13);--nav-h:72px;--section-v:clamp(3.5rem,7vw,6rem);}
+:root{--c-primary:#004aad;--c-primary-dark:#003888;--c-primary-light:#EAF4FB;--c-secondary:#27A9E1;--c-navy:#0D2D44;--c-text:#1A2C3D;--c-text-muted:#5A7285;--c-white:#FFFFFF;--c-bg:#F5F8FB;--c-border:#D6E4EE;--c-div:#004aad;--radius:6px;--radius-lg:12px;--shadow-md:0 4px 20px rgba(11,94,168,0.10);--shadow-lg:0 12px 40px rgba(11,94,168,0.13);--nav-h:72px;--section-v:clamp(3.5rem,7vw,6rem);}
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
 html{scroll-behavior:smooth;}
 body{font-family:"Inter",Arial,sans-serif;font-size:clamp(1rem,1.15vw,1.0625rem);color:var(--c-text);background:var(--c-white);line-height:1.65;-webkit-font-smoothing:antialiased;}
 img{max-width:100%;display:block;}
-a{color:var(--c-aesth);text-decoration:none;}
+a{color:var(--c-primary);text-decoration:none;}
 h1,h2,h3,h4{line-height:1.18;font-weight:700;color:var(--c-navy);}
-h1{font-size:clamp(2rem,4.5vw,3.5rem);}h2{font-size:clamp(1.6rem,2.8vw,2.4rem);}h3{font-size:clamp(1.15rem,1.8vw,1.45rem);}h4{font-size:clamp(1rem,1.3vw,1.15rem);}
-p{margin-bottom:1em;}p:last-child{margin-bottom:0;}ul{list-style:none;}
+h1{font-size:clamp(2rem,4.5vw,3.5rem);}
+h2{font-size:clamp(1.6rem,2.8vw,2.4rem);}
+h3{font-size:clamp(1.15rem,1.8vw,1.45rem);}
+h4{font-size:clamp(1rem,1.3vw,1.15rem);}
+p{margin-bottom:1em;}p:last-child{margin-bottom:0;}
+ul{list-style:none;}
 .container{width:100%;max-width:1220px;margin-inline:auto;padding-inline:clamp(1.25rem,4vw,3rem);}
-.section{padding-block:var(--section-v);}.section--alt{background:var(--c-bg);}.section--aesth{background:var(--c-aesth);color:#fff;}.section--aesth h2,.section--aesth h3,.section--aesth h4{color:#fff;}
-.eyebrow{display:inline-block;font-size:.75rem;font-weight:700;letter-spacing:.13em;text-transform:uppercase;color:var(--c-aesth);margin-bottom:.75rem;}
-.section--aesth .eyebrow{color:rgba(255,255,255,.7);}
-.section-header{margin-bottom:clamp(2rem,4vw,3.5rem);}.section-header p{max-width:620px;color:var(--c-text-muted);margin-top:.75rem;}.section-header.centered{text-align:center;}.section-header.centered p{margin-inline:auto;}
+.section{padding-block:var(--section-v);}
+.section--alt{background:var(--c-bg);}
+.section--navy{background:var(--c-navy);color:var(--c-white);}
+.section--navy h2,.section--navy h3,.section--navy h4{color:var(--c-white);}
+.eyebrow{display:inline-block;font-size:.75rem;font-weight:700;letter-spacing:.13em;text-transform:uppercase;color:var(--c-primary);margin-bottom:.75rem;}
+.section--navy .eyebrow{color:var(--c-secondary);}
+.section-header{margin-bottom:clamp(2rem,4vw,3.5rem);}
+.section-header p{max-width:620px;color:var(--c-text-muted);margin-top:.75rem;}
+.section-header.centered{text-align:center;}
+.section-header.centered p{margin-inline:auto;}
 .btn{display:inline-flex;align-items:center;gap:.5rem;padding:.75rem 1.5rem;border-radius:var(--radius);font-size:.9375rem;font-weight:600;font-family:"Inter",Arial,sans-serif;cursor:pointer;border:2px solid transparent;transition:background .2s,color .2s,border-color .2s;min-height:48px;white-space:nowrap;text-decoration:none;}
 .btn:focus-visible{outline:3px solid var(--c-secondary);outline-offset:3px;}
-.btn-aesth{background:var(--c-aesth);color:#fff;border-color:var(--c-aesth);}.btn-aesth:hover{background:#3D1A5C;border-color:#3D1A5C;color:#fff;}
-.btn-primary{background:var(--c-primary);color:#fff;border-color:var(--c-primary);}.btn-primary:hover{background:var(--c-primary-dark);color:#fff;}
-.btn-outline-aesth{background:transparent;color:var(--c-aesth);border-color:var(--c-aesth);}.btn-outline-aesth:hover{background:var(--c-aesth);color:#fff;}
-.btn-white{background:#fff;color:var(--c-aesth);border-color:#fff;}.btn-white:hover{background:var(--c-aesth-light);}
-.btn-outline-white{background:transparent;color:#fff;border-color:rgba(255,255,255,.55);}.btn-outline-white:hover{background:rgba(255,255,255,.1);border-color:#fff;}
-.btn-sm{padding:.55rem 1.1rem;font-size:.875rem;min-height:40px;}.btn-group{display:flex;flex-wrap:wrap;gap:.875rem;}
-.skip-link{position:absolute;top:-60px;left:1rem;background:var(--c-aesth);color:#fff;padding:.75rem 1.25rem;border-radius:0 0 var(--radius) var(--radius);z-index:9999;font-weight:600;transition:top .2s;}.skip-link:focus{top:0;}
-/* NAV - same as ophtho */
+.btn-primary{background:var(--c-primary);color:#fff;border-color:var(--c-primary);}
+.btn-primary:hover{background:var(--c-primary-dark);border-color:var(--c-primary-dark);color:#fff;}
+.btn-outline{background:transparent;color:var(--c-primary);border-color:var(--c-primary);}
+.btn-outline:hover{background:var(--c-primary);color:#fff;}
+.btn-white{background:#fff;color:var(--c-primary);border-color:#fff;}
+.btn-white:hover{background:var(--c-primary-light);}
+.btn-outline-white{background:transparent;color:#fff;border-color:rgba(255,255,255,.55);}
+.btn-outline-white:hover{background:rgba(255,255,255,.1);border-color:#fff;}
+.btn-sm{padding:.55rem 1.1rem;font-size:.875rem;min-height:40px;}
+.btn-group{display:flex;flex-wrap:wrap;gap:.875rem;}
+.skip-link{position:absolute;top:-60px;left:1rem;background:var(--c-primary);color:#fff;padding:.75rem 1.25rem;border-radius:0 0 var(--radius) var(--radius);z-index:9999;font-weight:600;transition:top .2s;}
+.skip-link:focus{top:0;}
+
+/* NAV */
 .site-header{position:sticky;top:0;z-index:900;background:#fff;border-bottom:1px solid var(--c-border);box-shadow:0 2px 12px rgba(11,94,168,.06);height:var(--nav-h);display:flex;align-items:center;}
 .nav-inner{display:flex;align-items:center;justify-content:space-between;width:100%;max-width:1380px;margin-inline:auto;padding-inline:clamp(1.25rem,4vw,2.5rem);}
-.nav-logo{display:flex;align-items:center;gap:.625rem;text-decoration:none;flex-shrink:0;}.nav-logo-text{font-size:1.25rem;font-weight:800;color:var(--c-navy);letter-spacing:-.02em;}.nav-logo-text span{color:var(--c-primary);}
-.nav-links{display:flex;align-items:center;gap:.15rem;margin:0;}.nav-links>li{position:relative;}
+.nav-logo{display:flex;align-items:center;gap:.625rem;text-decoration:none;flex-shrink:0;}
+.nav-logo-text{font-size:1.25rem;font-weight:800;color:var(--c-navy);letter-spacing:-.02em;}
+.nav-logo-text span{color:var(--c-primary);}
+.nav-links{display:flex;align-items:center;gap:.15rem;margin:0;}
+.nav-links>li{position:relative;}
 .nav-link{display:flex;align-items:center;gap:.3rem;padding:.5rem .7rem;font-size:.875rem;font-weight:500;color:var(--c-text);border-radius:var(--radius);cursor:pointer;min-height:48px;background:none;border:none;font-family:"Inter",Arial,sans-serif;text-decoration:none;transition:background .15s,color .15s;white-space:nowrap;}
-.nav-link:hover,.nav-link[aria-expanded="true"]{background:var(--c-primary-light);color:var(--c-primary);}
-.nav-link svg.chevron{width:14px;height:14px;transition:transform .2s;}.nav-link[aria-expanded="true"] svg.chevron{transform:rotate(180deg);}
-.dropdown-panel{display:none;position:absolute;top:calc(100% + 4px);left:0;min-width:280px;background:#fff;border:1px solid var(--c-border);border-radius:var(--radius-lg);box-shadow:0 12px 40px rgba(11,94,168,.13);padding:1rem;z-index:800;}.dropdown-panel.is-open{display:block;}
+.nav-link:hover,.nav-link.active,.nav-link[aria-expanded="true"]{background:var(--c-primary-light);color:var(--c-primary);}
+.nav-link svg.chevron{width:14px;height:14px;transition:transform .2s;flex-shrink:0;}
+.nav-link[aria-expanded="true"] svg.chevron{transform:rotate(180deg);}
+.dropdown-panel{display:none;position:absolute;top:calc(100% + 4px);left:0;min-width:280px;background:#fff;border:1px solid var(--c-border);border-radius:var(--radius-lg);box-shadow:var(--shadow-lg);padding:1rem;z-index:800;}
+.dropdown-panel.is-open{display:block;}
 .dropdown-head{font-size:.6875rem;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:var(--c-text-muted);padding:.5rem .75rem .375rem;}
-.dropdown-item{display:flex;align-items:center;gap:.625rem;padding:.6rem .75rem;border-radius:var(--radius);color:var(--c-text);font-size:.875rem;font-weight:500;transition:background .15s;text-decoration:none;}.dropdown-item:hover{background:var(--c-primary-light);color:var(--c-primary);}
+.dropdown-item{display:flex;align-items:center;gap:.625rem;padding:.6rem .75rem;border-radius:var(--radius);color:var(--c-text);font-size:.875rem;font-weight:500;transition:background .15s;text-decoration:none;}
+.dropdown-item:hover{background:var(--c-primary-light);color:var(--c-primary);}
 .nav-ctas{display:flex;align-items:center;gap:.5rem;flex-shrink:0;}
-.hamburger{display:none;flex-direction:column;justify-content:center;align-items:center;gap:5px;width:48px;height:48px;background:none;border:none;cursor:pointer;border-radius:var(--radius);padding:.5rem;transition:background .15s;}.hamburger:hover{background:var(--c-primary-light);}.hamburger span{display:block;width:22px;height:2px;background:var(--c-navy);border-radius:2px;transition:transform .25s,opacity .25s;}.hamburger.is-open span:nth-child(1){transform:translateY(7px) rotate(45deg);}.hamburger.is-open span:nth-child(2){opacity:0;}.hamburger.is-open span:nth-child(3){transform:translateY(-7px) rotate(-45deg);}
-.mobile-drawer{display:none;position:fixed;inset:var(--nav-h) 0 0 0;background:#fff;z-index:850;overflow-y:auto;padding:1.5rem 1.25rem 3rem;border-top:1px solid var(--c-border);}.mobile-drawer.is-open{display:block;}
-.mob-nav-item{border-bottom:1px solid var(--c-border);}.mob-nav-link{display:flex;align-items:center;justify-content:space-between;padding:.875rem .25rem;font-size:1rem;font-weight:600;color:var(--c-navy);text-decoration:none;background:none;border:none;width:100%;cursor:pointer;font-family:"Inter",Arial,sans-serif;min-height:48px;}.mob-accordion-body{display:none;padding-bottom:.75rem;}.mob-accordion-body.is-open{display:block;}.mob-sub-link{display:block;padding:.55rem .75rem;font-size:.9375rem;color:var(--c-text);text-decoration:none;border-radius:var(--radius);}.mob-sub-link:hover{background:var(--c-primary-light);color:var(--c-primary);}.mob-ctas{margin-top:1.5rem;display:flex;flex-direction:column;gap:.75rem;}
+.hamburger{display:none;flex-direction:column;justify-content:center;align-items:center;gap:5px;width:48px;height:48px;background:none;border:none;cursor:pointer;border-radius:var(--radius);padding:.5rem;transition:background .15s;}
+.hamburger:hover{background:var(--c-primary-light);}
+.hamburger span{display:block;width:22px;height:2px;background:var(--c-navy);border-radius:2px;transition:transform .25s,opacity .25s;}
+.hamburger.is-open span:nth-child(1){transform:translateY(7px) rotate(45deg);}
+.hamburger.is-open span:nth-child(2){opacity:0;}
+.hamburger.is-open span:nth-child(3){transform:translateY(-7px) rotate(-45deg);}
+.mobile-drawer{display:none;position:fixed;inset:var(--nav-h) 0 0 0;background:#fff;z-index:850;overflow-y:auto;padding:1.5rem 1.25rem 3rem;border-top:1px solid var(--c-border);}
+.mobile-drawer.is-open{display:block;}
+.mob-nav-item{border-bottom:1px solid var(--c-border);}
+.mob-nav-link{display:flex;align-items:center;justify-content:space-between;padding:.875rem .25rem;font-size:1rem;font-weight:600;color:var(--c-navy);text-decoration:none;background:none;border:none;width:100%;cursor:pointer;font-family:"Inter",Arial,sans-serif;min-height:48px;}
+.mob-accordion-body{display:none;padding-bottom:.75rem;}
+.mob-accordion-body.is-open{display:block;}
+.mob-sub-link{display:block;padding:.55rem .75rem;font-size:.9375rem;color:var(--c-text);text-decoration:none;border-radius:var(--radius);}
+.mob-sub-link:hover{background:var(--c-primary-light);color:var(--c-primary);}
+.mob-ctas{margin-top:1.5rem;display:flex;flex-direction:column;gap:.75rem;}
+
 /* PAGE HERO */
-.page-hero{background:linear-gradient(135deg,#3D1A5C 0%,#5C2D82 100%);color:#fff;padding-block:clamp(3rem,7vw,6rem);position:relative;overflow:hidden;}
-.page-hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 50% 80% at 100% 50%,rgba(39,169,225,.12) 0%,transparent 70%);pointer-events:none;}
-.page-hero-grid{position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.025) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.025) 1px,transparent 1px);background-size:60px 60px;pointer-events:none;}
+.page-hero{background:linear-gradient(135deg,var(--c-navy) 0%,#0B3D6B 100%);color:#fff;padding-block:clamp(3rem,7vw,6rem);position:relative;overflow:hidden;}
+.page-hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 50% 80% at 100% 50%,rgba(11,94,168,.3) 0%,transparent 70%);pointer-events:none;}
+.page-hero-grid{position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.02) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.02) 1px,transparent 1px);background-size:60px 60px;pointer-events:none;}
 .page-hero-inner{position:relative;z-index:2;max-width:760px;}
+.page-hero .eyebrow{color:var(--c-secondary);}
 .page-hero h1{color:#fff;margin-bottom:1.25rem;font-weight:800;letter-spacing:-.025em;}
 .page-hero p{color:rgba(255,255,255,.78);font-size:clamp(1rem,1.3vw,1.125rem);max-width:600px;margin-bottom:2rem;}
+
 /* BREADCRUMB */
 .breadcrumb{background:var(--c-bg);border-bottom:1px solid var(--c-border);padding:.875rem 0;}
-.breadcrumb-inner{display:flex;align-items:center;gap:.5rem;font-size:.8125rem;color:var(--c-text-muted);}.breadcrumb-inner a{color:var(--c-text-muted);}.breadcrumb-inner a:hover{color:var(--c-aesth);}.breadcrumb-sep{color:var(--c-border);}
+.breadcrumb-inner{display:flex;align-items:center;gap:.5rem;font-size:.8125rem;color:var(--c-text-muted);}
+.breadcrumb-inner a{color:var(--c-text-muted);}
+.breadcrumb-inner a:hover{color:var(--c-primary);}
+.breadcrumb-sep{color:var(--c-border);}
+
 /* SUMMARY BOX */
-.summary-box{background:var(--c-aesth-light);border:1px solid #D4C0E8;border-radius:var(--radius-lg);padding:1.75rem 2rem;margin-bottom:3rem;}
-.summary-box h3{font-size:1rem;margin-bottom:1rem;color:var(--c-aesth);}
-.summary-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:.625rem;}.summary-row{display:flex;gap:.5rem;font-size:.875rem;}.summary-label{font-weight:700;color:var(--c-navy);min-width:120px;flex-shrink:0;}.summary-val{color:var(--c-text-muted);}
-/* CAT NAV */
+.summary-box{background:var(--c-primary-light);border:1px solid #C0D9EE;border-radius:var(--radius-lg);padding:1.75rem 2rem;margin-bottom:3rem;}
+.summary-box h3{font-size:1rem;margin-bottom:1rem;color:var(--c-primary);}
+.summary-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:.625rem;}
+.summary-row{display:flex;gap:.5rem;font-size:.875rem;}
+.summary-label{font-weight:700;color:var(--c-navy);min-width:120px;flex-shrink:0;}
+.summary-val{color:var(--c-text-muted);}
+
+/* PRODUCT CATEGORY NAV */
 .cat-nav{display:flex;flex-wrap:wrap;gap:.5rem;margin-bottom:3rem;}
 .cat-pill{display:inline-flex;align-items:center;padding:.5rem 1rem;border-radius:50px;font-size:.8125rem;font-weight:600;background:#fff;border:1px solid var(--c-border);color:var(--c-text-muted);cursor:pointer;transition:background .15s,border-color .15s,color .15s;text-decoration:none;min-height:40px;}
-.cat-pill:hover,.cat-pill.active{background:var(--c-aesth);border-color:var(--c-aesth);color:#fff;}
+.cat-pill:hover,.cat-pill.active{background:var(--c-primary);border-color:var(--c-primary);color:#fff;}
+
 /* PRODUCT CARDS */
-.products-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:1.5rem;}
-.prod-card{background:#fff;border:1px solid var(--c-border);border-radius:var(--radius-lg);overflow:hidden;transition:box-shadow .22s,transform .22s;display:flex;flex-direction:column;}.prod-card:hover{box-shadow:var(--shadow-lg);transform:translateY(-2px);}
-.prod-card-band{height:5px;background:var(--c-aesth);}
+.products-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:1.5rem;}
+.prod-card{background:#fff;border:1px solid var(--c-border);border-radius:var(--radius-lg);overflow:hidden;transition:box-shadow .22s,transform .22s;display:flex;flex-direction:column;}
+.prod-card:hover{box-shadow:var(--shadow-lg);transform:translateY(-2px);}
+.prod-card-band{height:5px;background:var(--c-primary);}
+.prod-card-band.purple{background:#5C2D82;}
+.prod-card-band.teal{background:#1E8A6E;}
+.prod-card-band.cobalt{background:#004aad;}
 .prod-card-body{padding:1.5rem;flex:1;display:flex;flex-direction:column;}
-.prod-card-cat{font-size:.7rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--c-aesth);margin-bottom:.5rem;}
+.prod-card-cat{font-size:.7rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--c-primary);margin-bottom:.5rem;}
 .prod-card h3{font-size:1.125rem;margin-bottom:.625rem;}
 .prod-card p{font-size:.875rem;color:var(--c-text-muted);flex:1;margin-bottom:1rem;}
 .prod-card-footer{border-top:1px solid var(--c-border);padding-top:.875rem;margin-top:auto;}
-.prod-avail{font-size:.75rem;font-weight:600;color:var(--c-text-muted);margin-bottom:.75rem;}.prod-avail strong{color:var(--c-navy);}
-/* SKINCLINIC RANGES */
-.ranges-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.25rem;}
-.range-card{background:#fff;border:1px solid var(--c-border);border-radius:var(--radius-lg);padding:1.5rem;border-top:3px solid var(--c-aesth);transition:box-shadow .2s;}
-.range-card:hover{box-shadow:var(--shadow-md);}
-.range-card h4{font-size:1rem;margin-bottom:.5rem;color:var(--c-aesth);}
-.range-card p{font-size:.875rem;color:var(--c-text-muted);margin:0;}
-/* FEATURES */
+.prod-avail{font-size:.75rem;font-weight:600;color:var(--c-text-muted);margin-bottom:.75rem;}
+.prod-avail strong{color:var(--c-navy);}
+
+/* FEATURES LIST */
 .features-2col{display:grid;grid-template-columns:1fr 1fr;gap:1.5rem;}
-.feature-item{display:flex;gap:.875rem;}.feature-icon{width:40px;height:40px;background:var(--c-aesth-light);border-radius:8px;display:flex;align-items:center;justify-content:center;flex-shrink:0;color:var(--c-aesth);}.feature-icon svg{width:20px;height:20px;}
-.feature-item h4{font-size:.9375rem;margin-bottom:.25rem;}.feature-item p{font-size:.875rem;color:var(--c-text-muted);margin:0;}
+.feature-item{display:flex;gap:.875rem;}
+.feature-icon{width:40px;height:40px;background:var(--c-primary-light);border-radius:8px;display:flex;align-items:center;justify-content:center;flex-shrink:0;color:var(--c-primary);}
+.feature-icon svg{width:20px;height:20px;}
+.feature-item h4{font-size:.9375rem;margin-bottom:.25rem;}
+.feature-item p{font-size:.875rem;color:var(--c-text-muted);margin:0;}
+
+/* SUPPORT STRIP */
+.support-strip{background:var(--c-primary);color:#fff;padding-block:2.5rem;}
+.support-strip-inner{display:flex;flex-wrap:wrap;gap:1.5rem;align-items:center;justify-content:space-between;}
+.support-strip h3{color:#fff;font-size:1.25rem;}
+.support-strip p{color:rgba(255,255,255,.78);font-size:.9375rem;margin:0;}
+
 /* FAQ */
-.faq-list{display:flex;flex-direction:column;gap:.75rem;}.faq-item{border:1px solid var(--c-border);border-radius:var(--radius-lg);overflow:hidden;}
-.faq-q{display:flex;justify-content:space-between;align-items:center;padding:1.125rem 1.5rem;font-weight:600;font-size:.9375rem;cursor:pointer;background:#fff;border:none;width:100%;text-align:left;font-family:"Inter",Arial,sans-serif;color:var(--c-navy);min-height:56px;}.faq-q:hover{background:var(--c-bg);}.faq-q svg{width:18px;height:18px;flex-shrink:0;transition:transform .2s;color:var(--c-aesth);}.faq-q.open svg{transform:rotate(180deg);}
-.faq-a{display:none;padding:0 1.5rem 1.25rem;font-size:.9375rem;color:var(--c-text-muted);}.faq-a.open{display:block;}
-/* CTA */
-.cta-box{background:linear-gradient(135deg,var(--c-aesth),#3D1A5C);border-radius:var(--radius-lg);padding:clamp(2.5rem,5vw,4rem);text-align:center;position:relative;overflow:hidden;}
-.cta-box::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 60% 70% at 80% 50%,rgba(39,169,225,.1) 0%,transparent 70%);pointer-events:none;}
-.cta-box h2{color:#fff;margin-bottom:1rem;position:relative;}.cta-box p{color:rgba(255,255,255,.78);max-width:520px;margin-inline:auto;margin-bottom:2rem;position:relative;}.cta-box .btn-group{justify-content:center;position:relative;}
-/* DISCLAIMER / FOOTER */
-.disclaimer{background:var(--c-bg);border-top:1px solid var(--c-border);padding-block:1.5rem;}.disclaimer p{font-size:.8125rem;color:var(--c-text-muted);max-width:960px;margin-inline:auto;text-align:center;line-height:1.6;margin-bottom:0;}
+.faq-list{display:flex;flex-direction:column;gap:.75rem;}
+.faq-item{border:1px solid var(--c-border);border-radius:var(--radius-lg);overflow:hidden;}
+.faq-q{display:flex;justify-content:space-between;align-items:center;padding:1.125rem 1.5rem;font-weight:600;font-size:.9375rem;cursor:pointer;background:#fff;border:none;width:100%;text-align:left;font-family:"Inter",Arial,sans-serif;color:var(--c-navy);min-height:56px;}
+.faq-q:hover{background:var(--c-bg);}
+.faq-q svg{width:18px;height:18px;flex-shrink:0;transition:transform .2s;color:var(--c-primary);}
+.faq-q.open svg{transform:rotate(180deg);}
+.faq-a{display:none;padding:0 1.5rem 1.25rem;font-size:.9375rem;color:var(--c-text-muted);}
+.faq-a.open{display:block;}
+
+/* CTA BOX */
+.cta-box{background:linear-gradient(135deg,var(--c-primary),var(--c-primary-dark));border-radius:var(--radius-lg);padding:clamp(2.5rem,5vw,4rem);text-align:center;position:relative;overflow:hidden;}
+.cta-box::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 60% 70% at 80% 50%,rgba(39,169,225,.15) 0%,transparent 70%);pointer-events:none;}
+.cta-box h2{color:#fff;margin-bottom:1rem;position:relative;}
+.cta-box p{color:rgba(255,255,255,.78);max-width:520px;margin-inline:auto;margin-bottom:2rem;position:relative;}
+.cta-box .btn-group{justify-content:center;position:relative;}
+
+/* DISCLAIMER */
+.disclaimer{background:var(--c-bg);border-top:1px solid var(--c-border);padding-block:1.5rem;}
+.disclaimer p{font-size:.8125rem;color:var(--c-text-muted);max-width:960px;margin-inline:auto;text-align:center;line-height:1.6;margin-bottom:0;}
+
+/* FOOTER */
 .site-footer{background:var(--c-navy);color:rgba(255,255,255,.7);padding-top:3.5rem;padding-bottom:2rem;}
 .footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:2.5rem;margin-bottom:2.5rem;}
 .footer-brand p{font-size:.875rem;color:rgba(255,255,255,.55);max-width:260px;margin-top:.875rem;line-height:1.6;}
-.footer-col h5{color:#fff;font-size:.75rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;margin-bottom:.875rem;}.footer-col ul li{margin-bottom:.5rem;}.footer-col ul li a{font-size:.875rem;color:rgba(255,255,255,.6);transition:color .15s;}.footer-col ul li a:hover{color:#fff;}
-.footer-bottom{border-top:1px solid rgba(255,255,255,.1);padding-top:1.25rem;display:flex;flex-wrap:wrap;gap:1rem;align-items:center;justify-content:space-between;font-size:.8125rem;color:rgba(255,255,255,.4);}.footer-bottom a{color:rgba(255,255,255,.5);}.footer-bottom a:hover{color:#fff;}.footer-legal{display:flex;gap:1.25rem;flex-wrap:wrap;}
-.site-disclaimer{background:var(--c-navy);border-top:1px solid rgba(255,255,255,.08);padding-block:1.25rem;}.site-disclaimer p{font-size:.75rem;color:rgba(255,255,255,.35);text-align:center;max-width:960px;margin-inline:auto;line-height:1.6;margin-bottom:0;}
+.footer-col h5{color:#fff;font-size:.75rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;margin-bottom:.875rem;}
+.footer-col ul li{margin-bottom:.5rem;}
+.footer-col ul li a{font-size:.875rem;color:rgba(255,255,255,.6);transition:color .15s;}
+.footer-col ul li a:hover{color:#fff;}
+.footer-bottom{border-top:1px solid rgba(255,255,255,.1);padding-top:1.25rem;display:flex;flex-wrap:wrap;gap:1rem;align-items:center;justify-content:space-between;font-size:.8125rem;color:rgba(255,255,255,.4);}
+.footer-bottom a{color:rgba(255,255,255,.5);}
+.footer-bottom a:hover{color:#fff;}
+.footer-legal{display:flex;gap:1.25rem;flex-wrap:wrap;}
+.site-disclaimer{background:var(--c-navy);border-top:1px solid rgba(255,255,255,.08);padding-block:1.25rem;}
+.site-disclaimer p{font-size:.75rem;color:rgba(255,255,255,.35);text-align:center;max-width:960px;margin-inline:auto;line-height:1.6;margin-bottom:0;}
+
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{transition-duration:.01ms!important;}}
-@media(max-width:1024px){.footer-grid{grid-template-columns:1fr 1fr;}.features-2col{grid-template-columns:1fr;}.ranges-grid{grid-template-columns:1fr 1fr;}}
-@media(max-width:860px){.nav-links,.nav-ctas{display:none;}.hamburger{display:flex;}.products-grid{grid-template-columns:1fr 1fr;}}
-@media(max-width:600px){:root{--nav-h:64px;}.products-grid,.ranges-grid{grid-template-columns:1fr;}.footer-grid{grid-template-columns:1fr;}.summary-grid{grid-template-columns:1fr;}}
+@media(max-width:1024px){.footer-grid{grid-template-columns:1fr 1fr;}.features-2col{grid-template-columns:1fr;}}
+@media(max-width:860px){.nav-links{display:none;}.nav-ctas{display:none;}.hamburger{display:flex;}.products-grid{grid-template-columns:1fr 1fr;}}
+@media(max-width:600px){:root{--nav-h:64px;}.products-grid{grid-template-columns:1fr;}.footer-grid{grid-template-columns:1fr;}.features-2col{grid-template-columns:1fr;}.summary-grid{grid-template-columns:1fr;}}
 </style>
 </head>
 <body>
 <a href="#main-content" class="skip-link">Skip to main content</a>
+
 <header class="site-header">
   <nav class="nav-inner" aria-label="Primary navigation">
-    <a href="/" class="nav-logo"><svg viewBox="111 72 152 180" width="160" height="160" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect x="111" y="72" width="152" height="180" fill="#004aad" rx="18"/><path fill="#ffffff" d="M 225.746094 143.082031 L 263.144531 143.082031 C 260.671875 103.492188 227.785156 72.144531 187.570312 72.144531 C 181.113281 72.144531 174.847656 72.953125 168.867188 74.472656 C 200.152344 82.421875 223.667969 109.84375 225.746094 143.082031"/><path fill="#ffffff" d="M 149.242188 175.691406 L 149.242188 147.875 C 149.242188 133.496094 157.15625 120.972656 168.867188 114.414062 C 163.335938 111.316406 156.960938 109.542969 150.167969 109.542969 C 129 109.542969 111.839844 126.707031 111.839844 147.875 L 111.839844 175.691406 C 111.839844 196.859375 129 214.023438 150.167969 214.023438 C 156.960938 214.023438 163.335938 212.25 168.867188 209.152344 C 157.15625 202.59375 149.242188 190.070312 149.242188 175.691406"/><path fill="#ffffff" d="M 168.867188 249.09375 C 174.847656 250.613281 181.113281 251.421875 187.570312 251.421875 C 227.785156 251.421875 260.671875 220.074219 263.144531 180.484375 L 225.746094 180.484375 C 223.667969 213.722656 200.152344 241.144531 168.867188 249.09375"/></svg><span class="nav-logo-text">Curative<span>.</span></span></a>
+    <a href="/" class="nav-logo" aria-label="Curative home">
+      <svg viewBox="111 72 152 180" width="44" height="44" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect x="111" y="72" width="152" height="180" fill="#004aad" rx="16"/><path fill="#ffffff" d="M 225.746094 143.082031 L 263.144531 143.082031 C 260.671875 103.492188 227.785156 72.144531 187.570312 72.144531 C 181.113281 72.144531 174.847656 72.953125 168.867188 74.472656 C 200.152344 82.421875 223.667969 109.84375 225.746094 143.082031"/><path fill="#ffffff" d="M 149.242188 175.691406 L 149.242188 147.875 C 149.242188 133.496094 157.15625 120.972656 168.867188 114.414062 C 163.335938 111.316406 156.960938 109.542969 150.167969 109.542969 C 129 109.542969 111.839844 126.707031 111.839844 147.875 L 111.839844 175.691406 C 111.839844 196.859375 129 214.023438 150.167969 214.023438 C 156.960938 214.023438 163.335938 212.25 168.867188 209.152344 C 157.15625 202.59375 149.242188 190.070312 149.242188 175.691406"/><path fill="#ffffff" d="M 168.867188 249.09375 C 174.847656 250.613281 181.113281 251.421875 187.570312 251.421875 C 227.785156 251.421875 260.671875 220.074219 263.144531 180.484375 L 225.746094 180.484375 C 223.667969 213.722656 200.152344 241.144531 168.867188 249.09375"/></svg>
+      <span class="nav-logo-text">Curative<span>.</span></span>
+    </a>
     <ul class="nav-links">
       <li><a href="/" class="nav-link">Home</a></li>
       <li><a href="/about-curative" class="nav-link">About</a></li>
-      <li><button class="nav-link" aria-expanded="false" aria-controls="dd-div" id="btn-div" onclick="toggleDropdown('dd-div','btn-div')">Divisions <svg class="chevron" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M4 6l4 4 4-4" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
-        <div class="dropdown-panel" id="dd-div"><p class="dropdown-head">Business Divisions</p><a href="/ophthalmology" class="dropdown-item">👁 Ophthalmology</a><a href="/aesthetics" class="dropdown-item">✨ Medical Aesthetics</a><a href="/dentistry" class="dropdown-item">🦷 Dentistry &amp; Digital Imaging</a></div></li>
+      <li>
+        <button class="nav-link" aria-expanded="false" aria-controls="dd-div" id="btn-div" onclick="toggleDropdown('dd-div','btn-div')">Divisions <svg class="chevron" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M4 6l4 4 4-4" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+        <div class="dropdown-panel" id="dd-div">
+          <p class="dropdown-head">Business Divisions</p>
+          <a href="/ophthalmology" class="dropdown-item active">👁 Ophthalmology</a>
+          <a href="/aesthetics" class="dropdown-item">✨ Medical Aesthetics</a>
+          <a href="/dentistry" class="dropdown-item">🦷 Dentistry &amp; Digital Imaging</a>
+        </div>
+      </li>
       <li><a href="/markets" class="nav-link">Markets</a></li>
       <li><a href="/education-events" class="nav-link">Education</a></li>
       <li><a href="/resources" class="nav-link">Resources</a></li>
       <li><a href="/contact" class="nav-link">Contact</a></li>
     </ul>
-    <div class="nav-ctas"><a href="/contact?type=demo" class="btn btn-outline btn-sm" style="color:var(--c-aesth);border-color:var(--c-aesth);">Request a Demo</a><a href="/contact" class="btn btn-sm" style="background:var(--c-aesth);color:#fff;border-color:var(--c-aesth);">Product Enquiry</a></div>
+    <div class="nav-ctas">
+      <a href="/contact?type=demo" class="btn btn-outline btn-sm">Request a Demo</a>
+      <a href="/contact" class="btn btn-primary btn-sm">Product Enquiry</a>
+    </div>
     <button class="hamburger" id="hamburger-btn" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobile-drawer" onclick="toggleMobileNav()"><span></span><span></span><span></span></button>
   </nav>
 </header>
+
 <div class="mobile-drawer" id="mobile-drawer" role="navigation" aria-label="Mobile navigation">
-  <ul><li class="mob-nav-item"><a href="/" class="mob-nav-link">Home</a></li><li class="mob-nav-item"><a href="/about-curative" class="mob-nav-link">About Curative</a></li><li class="mob-nav-item"><button class="mob-nav-link" onclick="toggleMobAccordion('mob-div')" aria-expanded="false">Divisions <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M4 6l4 4 4-4" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/></svg></button><div class="mob-accordion-body" id="mob-div"><a href="/ophthalmology" class="mob-sub-link">Ophthalmology</a><a href="/aesthetics" class="mob-sub-link">Medical Aesthetics</a><a href="/dentistry" class="mob-sub-link">Dentistry &amp; Digital Imaging</a></div></li><li class="mob-nav-item"><a href="/markets" class="mob-nav-link">Markets</a></li><li class="mob-nav-item"><a href="/contact" class="mob-nav-link">Contact</a></li></ul>
-  <div class="mob-ctas"><a href="/contact?type=demo" class="btn btn-aesth">Request a Demo</a><a href="/contact" class="btn btn-outline-aesth">Product Enquiry</a></div>
+  <ul>
+    <li class="mob-nav-item"><a href="/" class="mob-nav-link">Home</a></li>
+    <li class="mob-nav-item"><a href="/about-curative" class="mob-nav-link">About Curative</a></li>
+    <li class="mob-nav-item">
+      <button class="mob-nav-link" onclick="toggleMobAccordion('mob-div')" aria-expanded="false">Divisions <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M4 6l4 4 4-4" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+      <div class="mob-accordion-body" id="mob-div">
+        <a href="/ophthalmology" class="mob-sub-link">Ophthalmology</a>
+        <a href="/aesthetics" class="mob-sub-link">Medical Aesthetics</a>
+        <a href="/dentistry" class="mob-sub-link">Dentistry &amp; Digital Imaging</a>
+      </div>
+    </li>
+    <li class="mob-nav-item"><a href="/markets" class="mob-nav-link">Markets</a></li>
+    <li class="mob-nav-item"><a href="/education-events" class="mob-nav-link">Education &amp; Events</a></li>
+    <li class="mob-nav-item"><a href="/contact" class="mob-nav-link">Contact</a></li>
+  </ul>
+  <div class="mob-ctas">
+    <a href="/contact?type=demo" class="btn btn-primary">Request a Demo</a>
+    <a href="/contact" class="btn btn-outline">Product Enquiry</a>
+  </div>
 </div>
-<nav class="breadcrumb" aria-label="Breadcrumb"><div class="container"><div class="breadcrumb-inner"><a href="/">Home</a><span class="breadcrumb-sep">›</span><span>Medical Aesthetics</span></div></div></nav>
+
+<nav class="breadcrumb" aria-label="Breadcrumb">
+  <div class="container"><div class="breadcrumb-inner"><a href="/">Home</a><span class="breadcrumb-sep">›</span><span>Ophthalmology</span></div></div>
+</nav>
 
 <main id="main-content">
+
+<!-- HERO -->
 <section class="page-hero">
   <div class="page-hero-grid" aria-hidden="true"></div>
-  <div class="container"><div class="page-hero-inner">
-    <span class="eyebrow" style="color:rgba(255,255,255,.7);">Curative Medical Aesthetics</span>
-    <h1>Professional Skincare, Facial Imaging and Injection Solutions</h1>
-    <p>Curative Aesthetics supports aesthetic clinics, dermatologists, plastic surgeons and medical spas with professional dermocosmetics, 3D facial imaging, aesthetic injection accessories and treatment-support solutions across Singapore, Malaysia, Thailand and Hong Kong.</p>
-    <div class="btn-group"><a href="/contact?type=demo&division=aesthetics" class="btn btn-white">Request a Product Demo</a><a href="/contact?division=aesthetics" class="btn btn-outline-white">Speak With a Specialist</a></div>
-  </div></div>
+  <div class="container">
+    <div class="page-hero-inner">
+      <span class="eyebrow">Curative Ophthalmology</span>
+      <h1>Cataract, Retina and Eye Surgery Solutions Across Asia</h1>
+      <p>Curative Ophthalmology provides intraocular lenses, cataract and vitreoretinal surgical systems, reusable instruments, viscoelastic devices, retinal tamponades and customised procedure kits for hospitals, eye centres and ophthalmic surgeons across Singapore, Malaysia, Thailand and Hong Kong.</p>
+      <div class="btn-group">
+        <a href="/contact?type=demo&division=ophthalmology" class="btn btn-white">Request a Product Demo</a>
+        <a href="/contact?division=ophthalmology" class="btn btn-outline-white">Speak With a Specialist</a>
+      </div>
+    </div>
+  </div>
 </section>
 
+<!-- SUMMARY BOX -->
 <section class="section" style="padding-bottom:0;">
   <div class="container">
     <div class="summary-box">
       <h3>Division Summary</h3>
       <div class="summary-grid">
-        <div class="summary-row"><span class="summary-label">Division</span><span class="summary-val">Curative Medical Aesthetics &amp; Dermocosmetics</span></div>
-        <div class="summary-row"><span class="summary-label">Users</span><span class="summary-val">Aesthetic Clinics · Dermatologists · Plastic Surgeons · Medical Spas</span></div>
-        <div class="summary-row"><span class="summary-label">Product Types</span><span class="summary-val">Professional Skincare · 3D Facial Scanning · Injection Accessories · Skin Boosters</span></div>
-        <div class="summary-row"><span class="summary-label">Key Brands</span><span class="summary-val">SkinClinic · FaceCast MPS · TSK Laboratory · EXOCEAN · AURORA NAD+</span></div>
+        <div class="summary-row"><span class="summary-label">Division</span><span class="summary-val">Curative Ophthalmology</span></div>
+        <div class="summary-row"><span class="summary-label">Specialties</span><span class="summary-val">Cataract · Vitreoretinal · Anterior Segment · Glaucoma</span></div>
+        <div class="summary-row"><span class="summary-label">Product Types</span><span class="summary-val">IOLs · Surgical Systems · Instruments · OVDs · Tamponades · Procedure Kits</span></div>
+        <div class="summary-row"><span class="summary-label">Key Brands</span><span class="summary-val">HOYA Surgical Optics · VOPTICA · Oertli · OPHTEC · Ariavisc · Micromed · ODC · Vortex Surgical</span></div>
         <div class="summary-row"><span class="summary-label">Markets</span><span class="summary-val">Singapore · Malaysia · Thailand · Hong Kong</span></div>
-        <div class="summary-row"><span class="summary-label">Distributor</span><span class="summary-val">Curative Group Pte. Ltd. (SkinClinic: exclusive regional distributor)</span></div>
+        <div class="summary-row"><span class="summary-label">Distributor</span><span class="summary-val">Curative Group Pte. Ltd.</span></div>
       </div>
     </div>
+
+    <!-- CATEGORY NAV -->
     <div class="cat-nav" role="navigation" aria-label="Product categories">
-      <a href="#skinclinic" class="cat-pill active">SkinClinic Dermocosmetics</a>
-      <a href="#facecast" class="cat-pill">FaceCast MPS</a>
-      <a href="#tsk" class="cat-pill">TSK Injection Accessories</a>
-      <a href="#skinboosters" class="cat-pill">Skin Boosters</a>
+      <a href="#iols" class="cat-pill active">Intraocular Lenses</a>
+      <a href="#cataract" class="cat-pill">Cataract Surgery</a>
+      <a href="#vitreoretinal" class="cat-pill">Vitreoretinal Surgery</a>
+      <a href="#instruments" class="cat-pill">Surgical Instruments</a>
+      <a href="#consumables" class="cat-pill">OVDs &amp; Consumables</a>
     </div>
   </div>
 </section>
 
-<!-- SKINCLINIC -->
-<section class="section section--alt" id="skinclinic" aria-labelledby="sc-heading">
+<!-- IOLS -->
+<section class="section section--alt" id="iols" aria-labelledby="iols-heading">
   <div class="container">
     <div class="section-header">
-      <span class="eyebrow">SkinClinic · Exclusive Regional Distributor</span>
-      <h2 id="sc-heading">SkinClinic Professional Dermocosmetics</h2>
-      <p>SkinClinic is a professional clinical skincare brand developed and manufactured in Spain. Its portfolio is designed for use by dermatologists, aesthetic physicians and qualified skincare professionals, addressing common skin concerns seen in Asian climates including pigmentation, acne, ageing, sensitivity, rosacea and skin recovery. Available exclusively through Curative in Singapore, Malaysia, Thailand and Hong Kong.</p>
-    </div>
-
-    <div class="ranges-grid" style="margin-bottom:2.5rem;">
-      <div class="range-card">
-        <h4>Melanyc — Pigmentation Care</h4>
-        <p>A targeted pigmentation range addressing dark spots, uneven tone and visible signs of sun exposure. Particularly relevant in Asian markets with year-round UV exposure. May complement in-clinic pigmentation treatments when recommended by a practitioner.</p>
-      </div>
-      <div class="range-card">
-        <h4>Rosanic — Sensitive &amp; Redness-Prone Skin</h4>
-        <p>A calming, barrier-focused range for skin prone to redness, discomfort and visible reactivity. Suitable for patients requiring gentle daily care alongside professional management of redness-prone skin conditions.</p>
-      </div>
-      <div class="range-card">
-        <h4>Hydro-Nourishing — Intensive Hydration</h4>
-        <p>Intensive hydration and nourishment for dry, dehydrated or compromised skin. Particularly relevant in climates with combined outdoor heat and prolonged indoor air-conditioning exposure.</p>
-      </div>
-      <div class="range-card">
-        <h4>Acne &amp; Sebum Regulation</h4>
-        <p>Targeted solutions for oily, congested and acne-prone skin. Designed to support cleansing, oil control, skin renewal and maintenance of a balanced complexion within a professionally guided programme.</p>
-      </div>
-      <div class="range-card">
-        <h4>Anti-Ageing &amp; Luminosity</h4>
-        <p>Formulations intended to support the appearance of smoother, more radiant skin. May be used as part of a daily maintenance programme or alongside professionally administered aesthetic treatments.</p>
-      </div>
-      <div class="range-card">
-        <h4>Skin Recovery &amp; Post-Procedure Care</h4>
-        <p>Regeneration and recovery products for incorporation into professional aftercare programmes following selected aesthetic procedures, supporting hydration, barrier recovery and skin comfort.</p>
-      </div>
-    </div>
-
-    <div style="background:#fff;border:1px solid var(--c-border);border-radius:var(--radius-lg);padding:1.75rem 2rem;">
-      <h3 style="margin-bottom:1rem;">Curative Support for SkinClinic Clinics</h3>
-      <div class="features-2col">
-        <div class="feature-item"><div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg></div><div><h4>Range Planning &amp; Onboarding</h4><p>Product selection, starter-range planning, clinic launch support and staff onboarding to introduce SkinClinic to your practice.</p></div></div>
-        <div class="feature-item"><div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/></svg></div><div><h4>Clinical Product Training</h4><p>Professional training on product selection, formulations, treatment protocols and home-care programme development for clinic teams.</p></div></div>
-        <div class="feature-item"><div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"/></svg></div><div><h4>Marketing Support</h4><p>Patient education materials, clinic promotional content and marketing support to help clinics communicate SkinClinic's professional positioning.</p></div></div>
-        <div class="feature-item"><div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M9 17V7m0 10a2 2 0 01-2 2H5a2 2 0 01-2-2V7a2 2 0 012-2h2a2 2 0 012 2m0 10a2 2 0 002 2h2a2 2 0 002-2M9 7a2 2 0 012-2h2a2 2 0 012 2m0 10V7m0 10a2 2 0 002 2h2a2 2 0 002-2V7a2 2 0 00-2-2h-2a2 2 0 00-2 2"/></svg></div><div><h4>Inventory &amp; Supply Planning</h4><p>Regional inventory management and supply-chain support for consistent product availability across Singapore, Malaysia, Thailand and Hong Kong.</p></div></div>
-      </div>
-      <div style="margin-top:1.5rem;padding-top:1.25rem;border-top:1px solid var(--c-border);"><p style="font-size:.875rem;color:var(--c-text-muted);margin-bottom:.875rem;"><strong style="color:var(--c-navy);">Available:</strong> Singapore · Malaysia · Thailand · Hong Kong</p><a href="/contact?product=skinclinic" class="btn btn-aesth">Enquire About SkinClinic</a></div>
-    </div>
-  </div>
-</section>
-
-<!-- FACECAST MPS -->
-<section class="section" id="facecast" aria-labelledby="fc-heading">
-  <div class="container">
-    <div class="section-header">
-      <span class="eyebrow">FaceCast · 3D Facial Scanning</span>
-      <h2 id="fc-heading">FaceCast MPS — 3D Facial Scanner for Aesthetic Medicine</h2>
-      <p>FaceCast MPS is a professional 3D facial scanning system designed for aesthetic medicine, plastic surgery and multidisciplinary clinical applications. It creates a detailed three-dimensional representation of the patient's external facial surface for clinical assessment, consultation and treatment documentation.</p>
-    </div>
-    <div class="products-grid" style="grid-template-columns:repeat(auto-fill,minmax(280px,1fr));">
-      <article class="prod-card">
-        <div class="prod-card-band"></div>
-        <div class="prod-card-body">
-          <p class="prod-card-cat">FaceCast · Key Application</p>
-          <h3>Patient Consultation &amp; Facial Analysis</h3>
-          <p>Three-dimensional facial data supports clinical assessment of facial symmetry, volume, contour and proportion. Clinicians can present visual information during consultation to facilitate more informed treatment discussions.</p>
-          <div class="prod-card-footer"><p class="prod-avail"><strong>FaceCast MPS:</strong> Aesthetic medicine · Plastic surgery</p></div>
-        </div>
-      </article>
-      <article class="prod-card">
-        <div class="prod-card-band"></div>
-        <div class="prod-card-body">
-          <p class="prod-card-cat">FaceCast · Key Application</p>
-          <h3>Before-and-After Documentation</h3>
-          <p>Standardised 3D facial records support structured before-and-after documentation across treatment cycles. Consistent 3D capture can improve the clinical value of outcome records compared with conventional photography alone.</p>
-          <div class="prod-card-footer"><p class="prod-avail"><strong>Applications:</strong> All aesthetic treatment modalities</p></div>
-        </div>
-      </article>
-      <article class="prod-card">
-        <div class="prod-card-band"></div>
-        <div class="prod-card-body">
-          <p class="prod-card-cat">FaceCast · Key Application</p>
-          <h3>Multidisciplinary Workflow Support</h3>
-          <p>FaceCast MPS supports collaboration across aesthetic physicians, dermatologists, plastic surgeons and ENT specialists. A shared 3D facial record provides a common visual reference for multidisciplinary treatment planning and communication.</p>
-          <div class="prod-card-footer"><p class="prod-avail"><strong>Available:</strong> Singapore · Malaysia · Hong Kong</p></div>
-        </div>
-      </article>
-    </div>
-    <div style="margin-top:1.75rem;padding:1.5rem 2rem;background:var(--c-aesth-light);border-radius:var(--radius-lg);border:1px solid #D4C0E8;">
-      <p style="font-size:.9375rem;color:var(--c-text-muted);margin-bottom:1rem;"><em>FaceCast is a communication and assessment tool. Any simulation or visualisation should not be presented as a guaranteed treatment outcome. FaceCast is intended for professional clinical use and should not replace physical examination, diagnostic imaging or the clinical judgement of a qualified healthcare professional.</em></p>
-      <a href="/contact?product=facecast-mps" class="btn btn-aesth">Request a FaceCast Demo</a>
-    </div>
-  </div>
-</section>
-
-<!-- TSK -->
-<section class="section section--alt" id="tsk" aria-labelledby="tsk-heading">
-  <div class="container">
-    <div class="section-header">
-      <span class="eyebrow">TSK Laboratory · Injection Accessories</span>
-      <h2 id="tsk-heading">TSK Aesthetic Needles and Cannulas</h2>
-      <p>TSK Laboratory provides a comprehensive range of injection accessories for aesthetic practitioners, including aesthetic cannulas, needles and low-dead-space injection products for dermal filler and botulinum toxin procedures.</p>
+      <span class="eyebrow">Intraocular Lenses</span>
+      <h2 id="iols-heading">IOL Solutions for Every Patient</h2>
+      <p>Curative provides a comprehensive range of intraocular lens technologies covering monofocal, toric and trifocal options for personalised vision correction after cataract surgery.</p>
     </div>
     <div class="products-grid">
+
       <article class="prod-card">
-        <div class="prod-card-band"></div>
+        <div class="prod-card-band cobalt"></div>
         <div class="prod-card-body">
-          <p class="prod-card-cat">TSK Laboratory · Cannulas</p>
-          <h3>STERiGLIDE™ Aesthetic Cannulas</h3>
-          <p>TSK STERiGLIDE™ cannulas are designed for soft-tissue filler delivery in aesthetic procedures. Their rounded tip and smooth delivery profile are intended to support controlled product placement during facial injection procedures. Available in a range of gauges and lengths.</p>
-          <div class="prod-card-footer"><p class="prod-avail"><strong>Available:</strong> Selected Asian markets</p><a href="/contact?product=steriglide" class="btn btn-aesth btn-sm">Request Information</a></div>
+          <p class="prod-card-cat">HOYA Surgical Optics · Monofocal IOL</p>
+          <h3>Vivinex™ iSert® (XC1 / XY1)</h3>
+          <p>The Vivinex™ iSert is a hydrophobic acrylic monofocal IOL delivered via the preloaded iSert® injector system. The aspheric optic design features a square posterior edge and active oxygen processing treatment. Available in UV-filter (XC1) and UV- and blue-light-filter (XY1) options. Power range +6.00 to +30.00 D in 0.50 D increments. Recommended incision size 2.20 mm.</p>
+          <div class="prod-card-footer">
+            <p class="prod-avail"><strong>Available:</strong> Singapore (authorised distributor)</p>
+            <a href="/contact?product=vivinex-isert" class="btn btn-outline btn-sm">Request Information</a>
+          </div>
         </div>
       </article>
+
       <article class="prod-card">
-        <div class="prod-card-band"></div>
+        <div class="prod-card-band cobalt"></div>
         <div class="prod-card-body">
-          <p class="prod-card-cat">TSK Laboratory · Needles</p>
-          <h3>STERiJECT™ Aesthetic Needles</h3>
-          <p>TSK STERiJECT™ needles are precision aesthetic injection needles designed for dermal filler, botulinum toxin and other injectable aesthetic treatments. Their fine gauge and consistent bevel design aim to support controlled delivery and patient comfort during procedures.</p>
-          <div class="prod-card-footer"><p class="prod-avail"><strong>Available:</strong> Selected Asian markets</p><a href="/contact?product=steriject" class="btn btn-aesth btn-sm">Request Information</a></div>
+          <p class="prod-card-cat">HOYA Surgical Optics · Toric IOL</p>
+          <h3>Vivinex™ Toric multiSert® (XY1A-SP)</h3>
+          <p>The Vivinex™ Toric multiSert combines astigmatism correction with the proven Vivinex hydrophobic acrylic platform. Delivered through the multiSert® preloaded injector for controlled, consistent implantation. Designed for rotational stability to support reliable astigmatic correction following cataract surgery.</p>
+          <div class="prod-card-footer">
+            <p class="prod-avail"><strong>Available:</strong> Singapore (authorised distributor)</p>
+            <a href="/contact?product=vivinex-toric" class="btn btn-outline btn-sm">Request Information</a>
+          </div>
         </div>
       </article>
+
       <article class="prod-card">
-        <div class="prod-card-band"></div>
+        <div class="prod-card-band cobalt"></div>
         <div class="prod-card-body">
-          <p class="prod-card-cat">TSK Laboratory · Specialty Needles</p>
-          <h3>THE INViSIBLE NEEDLE™</h3>
-          <p>THE INViSIBLE NEEDLE™ is a fine-gauge specialty needle designed to minimise visible needle trauma and support patient comfort during aesthetic injection procedures. Its ultra-fine tip and smooth surface are intended to reduce the visual impact of needle insertion sites.</p>
-          <div class="prod-card-footer"><p class="prod-avail"><strong>Available:</strong> Selected Asian markets</p><a href="/contact?product=invisible-needle" class="btn btn-aesth btn-sm">Request Information</a></div>
+          <p class="prod-card-cat">HOYA Surgical Optics · Trifocal IOL</p>
+          <h3>Vivinex™ Gemetric™ Trifocal Family</h3>
+          <p>The Gemetric™ trifocal IOL family provides a broad range of vision across distance, intermediate and near. Gemetric™ (XY1-G) prioritises distance with balanced intermediate and near. Gemetric™ Plus (XY1-GP) prioritises near with balanced distance and intermediate. Toric configurations (XY1-GT, XY1-GPT) are available for patients with corneal astigmatism. Delivered via the multiSert® preloaded injector.</p>
+          <div class="prod-card-footer">
+            <p class="prod-avail"><strong>Available:</strong> Singapore (authorised distributor)</p>
+            <a href="/contact?product=vivinex-gemetric" class="btn btn-outline btn-sm">Request Information</a>
+          </div>
         </div>
       </article>
+
+      <article class="prod-card">
+        <div class="prod-card-band cobalt"></div>
+        <div class="prod-card-body">
+          <p class="prod-card-cat">VOPTICA · Premium IOL Platform</p>
+          <h3>ArtIOL® 25 / ArtIOL® 40 / ArtIOL® 70</h3>
+          <p>The VOPTICA ArtIOL® family features a patented inverted meniscus optical design inspired by the natural crystalline lens. Unlike conventional biconvex IOLs, the inverted meniscus geometry is designed to enhance peripheral and off-axis optical performance. ArtIOL® 25, 40 and 70 offer different levels of non-diffractive depth of focus, allowing surgeons to personalise lens selection according to each patient's visual priorities and lifestyle.</p>
+          <div class="prod-card-footer">
+            <p class="prod-avail"><strong>Available:</strong> Hong Kong · Malaysia · Thailand</p>
+            <a href="/contact?product=artiol" class="btn btn-outline btn-sm">Request Information</a>
+          </div>
+        </div>
+      </article>
+
     </div>
   </div>
 </section>
 
-<!-- SKIN BOOSTERS -->
-<section class="section" id="skinboosters" aria-labelledby="sb-heading">
+<!-- CATARACT SURGERY -->
+<section class="section" id="cataract" aria-labelledby="cataract-heading">
   <div class="container">
     <div class="section-header">
-      <span class="eyebrow">Skin Boosters · Topical &amp; Microneedling</span>
-      <h2 id="sb-heading">EXOCEAN &amp; AURORA NAD+ Skin Boosters</h2>
-      <p>EXOCEAN and AURORA NAD+ are skin booster products intended for topical application and use in microneedling-assisted delivery protocols. They are not injectables. These products are available through Curative in selected markets.</p>
+      <span class="eyebrow">Cataract Surgery</span>
+      <h2 id="cataract-heading">Systems and Accessories for Phacoemulsification</h2>
+      <p>From phacoemulsification platforms and IOL injectors to OVDs and custom procedure kits, Curative supports the complete cataract surgical workflow.</p>
     </div>
-    <div class="products-grid" style="grid-template-columns:repeat(auto-fill,minmax(320px,1fr));">
+    <div class="products-grid">
+
       <article class="prod-card">
-        <div class="prod-card-band"></div>
+        <div class="prod-card-band cobalt"></div>
         <div class="prod-card-body">
-          <p class="prod-card-cat">EXOCEAN · Skin Booster</p>
-          <h3>EXOCEAN Skin Booster</h3>
-          <p>EXOCEAN is a skin booster product designed for topical and microneedling-assisted application in aesthetic skin-care protocols. It is intended to support skin hydration, texture and overall skin quality as part of a professionally guided treatment programme. Not an injectable product.</p>
-          <div class="prod-card-footer"><p class="prod-avail"><strong>Available:</strong> Selected Asian markets</p><a href="/contact?product=exocean" class="btn btn-aesth btn-sm">Request Information</a></div>
+          <p class="prod-card-cat">Oertli · Cataract Surgical System</p>
+          <h3>CataRhex 3® Phacoemulsification System</h3>
+          <p>The Oertli CataRhex 3® is a compact phacoemulsification system developed in Switzerland for routine cataract surgery. Featuring Oertli's controlled fluidics technology, the system supports precise aspiration and irrigation control during anterior segment procedures. Suitable for high-volume cataract programmes in hospital and ambulatory surgical settings.</p>
+          <div class="prod-card-footer">
+            <p class="prod-avail"><strong>Available:</strong> Hong Kong</p>
+            <a href="/contact?product=catarhex3" class="btn btn-outline btn-sm">Request Information</a>
+          </div>
         </div>
       </article>
+
       <article class="prod-card">
-        <div class="prod-card-band"></div>
+        <div class="prod-card-band cobalt"></div>
         <div class="prod-card-body">
-          <p class="prod-card-cat">AURORA NAD+ · Skin Booster</p>
-          <h3>AURORA NAD+ Skin Booster</h3>
-          <p>AURORA NAD+ is a skin booster product containing NAD+ intended for topical and microneedling-assisted application. It is designed to be incorporated into professionally supervised aesthetic skin-care and rejuvenation protocols. Not an injectable product.</p>
-          <div class="prod-card-footer"><p class="prod-avail"><strong>Available:</strong> Selected Asian markets</p><a href="/contact?product=aurora-nad" class="btn btn-aesth btn-sm">Request Information</a></div>
+          <p class="prod-card-cat">OPHTEC · IOL Injector System</p>
+          <h3>RingJect™ Injector System</h3>
+          <p>The OPHTEC RingJect™ is an IOL injector system designed to support controlled and consistent intraocular lens implantation. It is compatible with selected IOL platforms and is designed to minimise direct handling of the lens during implantation, supporting operating-room efficiency and safety.</p>
+          <div class="prod-card-footer">
+            <p class="prod-avail"><strong>Available:</strong> Selected Asian markets</p>
+            <a href="/contact?product=ringject" class="btn btn-outline btn-sm">Request Information</a>
+          </div>
         </div>
       </article>
+
+      <article class="prod-card">
+        <div class="prod-card-band cobalt"></div>
+        <div class="prod-card-body">
+          <p class="prod-card-cat">ODC · IOL Injector System</p>
+          <h3>ErgoTouch GLIDE Injector</h3>
+          <p>The ODC ErgoTouch GLIDE is a preloaded IOL injector system designed for ergonomic, single-handed operation during cataract surgery. Its design supports smooth and controlled lens delivery to reduce force and improve implantation consistency. Available for use with compatible IOL platforms.</p>
+          <div class="prod-card-footer">
+            <p class="prod-avail"><strong>Available:</strong> Selected Asian markets</p>
+            <a href="/contact?product=ergotouch" class="btn btn-outline btn-sm">Request Information</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="prod-card">
+        <div class="prod-card-band cobalt"></div>
+        <div class="prod-card-body">
+          <p class="prod-card-cat">Ariavisc · Ophthalmic Viscoelastic Device</p>
+          <h3>Ariavisc OVD (Sodium Hyaluronate)</h3>
+          <p>Ariavisc ophthalmic viscoelastic devices are sodium hyaluronate-based OVDs available in dispersive and cohesive formulations for cataract and anterior-segment surgery. Designed to support anterior-chamber maintenance, corneal endothelial protection, capsular-bag expansion and controlled IOL implantation.</p>
+          <div class="prod-card-footer">
+            <p class="prod-avail"><strong>Available:</strong> Selected Asian markets</p>
+            <a href="/contact?product=ariavisc" class="btn btn-outline btn-sm">Request Information</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="prod-card">
+        <div class="prod-card-band cobalt"></div>
+        <div class="prod-card-body">
+          <p class="prod-card-cat">Curative · Custom OR Solutions</p>
+          <h3>Custom Ophthalmic Procedure Kits</h3>
+          <p>Curative provides custom ophthalmic procedure kits configured according to the hospital's surgical workflow, surgeon preference and procurement requirements. Kits can be assembled for cataract, vitreoretinal and other ophthalmic procedures, combining appropriate drapes, consumables and surgical accessories in a single procedure-ready package.</p>
+          <div class="prod-card-footer">
+            <p class="prod-avail"><strong>Available:</strong> Selected Asian markets</p>
+            <a href="/contact?product=procedure-kits" class="btn btn-outline btn-sm">Request Information</a>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- VITREORETINAL -->
+<section class="section section--alt" id="vitreoretinal" aria-labelledby="vr-heading">
+  <div class="container">
+    <div class="section-header">
+      <span class="eyebrow">Vitreoretinal Surgery</span>
+      <h2 id="vr-heading">Posterior Segment Surgical Solutions</h2>
+      <p>From advanced vitreoretinal surgical platforms to specialty single-use instruments and retinal tamponades, Curative supports posterior-segment surgical teams in selected Asian markets.</p>
+    </div>
+    <div class="products-grid">
+
+      <article class="prod-card">
+        <div class="prod-card-band cobalt"></div>
+        <div class="prod-card-body">
+          <p class="prod-card-cat">Oertli · Vitreoretinal Surgical System</p>
+          <h3>Faros™ Phaco &amp; Vitreoretinal System</h3>
+          <p>The Oertli Faros™ is a versatile surgical platform supporting phacoemulsification and vitreoretinal procedures. Available configurations include phaco, controlled fluidics, vitrectomy, illumination, diathermy and integrated endolaser capabilities. Suitable for combined anterior- and posterior-segment procedures in specialist eye centres and hospitals.</p>
+          <div class="prod-card-footer">
+            <p class="prod-avail"><strong>Available:</strong> Hong Kong</p>
+            <a href="/contact?product=faros" class="btn btn-outline btn-sm">Request Information</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="prod-card">
+        <div class="prod-card-band cobalt"></div>
+        <div class="prod-card-body">
+          <p class="prod-card-cat">Oertli · Advanced Vitreoretinal System</p>
+          <h3>OS 4™ Up Vitreoretinal System</h3>
+          <p>The Oertli OS 4™ Up is an advanced vitreoretinal surgical platform for complex posterior-segment procedures. The system supports high-speed vitrectomy, controlled fluidics and a range of surgical configurations for demanding vitreoretinal cases, including proliferative vitreoretinopathy, giant retinal tears and retinal detachment surgery.</p>
+          <div class="prod-card-footer">
+            <p class="prod-avail"><strong>Available:</strong> Hong Kong</p>
+            <a href="/contact?product=os4up" class="btn btn-outline btn-sm">Request Information</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="prod-card">
+        <div class="prod-card-band cobalt"></div>
+        <div class="prod-card-body">
+          <p class="prod-card-cat">Vortex Surgical · Retinal Instruments</p>
+          <h3>ACTU8® Retinal Forceps</h3>
+          <p>Vortex Surgical ACTU8® retinal forceps are specialised single-use instruments designed for delicate posterior-segment tissue manipulation. The ACTU8® design supports precise gripping and controlled retinal work during vitreoretinal surgery procedures. Available in selected markets through Curative.</p>
+          <div class="prod-card-footer">
+            <p class="prod-avail"><strong>Available:</strong> Hong Kong</p>
+            <a href="/contact?product=actu8" class="btn btn-outline btn-sm">Request Information</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="prod-card">
+        <div class="prod-card-band cobalt"></div>
+        <div class="prod-card-body">
+          <p class="prod-card-cat">MedOne Surgical · Single-Use Retina Instruments</p>
+          <h3>MedOne Surgical Retina Portfolio</h3>
+          <p>MedOne Surgical provides single-use cannulas, backflush instruments and fluid-delivery devices for modern small-gauge vitreoretinal surgery. Compatible with 20-, 23-, 25- and 27-gauge platforms. The portfolio includes specialty cannulas, subretinal injection cannulas, FlexTip™ cannulas, backflush instruments, micropicks and MicroDose™ injection systems.</p>
+          <div class="prod-card-footer">
+            <p class="prod-avail"><strong>Available:</strong> Thailand</p>
+            <a href="/contact?product=medone" class="btn btn-outline btn-sm">Request Information</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="prod-card">
+        <div class="prod-card-band cobalt"></div>
+        <div class="prod-card-body">
+          <p class="prod-card-cat">Micromed · Vitreoretinal Tamponades</p>
+          <h3>Micromed Silicone Oils, Gases &amp; PFCL</h3>
+          <p>Micromed vitreoretinal products include PDMS silicone oils for longer-term tamponade, SF6, C2F6 and C3F8 intraocular gases for temporary tamponade, and perfluorodecalin (PFCL) as a temporary intraoperative surgical aid. The range supports the management of retinal detachment, giant retinal tears, proliferative vitreoretinopathy and complex vitreoretinal conditions.</p>
+          <div class="prod-card-footer">
+            <p class="prod-avail"><strong>Available:</strong> Singapore</p>
+            <a href="/contact?product=micromed" class="btn btn-outline btn-sm">Request Information</a>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- INSTRUMENTS -->
+<section class="section" id="instruments" aria-labelledby="instr-heading">
+  <div class="container">
+    <div class="section-header">
+      <span class="eyebrow">Surgical Instruments</span>
+      <h2 id="instr-heading">Reusable Ophthalmic Instruments by Market</h2>
+      <p>Curative provides reusable ophthalmic instruments from specialist manufacturers for cataract, corneal, glaucoma, refractive and vitreoretinal surgery. The portfolio is market-specific.</p>
+    </div>
+    <div class="products-grid">
+
+      <article class="prod-card">
+        <div class="prod-card-band cobalt"></div>
+        <div class="prod-card-body">
+          <p class="prod-card-cat">RUMEX · Reusable Instruments</p>
+          <h3>RUMEX Ophthalmic Instruments — Singapore</h3>
+          <p>RUMEX provides a comprehensive range of reusable ophthalmic microsurgical instruments for cataract, corneal, glaucoma, refractive and vitreoretinal surgery. The portfolio includes anterior-segment instruments, forceps, scissors, cannulas, irrigation and aspiration handpieces, and posterior-segment vitreoretinal instruments for precision tissue manipulation.</p>
+          <div class="prod-card-footer">
+            <p class="prod-avail"><strong>Available:</strong> Singapore</p>
+            <a href="/contact?product=rumex" class="btn btn-outline btn-sm">Request Information</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="prod-card">
+        <div class="prod-card-band cobalt"></div>
+        <div class="prod-card-body">
+          <p class="prod-card-cat">PMS · Reusable Instruments</p>
+          <h3>PMS Precision Medical Specialities — Malaysia &amp; Hong Kong</h3>
+          <p>Manufactured in Tuttlingen, Germany, PMS provides a broad selection of precision reusable ophthalmic instruments for anterior- and posterior-segment surgery. The portfolio covers cataract, corneal, glaucoma, refractive, oculoplastic and vitreoretinal procedures, combining German instrument manufacturing expertise with comprehensive procedure coverage.</p>
+          <div class="prod-card-footer">
+            <p class="prod-avail"><strong>Available:</strong> Malaysia · Hong Kong</p>
+            <a href="/contact?product=pms" class="btn btn-outline btn-sm">Request Information</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="prod-card">
+        <div class="prod-card-band cobalt"></div>
+        <div class="prod-card-body">
+          <p class="prod-card-cat">OPTICO · Reusable Instruments</p>
+          <h3>OPTICO Ophthalmic Instruments — Thailand</h3>
+          <p>OPTICO provides reusable ophthalmic surgical instruments combining British microsurgical expertise with a broad range of procedure-specific designs. The portfolio supports cataract, corneal, glaucoma, refractive and vitreoretinal surgery, with OPTICO also offering repair services to support the continued use of existing instrument inventories.</p>
+          <div class="prod-card-footer">
+            <p class="prod-avail"><strong>Available:</strong> Thailand</p>
+            <a href="/contact?product=optico" class="btn btn-outline btn-sm">Request Information</a>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- WHY CURATIVE OPHTHO -->
+<section class="section section--navy" aria-labelledby="why-ophtho-heading">
+  <div class="container">
+    <div class="section-header centered">
+      <span class="eyebrow">Why Curative Ophthalmology</span>
+      <h2 id="why-ophtho-heading">Clinical Support at Every Stage</h2>
+      <p style="color:rgba(255,255,255,.7);max-width:580px;margin-inline:auto;">From IOL selection and injector compatibility support to operating-room implementation, instrument configuration and ongoing supply planning, Curative provides hands-on support for ophthalmic surgical teams.</p>
+    </div>
+    <div class="features-2col" style="max-width:900px;margin-inline:auto;">
+      <div class="feature-item">
+        <div class="feature-icon" style="background:rgba(39,169,225,.15);color:var(--c-secondary);"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg></div>
+        <div><h4 style="color:#fff;">IOL Selection Support</h4><p>Clinical evaluation, injector compatibility guidance and biometry support for surgeons selecting from the Vivinex™ and ArtIOL® portfolios.</p></div>
+      </div>
+      <div class="feature-item">
+        <div class="feature-icon" style="background:rgba(39,169,225,.15);color:var(--c-secondary);"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"/><circle cx="12" cy="12" r="3"/></svg></div>
+        <div><h4 style="color:#fff;">System Installation &amp; Training</h4><p>Platform assessment, clinical evaluation, installation, user training, consumable selection and technical-service coordination for surgical systems.</p></div>
+      </div>
+      <div class="feature-item">
+        <div class="feature-icon" style="background:rgba(39,169,225,.15);color:var(--c-secondary);"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"/></svg></div>
+        <div><h4 style="color:#fff;">Custom Instrument Sets</h4><p>Surgeon-specific instrument recommendations, customised surgical sets and replacement instrument coordination across all instrument portfolios.</p></div>
+      </div>
+      <div class="feature-item">
+        <div class="feature-icon" style="background:rgba(39,169,225,.15);color:var(--c-secondary);"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M9 17V7m0 10a2 2 0 01-2 2H5a2 2 0 01-2-2V7a2 2 0 012-2h2a2 2 0 012 2m0 10a2 2 0 002 2h2a2 2 0 002-2M9 7a2 2 0 012-2h2a2 2 0 012 2m0 10V7m0 10a2 2 0 002 2h2a2 2 0 002-2V7a2 2 0 00-2-2h-2a2 2 0 00-2 2"/></svg></div>
+        <div><h4 style="color:#fff;">Inventory &amp; Supply Planning</h4><p>Collaborative inventory management for IOLs, OVDs, tamponades and consumables to support consistent operating-room availability.</p></div>
+      </div>
     </div>
   </div>
 </section>
@@ -332,13 +598,31 @@ p{margin-bottom:1em;}p:last-child{margin-bottom:0;}ul{list-style:none;}
 <!-- FAQ -->
 <section class="section section--alt" aria-labelledby="faq-heading">
   <div class="container" style="max-width:820px;">
-    <div class="section-header centered"><span class="eyebrow">Frequently Asked Questions</span><h2 id="faq-heading">Common Questions</h2></div>
+    <div class="section-header centered">
+      <span class="eyebrow">Frequently Asked Questions</span>
+      <h2 id="faq-heading">Common Questions</h2>
+    </div>
     <div class="faq-list">
-      <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)" aria-expanded="false">Where is SkinClinic available through Curative?<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M19 9l-7 7-7-7"/></svg></button><div class="faq-a"><p>SkinClinic professional dermocosmetics are available through Curative in Singapore, Malaysia, Thailand and Hong Kong. Curative is the exclusive regional distributor for SkinClinic in these markets. Contact the local Curative team to discuss clinic partnership, product range and training.</p></div></div>
-      <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)" aria-expanded="false">Is SkinClinic a professional-only range?<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M19 9l-7 7-7-7"/></svg></button><div class="faq-a"><p>Yes. SkinClinic is a professional skincare brand intended for use within a clinical or professionally guided context. Products should be recommended based on the individual's skin condition, tolerance and professional assessment. SkinClinic is positioned for use by doctors, dermatologists and qualified skincare professionals.</p></div></div>
-      <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)" aria-expanded="false">Are EXOCEAN and AURORA NAD+ injectable products?<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M19 9l-7 7-7-7"/></svg></button><div class="faq-a"><p>No. EXOCEAN and AURORA NAD+ are skin booster products intended for topical application and use within microneedling-assisted protocols. They are not injectable products and should not be used as injectables. Please follow the manufacturer's current instructions for use.</p></div></div>
-      <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)" aria-expanded="false">Can Curative provide training for our clinic team on SkinClinic products?<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M19 9l-7 7-7-7"/></svg></button><div class="faq-a"><p>Yes. Curative provides professional and clinical product training, treatment protocol development, clinic launch support and staff onboarding for SkinClinic. Training is available in each of Curative's markets — Singapore, Malaysia, Thailand and Hong Kong.</p></div></div>
-      <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)" aria-expanded="false">Can I arrange a FaceCast MPS demonstration for my clinic?<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M19 9l-7 7-7-7"/></svg></button><div class="faq-a"><p>Yes. Curative can arrange a FaceCast MPS product demonstration in Singapore, Malaysia and Hong Kong. Please contact the Curative team to discuss your clinic's requirements and arrange a suitable demonstration appointment.</p></div></div>
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)" aria-expanded="false">Which IOL brands does Curative distribute in Singapore?<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M19 9l-7 7-7-7"/></svg></button>
+        <div class="faq-a"><p>In Singapore, Curative is an authorised distributor for HOYA Surgical Optics, covering the Vivinex™ iSert®, multiSert®, Toric multiSert® and Gemetric™ trifocal IOL families. Contact Curative Singapore for product availability, pricing and surgeon evaluation arrangements.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)" aria-expanded="false">Where are VOPTICA ArtIOLs® available through Curative?<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M19 9l-7 7-7-7"/></svg></button>
+        <div class="faq-a"><p>VOPTICA ArtIOL® intraocular lenses are available through Curative in Hong Kong, Malaysia and Thailand. The ArtIOL® 25, ArtIOL® 40 and ArtIOL® 70 offer different non-diffractive depth-of-focus options. Please contact the local Curative team for availability, evaluation and clinical support.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)" aria-expanded="false">Which markets are Oertli surgical systems available in through Curative?<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M19 9l-7 7-7-7"/></svg></button>
+        <div class="faq-a"><p>Oertli cataract and vitreoretinal surgical platforms — including the CataRhex 3®, Faros™ and OS 4™ Up — are available through Curative in Hong Kong. Curative supports institutions with platform assessment, clinical evaluation, installation, user training and technical-service coordination.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)" aria-expanded="false">Can Curative configure a custom reusable instrument set for my clinic?<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M19 9l-7 7-7-7"/></svg></button>
+        <div class="faq-a"><p>Yes. Curative can assist surgeons and operating-room teams with instrument selection, customised surgical set configuration and replacement instrument coordination. Contact the local Curative team to discuss your procedural requirements and preferred instrument portfolio.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)" aria-expanded="false">Does Curative provide clinical training for ophthalmic products?<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M19 9l-7 7-7-7"/></svg></button>
+        <div class="faq-a"><p>Yes. Curative Ophthalmology provides product demonstrations, surgeon evaluations, user training, application workshops and ongoing clinical support for the products it distributes. Training is available in each of Curative's operating markets.</p></div>
+      </div>
     </div>
   </div>
 </section>
@@ -347,22 +631,33 @@ p{margin-bottom:1em;}p:last-child{margin-bottom:0;}ul{list-style:none;}
 <section class="section">
   <div class="container" style="max-width:880px;">
     <div class="cta-box">
-      <h2>Request an Aesthetics Product Demonstration</h2>
-      <p>Speak with the Curative Aesthetics team about SkinClinic clinic partnerships, FaceCast MPS demonstrations, TSK product evaluations or skin booster enquiries across Singapore, Malaysia, Thailand and Hong Kong.</p>
-      <div class="btn-group"><a href="/contact?type=demo&division=aesthetics" class="btn btn-white">Request a Demonstration</a><a href="/contact?division=aesthetics" class="btn btn-outline-white">Contact the Team</a></div>
+      <h2>Request an Ophthalmology Product Demonstration</h2>
+      <p>Speak with the Curative Ophthalmology team about IOL evaluations, surgical system assessments, instrument selection or procedure kit configuration across Singapore, Malaysia, Thailand and Hong Kong.</p>
+      <div class="btn-group">
+        <a href="/contact?type=demo&division=ophthalmology" class="btn btn-white">Request a Demonstration</a>
+        <a href="/contact?division=ophthalmology" class="btn btn-outline-white">Speak With a Specialist</a>
+      </div>
     </div>
   </div>
 </section>
+
 </main>
 
-<div class="disclaimer"><div class="container"><p>SkinClinic products are intended for cosmetic skincare use. Product recommendations should be based on the individual's skin condition and professional assessment. Results may vary between individuals. FaceCast is intended for professional clinical use and should not replace physical examination or clinical judgement. Product availability, formulation, configurations and regulatory status may vary between Singapore, Malaysia, Thailand and Hong Kong. All products must be used according to the manufacturer's current instructions for use.</p></div></div>
+<div class="disclaimer">
+  <div class="container">
+    <p>Products are intended for use by appropriately qualified healthcare professionals. IOL selection requires a full ophthalmic assessment and is subject to the surgeon's clinical judgement. Product availability, indications, specifications, configurations and regulatory approval may vary by market. All products must be used according to the manufacturer's current instructions for use.</p>
+  </div>
+</div>
 
 <footer class="site-footer">
   <div class="container">
     <div class="footer-grid">
-      <div class="footer-brand"><a href="/" class="nav-logo"><svg viewBox="111 72 152 180" width="160" height="160" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect x="111" y="72" width="152" height="180" fill="#004aad" rx="18"/><path fill="#ffffff" d="M 225.746094 143.082031 L 263.144531 143.082031 C 260.671875 103.492188 227.785156 72.144531 187.570312 72.144531 C 181.113281 72.144531 174.847656 72.953125 168.867188 74.472656 C 200.152344 82.421875 223.667969 109.84375 225.746094 143.082031"/><path fill="#ffffff" d="M 149.242188 175.691406 L 149.242188 147.875 C 149.242188 133.496094 157.15625 120.972656 168.867188 114.414062 C 163.335938 111.316406 156.960938 109.542969 150.167969 109.542969 C 129 109.542969 111.839844 126.707031 111.839844 147.875 L 111.839844 175.691406 C 111.839844 196.859375 129 214.023438 150.167969 214.023438 C 156.960938 214.023438 163.335938 212.25 168.867188 209.152344 C 157.15625 202.59375 149.242188 190.070312 149.242188 175.691406"/><path fill="#ffffff" d="M 168.867188 249.09375 C 174.847656 250.613281 181.113281 251.421875 187.570312 251.421875 C 227.785156 251.421875 260.671875 220.074219 263.144531 180.484375 L 225.746094 180.484375 C 223.667969 213.722656 200.152344 241.144531 168.867188 249.09375"/></svg><span class="nav-logo-text" style="color:#fff;">Curative<span style="color:#27A9E1;">.</span></span></a><p>Regional healthcare solutions across ophthalmology, aesthetics and digital dentistry.</p></div>
-      <div class="footer-col"><h5>Aesthetics</h5><ul><li><a href="#skinclinic">SkinClinic</a></li><li><a href="#facecast">FaceCast MPS</a></li><li><a href="#tsk">TSK Accessories</a></li><li><a href="#skinboosters">Skin Boosters</a></li></ul></div>
-      <div class="footer-col"><h5>Other Divisions</h5><ul><li><a href="/ophthalmology">Ophthalmology</a></li><li><a href="/dentistry">Dentistry &amp; Imaging</a></li></ul><h5 style="margin-top:1.25rem;">Markets</h5><ul><li><a href="/markets/singapore">Singapore</a></li><li><a href="/markets/malaysia">Malaysia</a></li><li><a href="/markets/thailand">Thailand</a></li><li><a href="/markets/hong-kong">Hong Kong</a></li></ul></div>
+      <div class="footer-brand">
+        <a href="/" class="nav-logo"><svg viewBox="111 72 152 180" width="44" height="44" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect x="111" y="72" width="152" height="180" fill="#004aad" rx="16"/><path fill="#ffffff" d="M 225.746094 143.082031 L 263.144531 143.082031 C 260.671875 103.492188 227.785156 72.144531 187.570312 72.144531 C 181.113281 72.144531 174.847656 72.953125 168.867188 74.472656 C 200.152344 82.421875 223.667969 109.84375 225.746094 143.082031"/><path fill="#ffffff" d="M 149.242188 175.691406 L 149.242188 147.875 C 149.242188 133.496094 157.15625 120.972656 168.867188 114.414062 C 163.335938 111.316406 156.960938 109.542969 150.167969 109.542969 C 129 109.542969 111.839844 126.707031 111.839844 147.875 L 111.839844 175.691406 C 111.839844 196.859375 129 214.023438 150.167969 214.023438 C 156.960938 214.023438 163.335938 212.25 168.867188 209.152344 C 157.15625 202.59375 149.242188 190.070312 149.242188 175.691406"/><path fill="#ffffff" d="M 168.867188 249.09375 C 174.847656 250.613281 181.113281 251.421875 187.570312 251.421875 C 227.785156 251.421875 260.671875 220.074219 263.144531 180.484375 L 225.746094 180.484375 C 223.667969 213.722656 200.152344 241.144531 168.867188 249.09375"/></svg><span class="nav-logo-text" style="color:#fff;">Curative<span style="color:#27A9E1;">.</span></span></a>
+        <p>Regional healthcare solutions across ophthalmology, aesthetics and digital dentistry.</p>
+      </div>
+      <div class="footer-col"><h5>Ophthalmology</h5><ul><li><a href="#iols">Intraocular Lenses</a></li><li><a href="#cataract">Cataract Surgery</a></li><li><a href="#vitreoretinal">Vitreoretinal Surgery</a></li><li><a href="#instruments">Surgical Instruments</a></li></ul></div>
+      <div class="footer-col"><h5>Other Divisions</h5><ul><li><a href="/aesthetics">Medical Aesthetics</a></li><li><a href="/dentistry">Dentistry &amp; Imaging</a></li></ul><h5 style="margin-top:1.25rem;">Markets</h5><ul><li><a href="/markets/singapore">Singapore</a></li><li><a href="/markets/malaysia">Malaysia</a></li><li><a href="/markets/thailand">Thailand</a></li><li><a href="/markets/hong-kong">Hong Kong</a></li></ul></div>
       <div class="footer-col"><h5>Contact</h5><ul><li><a href="/contact?type=demo">Request a Demo</a></li><li><a href="/contact">Product Enquiry</a></li><li><a href="tel:+6581946188">+65 8194 6188</a></li><li><a href="mailto:sales@curative.asia">sales@curative.asia</a></li></ul></div>
     </div>
     <div class="footer-bottom"><span>© 2025 Curative Group Pte. Ltd.</span><div class="footer-legal"><a href="/privacy-policy">Privacy Policy</a><a href="/medical-disclaimer">Medical Disclaimer</a></div></div>
@@ -372,8 +667,8 @@ p{margin-bottom:1em;}p:last-child{margin-bottom:0;}ul{list-style:none;}
 
 <script>
 function toggleDropdown(p,b){var panel=document.getElementById(p),btn=document.getElementById(b),isOpen=panel.classList.contains('is-open');document.querySelectorAll('.dropdown-panel.is-open').forEach(function(x){x.classList.remove('is-open');});document.querySelectorAll('.nav-link[aria-expanded="true"]').forEach(function(x){x.setAttribute('aria-expanded','false');});if(!isOpen){panel.classList.add('is-open');btn.setAttribute('aria-expanded','true');}}
-document.addEventListener('click',function(e){if(!e.target.closest('.nav-links')){document.querySelectorAll('.dropdown-panel.is-open').forEach(function(p){p.classList.remove('is-open');});}});
-document.addEventListener('keydown',function(e){if(e.key==='Escape'){document.querySelectorAll('.dropdown-panel.is-open').forEach(function(p){p.classList.remove('is-open');});var drawer=document.getElementById('mobile-drawer');if(drawer&&drawer.classList.contains('is-open'))toggleMobileNav();}});
+document.addEventListener('click',function(e){if(!e.target.closest('.nav-links')){document.querySelectorAll('.dropdown-panel.is-open').forEach(function(p){p.classList.remove('is-open');});document.querySelectorAll('.nav-link[aria-expanded="true"]').forEach(function(b){b.setAttribute('aria-expanded','false');});}});
+document.addEventListener('keydown',function(e){if(e.key==='Escape'){document.querySelectorAll('.dropdown-panel.is-open').forEach(function(p){p.classList.remove('is-open');});var drawer=document.getElementById('mobile-drawer');if(drawer.classList.contains('is-open'))toggleMobileNav();}});
 function toggleMobileNav(){var btn=document.getElementById('hamburger-btn'),drawer=document.getElementById('mobile-drawer'),isOpen=drawer.classList.contains('is-open');if(isOpen){drawer.classList.remove('is-open');btn.classList.remove('is-open');btn.setAttribute('aria-expanded','false');document.body.style.overflow='';}else{drawer.classList.add('is-open');btn.classList.add('is-open');btn.setAttribute('aria-expanded','true');document.body.style.overflow='hidden';}}
 function toggleMobAccordion(id){var body=document.getElementById(id),btn=body.previousElementSibling,isOpen=body.classList.contains('is-open');body.classList.toggle('is-open',!isOpen);btn.setAttribute('aria-expanded',!isOpen?'true':'false');}
 function toggleFaq(btn){var a=btn.nextElementSibling,open=btn.classList.contains('open');document.querySelectorAll('.faq-q.open').forEach(function(b){b.classList.remove('open');b.nextElementSibling.classList.remove('open');b.setAttribute('aria-expanded','false');});if(!open){btn.classList.add('open');a.classList.add('open');btn.setAttribute('aria-expanded','true');}}
