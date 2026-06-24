@@ -1,130 +1,132 @@
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
   <url>
-    <loc>https://curative.asia/</loc>
-    <lastmod>2026-06-21</lastmod>
-    <changefreq>monthly</changefreq>
+    <loc>https://www.curative.asia/</loc>
+    <lastmod>2026-06-24</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
 
   <url>
-    <loc>https://curative.asia/about-curative</loc>
+    <loc>https://www.curative.asia/about-curative</loc>
     <lastmod>2026-06-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://curative.asia/ophthalmology</loc>
+    <loc>https://www.curative.asia/ophthalmology</loc>
     <lastmod>2026-06-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <url>
-    <loc>https://curative.asia/aesthetics</loc>
+    <loc>https://www.curative.asia/aesthetics</loc>
     <lastmod>2026-06-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <url>
-    <loc>https://curative.asia/plinest</loc>
+    <loc>https://www.curative.asia/plinest</loc>
     <lastmod>2026-06-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <url>
-    <loc>https://curative.asia/dentistry</loc>
+    <loc>https://www.curative.asia/dentistry</loc>
     <lastmod>2026-06-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <url>
-    <loc>https://curative.asia/markets</loc>
+    <loc>https://www.curative.asia/markets</loc>
     <lastmod>2026-06-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://curative.asia/markets/singapore</loc>
+    <loc>https://www.curative.asia/markets/singapore</loc>
     <lastmod>2026-06-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://curative.asia/markets/malaysia</loc>
+    <loc>https://www.curative.asia/markets/malaysia</loc>
     <lastmod>2026-06-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://curative.asia/markets/thailand</loc>
+    <loc>https://www.curative.asia/markets/thailand</loc>
     <lastmod>2026-06-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://curative.asia/markets/hong-kong</loc>
+    <loc>https://www.curative.asia/markets/hong-kong</loc>
     <lastmod>2026-06-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://curative.asia/markets/indonesia</loc>
+    <loc>https://www.curative.asia/markets/indonesia</loc>
     <lastmod>2026-06-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://curative.asia/education-events</loc>
+    <loc>https://www.curative.asia/education-events</loc>
     <lastmod>2026-06-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://curative.asia/resources</loc>
+    <loc>https://www.curative.asia/resources</loc>
     <lastmod>2026-06-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://curative.asia/contact</loc>
+    <loc>https://www.curative.asia/contact</loc>
     <lastmod>2026-06-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://curative.asia/privacy-policy</loc>
+    <loc>https://www.curative.asia/privacy-policy</loc>
     <lastmod>2026-06-21</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
 
   <url>
-    <loc>https://curative.asia/terms-of-use</loc>
+    <loc>https://www.curative.asia/terms-of-use</loc>
     <lastmod>2026-06-21</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
 
   <url>
-    <loc>https://curative.asia/medical-disclaimer</loc>
+    <loc>https://www.curative.asia/medical-disclaimer</loc>
     <lastmod>2026-06-21</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
 
 </urlset>
+```
