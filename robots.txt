@@ -1,24 +1,107 @@
+# robots.txt — curative.asia
+# Curative Group Pte. Ltd. | Medical Technology | Singapore
+# Updated: 2026-06-25
+
+# ============================================================
+# GENERAL
+# ============================================================
 User-agent: *
 Allow: /
 
-# AI crawlers - allow indexing
-User-agent: GPTBot
+# Block utility/system files not for indexing
+Disallow: /UPLOAD-INSTRUCTIONS.txt
+Disallow: /95c6f04f1f894a80af44e2a38ba8f856.txt
+
+# ============================================================
+# GOOGLE
+# ============================================================
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 2
+
+User-agent: Googlebot-Image
 Allow: /
 
+# ============================================================
+# BING / MICROSOFT
+# ============================================================
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 2
+
+User-agent: msnbot
+Allow: /
+
+# ============================================================
+# AI SEARCH CRAWLERS — PERMITTED
+# ============================================================
+
+# Anthropic / Claude
 User-agent: ClaudeBot
 Allow: /
 
-User-agent: Google-Extended
+User-agent: Claude-User
 Allow: /
 
-User-agent: PerplexityBot
+User-agent: Claude-SearchBot
 Allow: /
 
 User-agent: anthropic-ai
 Allow: /
 
-User-agent: Amazonbot
+# OpenAI / ChatGPT
+User-agent: GPTBot
 Allow: /
 
-# Sitemap
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+# Perplexity
+User-agent: PerplexityBot
+Allow: /
+
+# Apple
+User-agent: Applebot
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+# Google AI / Gemini
+User-agent: Google-Extended
+Allow: /
+
+# Meta
+User-agent: FacebookBot
+Allow: /
+
+# Common AI research crawlers
+User-agent: CCBot
+Allow: /
+
+User-agent: cohere-ai
+Allow: /
+
+User-agent: YouBot
+Allow: /
+
+User-agent: DiffBot
+Allow: /
+
+User-agent: Bytespider
+Allow: /
+
+# ============================================================
+# CONTENT-SIGNAL DIRECTIVES (AI Agent Readiness)
+# Signals that this site is structured for AI consumption
+# ============================================================
+# Content-Signal: agent-ready
+# Content-Signal: llms-txt-available
+
+# ============================================================
+# SITEMAP
+# ============================================================
 Sitemap: https://curative.asia/sitemap.xml
