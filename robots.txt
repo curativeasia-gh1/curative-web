@@ -1,6 +1,6 @@
 # robots.txt — curative.asia
 # Curative Group Pte. Ltd. | Medical Technology | Singapore
-# Updated: 2026-06-25
+# Updated: 2026-06-27
 
 # ============================================================
 # GENERAL
@@ -33,7 +33,7 @@ User-agent: msnbot
 Allow: /
 
 # ============================================================
-# AI SEARCH CRAWLERS — PERMITTED
+# AI SEARCH & LLM CRAWLERS — PERMITTED
 # ============================================================
 
 # Anthropic / Claude
@@ -74,11 +74,24 @@ Allow: /
 User-agent: Google-Extended
 Allow: /
 
-# Meta
+# Meta AI
 User-agent: FacebookBot
 Allow: /
 
-# Common AI research crawlers
+User-agent: Meta-ExternalAgent
+Allow: /
+
+User-agent: Meta-ExternalFetcher
+Allow: /
+
+User-agent: facebookexternalhit
+Allow: /
+
+# Amazon / Alexa / Rufus
+User-agent: Amazonbot
+Allow: /
+
+# Common AI research & retrieval crawlers
 User-agent: CCBot
 Allow: /
 
@@ -92,6 +105,15 @@ User-agent: DiffBot
 Allow: /
 
 User-agent: Bytespider
+Allow: /
+
+User-agent: iaskSpider
+Allow: /
+
+User-agent: Kangaroo Bot
+Allow: /
+
+User-agent: DataForSeoBot
 Allow: /
 
 # ============================================================
