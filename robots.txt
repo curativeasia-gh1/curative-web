@@ -1,42 +1,36 @@
 # robots.txt — curative.asia
-# Curative Group Pte. Ltd. | Medical Technology | Singapore
-# Updated: 2026-06-27
+# Curative Group Pte. Ltd.
+# Updated: 2026-06-30
 
-# ============================================================
-# GENERAL
-# ============================================================
 User-agent: *
 Allow: /
 
-# Block utility/system files not for indexing
+# Utility and verification files not intended for indexing
 Disallow: /UPLOAD-INSTRUCTIONS.txt
 Disallow: /95c6f04f1f894a80af44e2a38ba8f856.txt
 
-# ============================================================
-# GOOGLE
-# ============================================================
+# Search and AI crawlers are permitted to access public website content.
+# The general rule above already applies to the agents below; they are
+# listed explicitly to make Curative's crawling policy clear.
+
 User-agent: Googlebot
 Allow: /
-Crawl-delay: 2
 
 User-agent: Googlebot-Image
 Allow: /
 
-# ============================================================
-# BING / MICROSOFT
-# ============================================================
 User-agent: Bingbot
 Allow: /
-Crawl-delay: 2
 
-User-agent: msnbot
+User-agent: GPTBot
 Allow: /
 
-# ============================================================
-# AI SEARCH & LLM CRAWLERS — PERMITTED
-# ============================================================
+User-agent: OAI-SearchBot
+Allow: /
 
-# Anthropic / Claude
+User-agent: ChatGPT-User
+Allow: /
+
 User-agent: ClaudeBot
 Allow: /
 
@@ -49,33 +43,16 @@ Allow: /
 User-agent: anthropic-ai
 Allow: /
 
-# OpenAI / ChatGPT
-User-agent: GPTBot
-Allow: /
-
-User-agent: OAI-SearchBot
-Allow: /
-
-User-agent: ChatGPT-User
-Allow: /
-
-# Perplexity
 User-agent: PerplexityBot
 Allow: /
 
-# Apple
 User-agent: Applebot
 Allow: /
 
 User-agent: Applebot-Extended
 Allow: /
 
-# Google AI / Gemini
 User-agent: Google-Extended
-Allow: /
-
-# Meta AI
-User-agent: FacebookBot
 Allow: /
 
 User-agent: Meta-ExternalAgent
@@ -84,46 +61,10 @@ Allow: /
 User-agent: Meta-ExternalFetcher
 Allow: /
 
-User-agent: facebookexternalhit
-Allow: /
-
-# Amazon / Alexa / Rufus
 User-agent: Amazonbot
 Allow: /
 
-# Common AI research & retrieval crawlers
 User-agent: CCBot
 Allow: /
 
-User-agent: cohere-ai
-Allow: /
-
-User-agent: YouBot
-Allow: /
-
-User-agent: DiffBot
-Allow: /
-
-User-agent: Bytespider
-Allow: /
-
-User-agent: iaskSpider
-Allow: /
-
-User-agent: Kangaroo Bot
-Allow: /
-
-User-agent: DataForSeoBot
-Allow: /
-
-# ============================================================
-# CONTENT-SIGNAL DIRECTIVES (AI Agent Readiness)
-# Signals that this site is structured for AI consumption
-# ============================================================
-# Content-Signal: agent-ready
-# Content-Signal: llms-txt-available
-
-# ============================================================
-# SITEMAP
-# ============================================================
 Sitemap: https://curative.asia/sitemap.xml
