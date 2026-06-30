@@ -4,7 +4,7 @@
   <!-- CORE -->
   <url>
     <loc>https://curative.asia/</loc>
-    <lastmod>2026-06-27</lastmod>
+    <lastmod>2026-06-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
@@ -91,7 +91,7 @@
     <priority>0.6</priority>
   </url>
 
-  <!-- MARKETS — OVERVIEW -->
+  <!-- COUNTRY AND MARKET PAGES -->
   <url>
     <loc>https://curative.asia/markets/singapore/</loc>
     <lastmod>2026-06-27</lastmod>
@@ -100,7 +100,7 @@
   </url>
   <url>
     <loc>https://curative.asia/markets/malaysia/</loc>
-    <lastmod>2026-06-27</lastmod>
+    <lastmod>2026-06-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -118,12 +118,12 @@
   </url>
   <url>
     <loc>https://curative.asia/markets/hong-kong/</loc>
-    <lastmod>2026-06-27</lastmod>
+    <lastmod>2026-06-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
-  <!-- UTILITY -->
+  <!-- INFORMATION -->
   <url>
     <loc>https://curative.asia/faq/</loc>
     <lastmod>2026-06-25</lastmod>
