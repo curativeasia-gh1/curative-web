@@ -1,26 +1,30 @@
-# Clean URL redirects (old .html paths → new directory structure)
+# Canonical website routes
 /index.html               /                       301
-/about.html               /about/                 301
+/about.html               /about-curative        301
+/about/                   /about-curative        301
 /ophthalmology.html       /ophthalmology/         301
-/medical-aesthetics.html  /medical-aesthetics/    301
+/medical-aesthetics.html  /aesthetics             301
+/medical-aesthetics/      /aesthetics             301
 /dentistry.html           /dentistry/             301
 /dermocosmetics.html      /dermocosmetics/        301
 /healthcare-it.html       /healthcare-it/         301
 /faq.html                 /faq/                   301
-/contact.html             /contact/               301
+/contact.html             /contact                301
+/contact/                 /contact                301
 /privacy.html             /privacy/               301
+/privacy-policy.html      /privacy/               301
 
-# Legacy SPA focus pages
+# Legacy product and focus pages
 /hoya-iols.html           /ophthalmology/         301
 /hoya-singapore.html      /ophthalmology/         301
 /voptica.html             /ophthalmology/         301
-/facecast.html            /medical-aesthetics/    301
-/skinclinic.html          /dermocosmetics/        301
+/facecast.html            /aesthetics             301
+/skinclinic.html          /skinclinic/            301
 
 # Old route structure
-/businessunits            /about/                 301
-/businessunits/           /about/                 301
-/businessunits/aesthetics /medical-aesthetics/    301
+/businessunits            /about-curative         301
+/businessunits/           /about-curative         301
+/businessunits/aesthetics /aesthetics             301
 /products-solutions       /                       301
 /products-solutions/      /                       301
-/mastelli-polynucleotides  /plinest  301
+/mastelli-polynucleotides /plinest                301
