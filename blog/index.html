@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-PM5S8LTK');</script>
+<!-- End Google Tag Manager -->
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Listing meta — overwritten per post in JS -->
+<title id="pageTitle">News &amp; Insights | Curative</title>
+<meta id="metaDesc" name="description" content="News, clinical education and industry insights from Curative, a regional medical technology company serving ophthalmology, aesthetics and dentistry across Asia.">
+<link id="canonical" rel="canonical" href="https://curative.asia/blog">
+<meta property="og:title" content="News &amp; Insights | Curative">
+<meta property="og:description" content="News, clinical education and industry insights from Curative across Asia.">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+
+<!-- Marked.js (Markdown parser) -->
+<script src="https://cdn.jsdelivr.net/npm/marked@12/marked.min.js"></script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
+
+<style>
+/* ── Reset ── */
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+img{max-width:100%;display:block}
+button{cursor:pointer;font-family:inherit}
+a{text-decoration:none;color:inherit}
+
+/* ── Tokens ── */
+:root{
+  --blue:#004aad;
+  --blue-dk:#00368a;
+  --blue-lt:#e6eef8;
+  --purple:#6d2077;
+  --purple-lt:#f2eaf5;
+  --green:#166534;
+  --green-lt:#dcfce7;
+  --amber:#92400e;
+  --amber-lt:#fef3c7;
+  --dark:#0c1526;
+  --body:#1e293b;
+  --mid:#475569;
+  --muted:#64748b;
+  --border:#e2e8f0;
+  --surface:#f8fafc;
+  --white:#ffffff;
+  --r:8px;
+  --r-lg:14px;
+  --sh:0 1px 3px rgba(0,0,0,.07),0 4px 12px rgba(0,0,0,.05);
+  --sh-h:0 4px 16px rgba(0,0,0,.1),0 8px 28px rgba(0,0,0,.07);
+}
+
+body{font-family:'Inter',system-ui,sans-serif;font-size:16px;line-height:1.65;color:var(--body);background:var(--white)}
+.wrap{max-width:1200px;margin:0 auto;padding:0 24px}
+.wrap-narrow{max-width:760px;margin:0 auto;padding:0 24px}
+
+/* ─────────────── NAV ─────────────── */
+.nav{position:sticky;top:0;z-index:200;background:var(--white);border-bottom:1px solid var(--border)}
+.nav-row{display:flex;align-items:center;justify-content:space-between;height:68px;gap:24px}
+.logo{display:flex;align-items:baseline;gap:3px;font-size:19px;font-weight:800;color:var(--blue);letter-spacing:-.4px}
+.logo-dot{width:5px;height:5px;border-radius:50%;background:var(--purple);flex-shrink:0;margin-bottom:1px}
+.nav-links{display:flex;list-style:none;gap:2px}
+.nav-links a{display:block;padding:6px 11px;font-size:13.5px;font-weight:500;color:var(--mid);border-radius:6px;transition:color .15s,background .15s}
+.nav-links a:hover,.nav-links a.active{color:var(--blue);background:var(--blue-lt)}
+.nav-btn{padding:8px 18px;background:var(--blue);color:var(--white);font-size:13.5px;font-weight:600;border-radius:6px;white-space:nowrap;transition:background .15s}
+.nav-btn:hover{background:var(--blue-dk)}
+.nav-hamburger{display:none;background:none;border:none;padding:6px;color:var(--mid)}
+@media(max-width:800px){
+  .nav-links,.nav-btn{display:none}
+  .nav-hamburger{display:flex;align-items:center;justify-content:center}
+  .nav-links.open{display:flex;flex-direction:column;position:absolute;top:68px;left:0;right:0;background:var(--white);border-bottom:1px solid var(--border);padding:10px 16px 14px;gap:2px}
+}
+
+/* ─────────────── LISTING HERO ─────────────── */
+.list-hero{background:linear-gradient(140deg,#0c1526 0%,#0f2156 55%,#1a0a33 100%);color:var(--white);padding:68px 0 56px}
+.list-hero-eyebrow{font-size:11.5px;font-weight:600;letter-spacing:1.2px;text-transform:uppercase;color:rgba(255,255,255,.5);margin-bottom:14px}
+.list-hero h1{font-size:clamp(24px,4vw,40px);font-weight:800;letter-spacing:-.6px;margin-bottom:14px}
+.list-hero p{font-size:15.5px;color:rgba(255,255,255,.65);max-width:520px}
+
+/* ─────────────── CATEGORY TABS ─────────────── */
+.cat-bar{background:var(--white);border-bottom:1px solid var(--border);position:sticky;top:68px;z-index:100}
+.cat-inner{display:flex;gap:0;overflow-x:auto;scrollbar-width:none}
+.cat-inner::-webkit-scrollbar{display:none}
+.cat-tab{flex-shrink:0;padding:14px 18px;font-size:13.5px;font-weight:500;color:var(--muted);background:none;border:none;border-bottom:2px solid transparent;transition:all .15s;white-space:nowrap}
+.cat-tab:hover{color:var(--blue)}
+.cat-tab.active{color:var(--blue);border-bottom-color:var(--blue);font-weight:600}
+
+/* ─────────────── FEATURED POST ─────────────── */
+.featured-section{padding:52px 0 0}
+.featured-label{font-size:11px;font-weight:600;letter-spacing:1px;text-transform:uppercase;color:var(--purple);margin-bottom:16px}
+.featured-card{display:grid;grid-template-columns:1fr 1fr;gap:36px;align-items:center;background:var(--surface);border:1px solid var(--border);border-radius:16px;overflow:hidden;margin-bottom:52px;transition:box-shadow .2s}
+.featured-card:hover{box-shadow:var(--sh-h)}
+.featured-img{aspect-ratio:16/9;overflow:hidden;background:var(--surface)}
+.featured-img img{width:100%;height:100%;object-fit:cover}
+.featured-img-placeholder{width:100%;height:100%;background:linear-gradient(135deg,var(--blue-lt),var(--purple-lt));display:flex;align-items:center;justify-content:center}
+.featured-img-placeholder svg{width:40px;height:40px;color:rgba(0,74,173,.25)}
+.featured-body{padding:36px 36px 36px 0}
+@media(max-width:700px){
+  .featured-card{grid-template-columns:1fr}
+  .featured-body{padding:24px}
+}
+.cat-badge{display:inline-flex;padding:3px 10px;font-size:11px;font-weight:600;border-radius:4px;margin-bottom:12px}
+.badge-company{background:var(--blue-lt);color:var(--blue)}
+.badge-product{background:var(--purple-lt);color:var(--purple)}
+.badge-clinical{background:var(--green-lt);color:var(--green)}
+.badge-industry{background:var(--amber-lt);color:var(--amber)}
+.badge-events{background:#fce7f3;color:#9d174d}
+.badge-market{background:#eff6ff;color:#1d4ed8}
+.featured-body h2{font-size:clamp(18px,2.5vw,24px);font-weight:700;color:var(--dark);line-height:1.3;letter-spacing:-.3px;margin-bottom:10px}
+.featured-body .excerpt{font-size:14px;color:var(--muted);line-height:1.7;margin-bottom:16px}
+.post-meta{display:flex;flex-wrap:wrap;gap:12px;font-size:12.5px;color:var(--muted);margin-bottom:18px}
+.read-link{display:inline-flex;align-items:center;gap:6px;font-size:13.5px;font-weight:600;color:var(--blue)}
+.read-link svg{width:14px;height:14px;transition:transform .15s}
+.read-link:hover svg{transform:translateX(3px)}
+
+/* ─────────────── ARTICLE GRID ─────────────── */
+.articles-section{padding:12px 0 72px}
+.articles-head{display:flex;align-items:center;justify-content:space-between;margin-bottom:22px;flex-wrap:wrap;gap:8px}
+.articles-count{font-size:13px;color:var(--muted)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:22px}
+.article-card{background:var(--white);border:1px solid var(--border);border-radius:var(--r-lg);overflow:hidden;display:flex;flex-direction:column;transition:box-shadow .2s;cursor:pointer}
+.article-card:hover{box-shadow:var(--sh-h)}
+.card-img{aspect-ratio:16/9;overflow:hidden;background:var(--surface)}
+.card-img img{width:100%;height:100%;object-fit:cover;transition:transform .3s}
+.article-card:hover .card-img img{transform:scale(1.03)}
+.card-img-placeholder{width:100%;height:100%;background:linear-gradient(135deg,var(--blue-lt),var(--purple-lt));display:flex;align-items:center;justify-content:center}
+.card-img-placeholder svg{width:28px;height:28px;color:rgba(0,74,173,.2)}
+.card-body{padding:20px 20px 22px;flex:1;display:flex;flex-direction:column}
+.card-body .cat-badge{margin-bottom:10px}
+.card-body h3{font-size:15.5px;font-weight:700;color:var(--dark);line-height:1.35;letter-spacing:-.2px;margin-bottom:8px}
+.card-body .excerpt{font-size:13.5px;color:var(--muted);line-height:1.65;flex:1;margin-bottom:14px}
+.card-meta{font-size:12px;color:var(--muted)}
+
+/* Pagination */
+.pagination{display:flex;justify-content:center;align-items:center;gap:8px;padding:36px 0 0}
+.pg-btn{display:inline-flex;align-items:center;justify-content:center;width:36px;height:36px;border:1px solid var(--border);border-radius:6px;font-size:13px;font-weight:500;color:var(--mid);background:var(--white);transition:all .15s}
+.pg-btn:hover:not(:disabled){border-color:var(--blue);color:var(--blue)}
+.pg-btn.active{background:var(--blue);border-color:var(--blue);color:var(--white)}
+.pg-btn:disabled{opacity:.4;cursor:not-allowed}
+
+/* ─────────────── SINGLE POST ─────────────── */
+.post-view{display:none}
+.post-topbar{padding:18px 0;border-bottom:1px solid var(--border)}
+.breadcrumb{display:flex;align-items:center;gap:8px;font-size:13px;color:var(--muted)}
+.breadcrumb a{color:var(--blue)}
+.breadcrumb svg{width:14px;height:14px}
+.post-header{padding:56px 0 36px;border-bottom:1px solid var(--border)}
+.post-header .cat-badge{margin-bottom:14px}
+.post-header h1{font-size:clamp(22px,4vw,38px);font-weight:800;color:var(--dark);line-height:1.2;letter-spacing:-.5px;margin-bottom:14px}
+.post-header .post-meta{margin-bottom:0}
+.post-hero-img{margin:36px 0;border-radius:var(--r-lg);overflow:hidden;border:1px solid var(--border)}
+.post-hero-img img{width:100%;aspect-ratio:16/9;object-fit:cover}
+
+/* Post body typography */
+.post-body{padding:40px 0 56px;color:var(--body)}
+.post-body h2{font-size:22px;font-weight:700;color:var(--dark);letter-spacing:-.3px;margin:36px 0 12px;line-height:1.3}
+.post-body h3{font-size:18px;font-weight:600;color:var(--dark);margin:28px 0 10px;line-height:1.35}
+.post-body h4{font-size:15px;font-weight:600;color:var(--dark);margin:20px 0 8px}
+.post-body p{font-size:16px;line-height:1.8;color:var(--body);margin-bottom:20px}
+.post-body ul,.post-body ol{padding-left:22px;margin-bottom:20px;display:flex;flex-direction:column;gap:8px}
+.post-body li{font-size:16px;line-height:1.75;color:var(--body)}
+.post-body strong{font-weight:600;color:var(--dark)}
+.post-body em{font-style:italic}
+.post-body blockquote{margin:28px 0;padding:18px 22px;background:var(--blue-lt);border-left:3px solid var(--blue);border-radius:0 var(--r) var(--r) 0}
+.post-body blockquote p{margin:0;color:var(--blue);font-style:italic}
+.post-body hr{border:none;border-top:1px solid var(--border);margin:36px 0}
+.post-body a{color:var(--blue);text-decoration:underline;text-underline-offset:2px}
+.post-body a:hover{color:var(--blue-dk)}
+
+.post-tags{display:flex;flex-wrap:wrap;gap:7px;padding:24px 0;border-top:1px solid var(--border);margin-top:8px}
+.post-tag{display:inline-flex;padding:4px 12px;font-size:12.5px;color:var(--mid);background:var(--surface);border:1px solid var(--border);border-radius:4px}
+
+/* Disclaimer */
+.post-disclaimer{margin-top:36px;padding:18px 22px;background:var(--surface);border:1px solid var(--border);border-radius:var(--r);font-size:13px;color:var(--muted);line-height:1.65}
+
+/* Related / back */
+.post-bottom{padding:36px 0 72px;border-top:1px solid var(--border)}
+.back-link{display:inline-flex;align-items:center;gap:7px;font-size:14px;font-weight:600;color:var(--blue)}
+.back-link svg{width:15px;height:15px;transition:transform .15s}
+.back-link:hover svg{transform:translateX(-3px)}
+
+/* ─────────────── EMPTY / LOADING ─────────────── */
+.state-msg{text-align:center;padding:72px 24px}
+.state-msg svg{width:44px;height:44px;color:var(--border);margin:0 auto 14px;display:block}
+.state-msg h3{font-size:18px;font-weight:600;color:var(--dark);margin-bottom:6px}
+.state-msg p{font-size:14px;color:var(--muted)}
+
+/* ─────────────── FOOTER ─────────────── */
+.footer{background:var(--dark);color:rgba(255,255,255,.55);padding:52px 0 28px}
+.footer-row{display:flex;flex-wrap:wrap;gap:40px;margin-bottom:36px}
+.footer-brand{flex:1;min-width:180px}
+.footer-brand-name{font-size:17px;font-weight:700;color:var(--white);margin-bottom:8px}
+.footer-brand p{font-size:13px;color:rgba(255,255,255,.45);line-height:1.65}
+.footer-cols{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;flex:2}
+@media(max-width:580px){.footer-cols{grid-template-columns:1fr 1fr}}
+.footer-col h4{font-size:11px;font-weight:600;letter-spacing:.8px;text-transform:uppercase;color:rgba(255,255,255,.35);margin-bottom:12px}
+.footer-col ul{list-style:none;display:flex;flex-direction:column;gap:8px}
+.footer-col a{font-size:13.5px;color:rgba(255,255,255,.55);transition:color .15s}
+.footer-col a:hover{color:var(--white)}
+.footer-bottom{padding-top:22px;border-top:1px solid rgba(255,255,255,.07);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px;font-size:12.5px}
+</style>
+</head>
+<body>
+
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PM5S8LTK" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+<!-- ── NAVIGATION ── -->
+<nav class="nav">
+  <div class="wrap nav-row">
+    <a href="/" class="logo">Curative<span class="logo-dot"></span></a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="/ophthalmology">Ophthalmology</a></li>
+      <li><a href="/aesthetics">Aesthetics</a></li>
+      <li><a href="/dentistry">Dentistry</a></li>
+      <li><a href="/about-curative">About</a></li>
+      <li><a href="/blog" class="active">News</a></li>
+      <li><a href="/careers">Careers</a></li>
+    </ul>
+    <a href="/contact" class="nav-btn">Contact Us</a>
+    <button class="nav-hamburger" id="navToggle" aria-label="Toggle navigation">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/>
+      </svg>
+    </button>
+  </div>
+</nav>
+
+<!-- ════════════════════════════════════════
+     LISTING VIEW
+════════════════════════════════════════ -->
+<div id="listingView">
+
+  <!-- Hero -->
+  <section class="list-hero">
+    <div class="wrap">
+      <div class="list-hero-eyebrow">Curative News &amp; Insights</div>
+      <h1>News, Education &amp; Insights</h1>
+      <p>Updates from across Curative's ophthalmology, aesthetics and dental technology divisions, including product news, clinical education and industry developments from Asia.</p>
+    </div>
+  </section>
+
+  <!-- Category tabs -->
+  <div class="cat-bar">
+    <div class="wrap cat-inner" id="catTabs">
+      <button class="cat-tab active" data-cat="all">All Articles</button>
+      <button class="cat-tab" data-cat="Company News">Company News</button>
+      <button class="cat-tab" data-cat="Product Updates">Product Updates</button>
+      <button class="cat-tab" data-cat="Clinical Education">Clinical Education</button>
+      <button class="cat-tab" data-cat="Industry Insights">Industry Insights</button>
+      <button class="cat-tab" data-cat="Events & Conferences">Events</button>
+      <button class="cat-tab" data-cat="Market Updates">Market Updates</button>
+    </div>
+  </div>
+
+  <!-- Content area -->
+  <div id="listingContent">
+    <div class="wrap">
+      <div class="state-msg" id="loadMsg">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+        <h3>Loading articles&hellip;</h3>
+      </div>
+    </div>
+  </div>
+
+</div><!-- /listingView -->
+
+<!-- ════════════════════════════════════════
+     SINGLE POST VIEW
+════════════════════════════════════════ -->
+<div id="postView" class="post-view">
+
+  <div class="post-topbar">
+    <div class="wrap-narrow">
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="/">Home</a>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
+        <a href="/blog">News &amp; Insights</a>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
+        <span id="bcTitle" aria-current="page"></span>
+      </nav>
+    </div>
+  </div>
+
+  <div class="wrap-narrow">
+    <header class="post-header">
+      <div id="postBadge"></div>
+      <h1 id="postTitle"></h1>
+      <div class="post-meta" id="postMeta"></div>
+    </header>
+    <div id="postHeroImg"></div>
+    <article class="post-body" id="postBody"></article>
+    <div class="post-tags" id="postTags"></div>
+    <div class="post-disclaimer">
+      Products mentioned are intended for use by appropriately qualified healthcare professionals. Product availability, indications and regulatory status may vary by market. Individual outcomes may vary.
+    </div>
+    <div class="post-bottom">
+      <a href="/blog" class="back-link" id="backLink">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"/></svg>
+        Back to News &amp; Insights
+      </a>
+    </div>
+  </div>
+
+</div><!-- /postView -->
+
+<!-- ── FOOTER ── -->
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer-row">
+      <div class="footer-brand">
+        <div class="footer-brand-name">Curative</div>
+        <p>Medical technology and healthcare solutions across Singapore, Malaysia, Thailand, Hong Kong and Indonesia.</p>
+      </div>
+      <div class="footer-cols">
+        <div class="footer-col">
+          <h4>Divisions</h4>
+          <ul>
+            <li><a href="/ophthalmology">Ophthalmology</a></li>
+            <li><a href="/aesthetics">Aesthetics</a></li>
+            <li><a href="/dentistry">Dentistry</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="/about-curative">About Curative</a></li>
+            <li><a href="/markets">Our Markets</a></li>
+            <li><a href="/blog">News &amp; Insights</a></li>
+            <li><a href="/careers">Careers</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="/contact">Contact Us</a></li>
+            <li><a href="/contact/request-demonstration">Request a Demo</a></li>
+            <li><a href="mailto:enquiries@curative.asia">enquiries@curative.asia</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 Curative Group Pte. Ltd. All rights reserved.</span>
+      <span>curative.asia</span>
+    </div>
+  </div>
+</footer>
+
+<!-- ── JSON-LD (updated per view in JS) ── -->
+<script type="application/ld+json" id="jsonLd">
+{
+  "@context":"https://schema.org",
+  "@type":"Blog",
+  "name":"Curative News & Insights",
+  "description":"News, clinical education and industry insights from Curative across Asia.",
+  "url":"https://curative.asia/blog",
+  "publisher":{
+    "@type":"Organization",
+    "name":"Curative Group Pte. Ltd.",
+    "url":"https://curative.asia"
+  }
+}
+</script>
+
+<script>
+'use strict';
+
+/* ── Configure marked ── */
+if (window.marked) {
+  marked.setOptions({ breaks: true, gfm: true });
+}
+
+/* ── State ── */
+let posts       = [];
+let activeCategory = 'all';
+let currentPage    = 1;
+const PER_PAGE     = 9;
+
+/* ─────────── Helpers ─────────── */
+function esc(s) {
+  if (!s) return '';
+  return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+}
+
+function badgeCls(cat) {
+  const m = {
+    'Company News':       'badge-company',
+    'Product Updates':    'badge-product',
+    'Clinical Education': 'badge-clinical',
+    'Industry Insights':  'badge-industry',
+    'Events & Conferences':'badge-events',
+    'Market Updates':     'badge-market'
+  };
+  return m[cat] || 'badge-company';
+}
+
+function imgOrPlaceholder(src, cls) {
+  if (src) return `<img src="${esc(src)}" alt="" loading="lazy">`;
+  return `<div class="${cls}"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="m3 9 5-5 4 4 3-3 6 6"/><circle cx="8.5" cy="8.5" r="1.5"/></svg></div>`;
+}
+
+/* ─────────── Routing ─────────── */
+function getSlug() {
+  return new URLSearchParams(window.location.search).get('post') || '';
+}
+
+function navigate(slug) {
+  const url = slug ? `/blog/?post=${encodeURIComponent(slug)}` : '/blog/';
+  history.pushState({}, '', url);
+  route();
+}
+
+function route() {
+  const slug = getSlug();
+  if (slug) showPost(slug);
+  else      showListing();
+}
+
+/* ─────────── Fetch ─────────── */
+async function loadPosts() {
+  try {
+    const res = await fetch('/content/posts.json');
+    if (!res.ok) throw new Error('Network error');
+    const data = await res.json();
+    posts = (data.posts || []).filter(p => p.status === 'published');
+    posts.sort((a, b) => new Date(b.date) - new Date(a.date));
+    route();
+  } catch {
+    document.getElementById('loadMsg').innerHTML =
+      '<h3>Unable to load articles</h3><p>Please try refreshing the page.</p>';
+  }
+}
+
+/* ─────────── LISTING ─────────── */
+function showListing() {
+  document.getElementById('listingView').style.display = '';
+  document.getElementById('postView').style.display    = 'none';
+  document.getElementById('pageTitle').textContent     = 'News & Insights | Curative';
+  document.getElementById('metaDesc').setAttribute('content',
+    'News, clinical education and industry insights from Curative across ophthalmology, aesthetics and dental technology in Asia.');
+  document.getElementById('canonical').href = 'https://curative.asia/blog';
+  renderListing();
+}
+
+function filteredPosts() {
+  if (activeCategory === 'all') return posts;
+  return posts.filter(p => p.category === activeCategory);
+}
+
+function renderListing() {
+  const fp    = filteredPosts();
+  const start = (currentPage - 1) * PER_PAGE;
+  const paged = fp.slice(start, start + PER_PAGE);
+  const featured = posts.find(p => p.featured);
+
+  const el = document.getElementById('listingContent');
+
+  if (!posts.length) {
+    el.innerHTML = `<div class="wrap"><div class="state-msg">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M14.5 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V9.5L14.5 3z"/><polyline points="14 3 14 10 21 10"/></svg>
+      <h3>No articles yet</h3>
+      <p>Check back soon for news and insights from Curative.</p>
+    </div></div>`;
+    return;
+  }
+
+  let html = '<div class="wrap">';
+
+  /* Featured post (listing view only, no category filter active) */
+  if (featured && activeCategory === 'all') {
+    html += `
+      <section class="featured-section">
+        <div class="featured-label">Featured Article</div>
+        <div class="featured-card" onclick="navigate('${esc(featured.slug)}')">
+          <div class="featured-img">${imgOrPlaceholder(featured.image,'featured-img-placeholder')}</div>
+          <div class="featured-body">
+            <span class="cat-badge ${badgeCls(featured.category)}">${esc(featured.category)}</span>
+            <h2>${esc(featured.title)}</h2>
+            <div class="post-meta">
+              <span>${esc(featured.date)}</span>
+              ${featured.author ? `<span>${esc(featured.author)}</span>` : ''}
+              <span>${esc(featured.division)}</span>
+            </div>
+            <p class="excerpt">${esc(featured.excerpt)}</p>
+            <span class="read-link">Read Article <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+          </div>
+        </div>
+      </section>`;
+  }
+
+  /* Article grid */
+  if (!paged.length) {
+    html += `<div class="state-msg"><h3>No articles in this category</h3><p>Select another category above.</p></div>`;
+  } else {
+    html += `
+      <section class="articles-section">
+        <div class="articles-head">
+          <span class="articles-count">${fp.length === 1 ? '1 article' : `${fp.length} articles`}</span>
+        </div>
+        <div class="grid">
+          ${paged.map(p => articleCard(p)).join('')}
+        </div>
+        ${paginator(fp.length)}
+      </section>`;
+  }
+
+  html += '</div>';
+  el.innerHTML = html;
+
+  /* Bind card clicks */
+  el.querySelectorAll('.article-card[data-slug]').forEach(card => {
+    card.addEventListener('click', () => navigate(card.dataset.slug));
+  });
+
+  /* Bind paginator */
+  el.querySelectorAll('.pg-btn[data-page]').forEach(b => {
+    b.addEventListener('click', () => {
+      currentPage = parseInt(b.dataset.page, 10);
+      renderListing();
+      window.scrollTo({ top: 0 });
+    });
+  });
+}
+
+function articleCard(post) {
+  return `
+    <article class="article-card" data-slug="${esc(post.slug)}" tabindex="0" role="button"
+             aria-label="Read: ${esc(post.title)}"
+             onkeydown="if(event.key==='Enter')navigate('${esc(post.slug)}')">
+      <div class="card-img">${imgOrPlaceholder(post.image,'card-img-placeholder')}</div>
+      <div class="card-body">
+        <span class="cat-badge ${badgeCls(post.category)}">${esc(post.category)}</span>
+        <h3>${esc(post.title)}</h3>
+        <p class="excerpt">${esc(post.excerpt)}</p>
+        <div class="card-meta">${esc(post.date)}${post.author ? ' · ' + esc(post.author) : ''}</div>
+      </div>
+    </article>`;
+}
+
+function paginator(total) {
+  const pages = Math.ceil(total / PER_PAGE);
+  if (pages <= 1) return '';
+  let btns = `<button class="pg-btn" data-page="${Math.max(1,currentPage-1)}" ${currentPage===1?'disabled':''}>
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"/></svg>
+  </button>`;
+  for (let i = 1; i <= pages; i++) {
+    btns += `<button class="pg-btn ${i===currentPage?'active':''}" data-page="${i}">${i}</button>`;
+  }
+  btns += `<button class="pg-btn" data-page="${Math.min(pages,currentPage+1)}" ${currentPage===pages?'disabled':''}>
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
+  </button>`;
+  return `<div class="pagination">${btns}</div>`;
+}
+
+/* ─────────── SINGLE POST ─────────── */
+function showPost(slug) {
+  const post = posts.find(p => p.slug === slug);
+
+  if (!post) {
+    document.getElementById('listingView').style.display = '';
+    document.getElementById('postView').style.display    = 'none';
+    return;
+  }
+
+  document.getElementById('listingView').style.display = 'none';
+  document.getElementById('postView').style.display    = '';
+
+  /* Head meta */
+  document.getElementById('pageTitle').textContent = `${post.title} | Curative`;
+  document.getElementById('metaDesc').setAttribute('content', post.excerpt || post.title);
+  document.getElementById('canonical').href = `https://curative.asia/blog/?post=${encodeURIComponent(slug)}`;
+
+  /* Breadcrumb */
+  document.getElementById('bcTitle').textContent = post.title.length > 50
+    ? post.title.slice(0,47) + '…' : post.title;
+
+  /* Badge */
+  document.getElementById('postBadge').innerHTML =
+    `<span class="cat-badge ${badgeCls(post.category)}">${esc(post.category)}</span>`;
+
+  /* Title */
+  document.getElementById('postTitle').textContent = post.title;
+
+  /* Meta row */
+  document.getElementById('postMeta').innerHTML = [
+    post.date   && `<span>${esc(post.date)}</span>`,
+    post.author && `<span>${esc(post.author)}</span>`,
+    post.division && `<span>${esc(post.division)}</span>`
+  ].filter(Boolean).join('<span style="color:var(--border)">·</span>');
+
+  /* Hero image */
+  document.getElementById('postHeroImg').innerHTML = post.image
+    ? `<div class="post-hero-img"><img src="${esc(post.image)}" alt="${esc(post.title)}"></div>` : '';
+
+  /* Body (Markdown) */
+  const bodyHtml = window.marked
+    ? marked.parse(post.body || '')
+    : `<p>${esc(post.body || '')}</p>`;
+  document.getElementById('postBody').innerHTML = bodyHtml;
+
+  /* Tags */
+  const tagsEl = document.getElementById('postTags');
+  if (post.tags && post.tags.length) {
+    tagsEl.innerHTML = post.tags.map(t => `<span class="post-tag">${esc(t)}</span>`).join('');
+    tagsEl.style.display = '';
+  } else {
+    tagsEl.style.display = 'none';
+  }
+
+  /* JSON-LD */
+  document.getElementById('jsonLd').textContent = JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": post.title,
+    "description": post.excerpt,
+    "datePublished": post.date,
+    "author": { "@type": "Organization", "name": post.author || "Curative Team" },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Curative Group Pte. Ltd.",
+      "url": "https://curative.asia"
+    },
+    "url": `https://curative.asia/blog/?post=${encodeURIComponent(slug)}`,
+    "image": post.image || ""
+  });
+
+  window.scrollTo({ top: 0 });
+}
+
+/* ─────────── Category tab handlers ─────────── */
+document.getElementById('catTabs').addEventListener('click', e => {
+  const tab = e.target.closest('.cat-tab');
+  if (!tab) return;
+  document.querySelectorAll('.cat-tab').forEach(t => t.classList.remove('active'));
+  tab.classList.add('active');
+  activeCategory = tab.dataset.cat;
+  currentPage    = 1;
+  renderListing();
+});
+
+/* ─────────── Back/forward navigation ─────────── */
+window.addEventListener('popstate', route);
+
+/* ─────────── Mobile nav ─────────── */
+document.getElementById('navToggle').addEventListener('click', () => {
+  document.getElementById('navLinks').classList.toggle('open');
+});
+
+/* ─────────── Init ─────────── */
+loadPosts();
+</script>
+
+</body>
+</html>

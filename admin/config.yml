@@ -1,0 +1,199 @@
+backend:
+  name: github
+  repo: curativeasia-gh1/curative-web
+  branch: main
+  base_url: https://curative.asia
+  auth_endpoint: /api/auth
+
+locale: en
+
+media_folder: assets/uploads
+public_folder: /assets/uploads
+
+# ─────────────────────────────────────────────
+# CAREERS: all jobs stored in a single JSON file
+# ─────────────────────────────────────────────
+collections:
+
+  - name: jobs
+    label: Career Listings
+    files:
+      - name: all_jobs
+        label: All Job Listings
+        file: content/jobs.json
+        format: json
+        description: >
+          Add, edit and remove job listings here. Set Status to "hidden" to
+          remove a role from the site without deleting it.
+        fields:
+          - label: Jobs
+            name: jobs
+            widget: list
+            summary: "{{fields.title}} — {{fields.location}} ({{fields.status}})"
+            fields:
+              - label: "Job ID (slug)"
+                name: id
+                widget: string
+                hint: "Lowercase letters and hyphens only. Example: sales-manager-singapore"
+              - label: Job Title
+                name: title
+                widget: string
+              - label: Division
+                name: division
+                widget: select
+                options:
+                  - Ophthalmology
+                  - Aesthetics
+                  - Dentistry
+                  - Corporate & Operations
+              - label: Location
+                name: location
+                widget: select
+                options:
+                  - Singapore
+                  - Malaysia
+                  - Thailand
+                  - Hong Kong
+                  - Indonesia
+                  - Remote
+              - label: Employment Type
+                name: type
+                widget: select
+                options:
+                  - Full-time
+                  - Part-time
+                  - Contract
+                  - Internship
+              - label: Department
+                name: department
+                widget: select
+                options:
+                  - Sales
+                  - Marketing
+                  - Clinical & Technical
+                  - Operations
+                  - Finance
+                  - Human Resources
+              - label: Short Summary
+                name: summary
+                widget: text
+                hint: "2–3 sentences displayed on the listing card. Keep it under 200 characters."
+              - label: Full Job Description
+                name: description
+                widget: markdown
+                hint: "Full role details, responsibilities and context. Markdown supported."
+              - label: Key Requirements
+                name: requirements
+                widget: list
+                hint: "One requirement per item. Press Enter to add another."
+              - label: What We Offer
+                name: benefits
+                widget: list
+                required: false
+                hint: "Optional. Benefits, perks or growth opportunities."
+              - label: Application Deadline
+                name: deadline
+                widget: string
+                required: false
+                hint: "Example: 31 August 2026. Leave blank if open-ended."
+              - label: Application Email
+                name: email
+                widget: string
+                default: careers@curative.asia
+              - label: Date Posted
+                name: posted
+                widget: string
+                hint: "Example: 1 July 2026"
+              - label: Status
+                name: status
+                widget: select
+                options:
+                  - published
+                  - hidden
+                default: published
+
+  # ─────────────────────────────────────────────
+  # BLOG: all posts stored in a single JSON file
+  # ─────────────────────────────────────────────
+  - name: blog
+    label: Blog & News
+    files:
+      - name: all_posts
+        label: All Blog Posts
+        file: content/posts.json
+        format: json
+        description: >
+          Add, edit and remove blog posts and news articles here. Set Status
+          to "draft" to save a post without publishing it to the website.
+          Set "Featured" to true for the post you want highlighted at the
+          top of the blog listing.
+        fields:
+          - label: Posts
+            name: posts
+            widget: list
+            summary: "{{fields.title}} ({{fields.date}}) — {{fields.status}}"
+            fields:
+              - label: "Slug (URL)"
+                name: slug
+                widget: string
+                hint: "Lowercase letters and hyphens only. Example: hoya-vivinex-gemetric-launch"
+              - label: Title
+                name: title
+                widget: string
+              - label: Date
+                name: date
+                widget: string
+                hint: "Example: 1 July 2026"
+              - label: Author
+                name: author
+                widget: string
+                default: Curative Team
+              - label: Category
+                name: category
+                widget: select
+                options:
+                  - Company News
+                  - Product Updates
+                  - Clinical Education
+                  - Industry Insights
+                  - Events & Conferences
+                  - Market Updates
+              - label: Division
+                name: division
+                widget: select
+                options:
+                  - Ophthalmology
+                  - Aesthetics
+                  - Dentistry
+                  - All Divisions
+              - label: Featured Image
+                name: image
+                widget: image
+                required: false
+                hint: "Recommended size: 1200 × 630 px. Leave blank if no image."
+              - label: Excerpt
+                name: excerpt
+                widget: text
+                hint: "2–3 sentence summary shown on the listing card. Plain text only."
+              - label: Body Content
+                name: body
+                widget: markdown
+                hint: "Full article content. Markdown formatting supported."
+              - label: Tags
+                name: tags
+                widget: list
+                required: false
+                hint: "Optional keyword tags, e.g. IOL, HOYA, Singapore."
+              - label: Status
+                name: status
+                widget: select
+                options:
+                  - published
+                  - draft
+                default: draft
+                hint: "Set to 'published' when the article is ready to go live."
+              - label: Featured
+                name: featured
+                widget: boolean
+                default: false
+                hint: "Show this post prominently at the top of the blog listing."

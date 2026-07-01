@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-PM5S8LTK');</script>
+<!-- End Google Tag Manager -->
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Careers at Curative | Medical Technology Roles Across Asia</title>
+<meta name="description" content="Join the Curative team across Asia. We are recruiting in ophthalmology, medical aesthetics and digital dentistry across Singapore, Malaysia, Thailand, Hong Kong and Indonesia.">
+<link rel="canonical" href="https://curative.asia/careers">
+<meta property="og:title" content="Careers at Curative | Medical Technology Roles Across Asia">
+<meta property="og:description" content="Build your career in specialist healthcare technology with Curative across Singapore, Malaysia, Thailand, Hong Kong and Indonesia.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://curative.asia/careers">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+/* ── Reset ── */
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+img{max-width:100%;display:block}
+button{cursor:pointer;font-family:inherit}
+a{text-decoration:none;color:inherit}
+
+/* ── Tokens ── */
+:root{
+  --blue:#004aad;
+  --blue-dk:#00368a;
+  --blue-lt:#e6eef8;
+  --purple:#6d2077;
+  --purple-lt:#f2eaf5;
+  --green:#166534;
+  --green-lt:#dcfce7;
+  --dark:#0c1526;
+  --body:#1e293b;
+  --mid:#475569;
+  --muted:#64748b;
+  --border:#e2e8f0;
+  --surface:#f8fafc;
+  --white:#ffffff;
+  --r:8px;
+  --r-lg:14px;
+  --sh:0 1px 3px rgba(0,0,0,.07),0 4px 12px rgba(0,0,0,.05);
+  --sh-h:0 4px 16px rgba(0,0,0,.1),0 8px 28px rgba(0,0,0,.07);
+}
+
+/* ── Base ── */
+body{font-family:'Inter',system-ui,sans-serif;font-size:16px;line-height:1.65;color:var(--body);background:var(--white)}
+
+/* ── Layout ── */
+.wrap{max-width:1200px;margin:0 auto;padding:0 24px}
+
+/* ─────────────────────── NAV ─────────────────────── */
+.nav{position:sticky;top:0;z-index:200;background:var(--white);border-bottom:1px solid var(--border)}
+.nav-row{display:flex;align-items:center;justify-content:space-between;height:68px;gap:24px}
+.logo{display:flex;align-items:baseline;gap:3px;font-size:19px;font-weight:800;color:var(--blue);letter-spacing:-.4px}
+.logo-dot{width:5px;height:5px;border-radius:50%;background:var(--purple);flex-shrink:0;margin-bottom:1px}
+.nav-links{display:flex;list-style:none;gap:2px}
+.nav-links a{display:block;padding:6px 11px;font-size:13.5px;font-weight:500;color:var(--mid);border-radius:6px;transition:color .15s,background .15s}
+.nav-links a:hover,.nav-links a.active{color:var(--blue);background:var(--blue-lt)}
+.nav-btn{padding:8px 18px;background:var(--blue);color:var(--white);font-size:13.5px;font-weight:600;border-radius:6px;white-space:nowrap;transition:background .15s}
+.nav-btn:hover{background:var(--blue-dk)}
+.nav-hamburger{display:none;background:none;border:none;padding:6px;color:var(--mid)}
+@media(max-width:800px){
+  .nav-links,.nav-btn{display:none}
+  .nav-hamburger{display:flex;align-items:center;justify-content:center}
+  .nav-links.open{display:flex;flex-direction:column;position:absolute;top:68px;left:0;right:0;background:var(--white);border-bottom:1px solid var(--border);padding:10px 16px 14px;gap:2px}
+}
+
+/* ─────────────────────── HERO ─────────────────────── */
+.hero{background:linear-gradient(140deg,#0c1526 0%,#0f2156 55%,#1a0a33 100%);color:var(--white);padding:88px 0 76px}
+.hero-eyebrow{display:inline-flex;align-items:center;gap:8px;font-size:11.5px;font-weight:600;letter-spacing:1.2px;text-transform:uppercase;color:rgba(255,255,255,.5);margin-bottom:18px}
+.hero-eyebrow span{width:24px;height:1px;background:rgba(255,255,255,.3)}
+.hero h1{font-size:clamp(26px,4.5vw,46px);font-weight:800;line-height:1.15;letter-spacing:-.8px;margin-bottom:18px;max-width:680px}
+.hero h1 em{font-style:normal;color:#93c5fd}
+.hero-lead{font-size:16.5px;line-height:1.7;color:rgba(255,255,255,.68);max-width:560px;margin-bottom:36px}
+.hero-pills{display:flex;flex-wrap:wrap;gap:10px}
+.pill{display:inline-flex;align-items:center;gap:7px;padding:7px 14px;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.12);border-radius:20px;font-size:13px;color:rgba(255,255,255,.7)}
+.pill svg{width:14px;height:14px;color:#93c5fd;flex-shrink:0}
+
+/* ─────────────────────── WHY CURATIVE ─────────────────────── */
+.why{padding:80px 0;background:var(--surface)}
+.sec-label{font-size:11.5px;font-weight:600;letter-spacing:1.2px;text-transform:uppercase;color:var(--purple);margin-bottom:10px}
+.sec-head{font-size:clamp(20px,2.8vw,30px);font-weight:700;color:var(--dark);letter-spacing:-.3px;margin-bottom:44px}
+.benefits{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:20px}
+.benefit{background:var(--white);border:1px solid var(--border);border-radius:var(--r-lg);padding:28px 22px;transition:box-shadow .2s}
+.benefit:hover{box-shadow:var(--sh)}
+.b-icon{width:42px;height:42px;border-radius:10px;background:var(--blue-lt);display:flex;align-items:center;justify-content:center;margin-bottom:16px}
+.b-icon svg{width:20px;height:20px;color:var(--blue)}
+.benefit h3{font-size:14.5px;font-weight:600;color:var(--dark);margin-bottom:7px}
+.benefit p{font-size:13.5px;color:var(--muted);line-height:1.6}
+
+/* ─────────────────────── DIVISIONS ─────────────────────── */
+.divs{padding:72px 0}
+.divs-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+@media(max-width:700px){.divs-grid{grid-template-columns:1fr}}
+.div-card{border:1px solid var(--border);border-radius:var(--r-lg);padding:28px 22px;position:relative;overflow:hidden}
+.div-card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px}
+.div-ophthal::before{background:var(--blue)}
+.div-aesthetics::before{background:var(--purple)}
+.div-dentistry::before{background:#15803d}
+.div-label{font-size:11px;font-weight:600;letter-spacing:.8px;text-transform:uppercase;margin-bottom:7px}
+.div-ophthal .div-label{color:var(--blue)}
+.div-aesthetics .div-label{color:var(--purple)}
+.div-dentistry .div-label{color:#15803d}
+.div-card h3{font-size:15px;font-weight:600;color:var(--dark);margin-bottom:9px}
+.div-card p{font-size:13.5px;color:var(--muted);line-height:1.6}
+
+/* ─────────────────────── LISTINGS ─────────────────────── */
+.listings{padding:72px 0;background:var(--surface)}
+.listings-top{display:flex;align-items:flex-end;justify-content:space-between;flex-wrap:wrap;gap:12px;margin-bottom:28px}
+.filters{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:22px;align-items:center}
+.filters-sep{width:1px;height:22px;background:var(--border);margin:0 4px}
+@media(max-width:600px){.filters-sep{display:none}}
+.filter-btn{display:inline-flex;padding:5px 13px;font-size:12.5px;font-weight:500;color:var(--mid);background:var(--white);border:1px solid var(--border);border-radius:20px;transition:all .15s;white-space:nowrap}
+.filter-btn:hover{border-color:var(--blue);color:var(--blue)}
+.filter-btn.active{background:var(--blue);border-color:var(--blue);color:var(--white)}
+.results-label{font-size:13px;color:var(--muted);margin-bottom:14px}
+.job-list{display:flex;flex-direction:column;gap:10px}
+
+/* Job card */
+.job-card{background:var(--white);border:1px solid var(--border);border-radius:var(--r-lg);overflow:hidden;transition:box-shadow .2s}
+.job-card:hover{box-shadow:var(--sh-h)}
+.job-header{display:flex;align-items:flex-start;justify-content:space-between;gap:16px;padding:22px 24px;cursor:pointer;user-select:none}
+.job-main{flex:1;min-width:0}
+.job-tags{display:flex;flex-wrap:wrap;gap:5px;margin-bottom:8px}
+.tag{display:inline-flex;padding:2px 9px;font-size:11px;font-weight:600;letter-spacing:.2px;border-radius:4px}
+.tag-div{background:var(--blue-lt);color:var(--blue)}
+.tag-div.aesthetics{background:var(--purple-lt);color:var(--purple)}
+.tag-div.dentistry{background:var(--green-lt);color:var(--green)}
+.tag-div.corporate{background:#fef9c3;color:#854d0e}
+.tag-loc{background:var(--surface);color:var(--mid);border:1px solid var(--border)}
+.tag-type{background:var(--surface);color:var(--mid);border:1px solid var(--border)}
+.job-title{font-size:16.5px;font-weight:700;color:var(--dark);margin-bottom:5px}
+.job-summary{font-size:13.5px;color:var(--muted);line-height:1.6;margin-bottom:8px}
+.job-meta{display:flex;flex-wrap:wrap;gap:14px}
+.job-meta span{font-size:12.5px;color:var(--muted)}
+.expand-btn{flex-shrink:0;display:inline-flex;align-items:center;gap:6px;padding:8px 14px;font-size:13px;font-weight:600;color:var(--blue);background:var(--blue-lt);border:none;border-radius:6px;white-space:nowrap;transition:all .15s}
+.expand-btn svg{width:15px;height:15px;transition:transform .22s}
+.expand-btn.open svg{transform:rotate(180deg)}
+@media(max-width:560px){.expand-btn span{display:none}}
+
+/* Job detail */
+.job-detail{display:none;border-top:1px solid var(--border);padding:0 24px}
+.job-detail.open{display:block}
+.detail-body{padding:22px 0}
+.detail-section{margin-bottom:20px}
+.detail-section h4{font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:.8px;color:var(--muted);margin-bottom:10px}
+.detail-section p,.detail-content p{font-size:14px;color:var(--body);line-height:1.75;margin-bottom:10px}
+.detail-section ul,.detail-content ul{padding-left:20px;display:flex;flex-direction:column;gap:6px}
+.detail-section li,.detail-content li{font-size:14px;color:var(--body);line-height:1.65}
+.detail-content h3{font-size:15px;font-weight:600;color:var(--dark);margin:14px 0 6px}
+.apply-row{display:flex;align-items:center;flex-wrap:wrap;gap:12px;padding-top:16px;border-top:1px solid var(--border)}
+.btn-apply{display:inline-flex;padding:10px 22px;background:var(--blue);color:var(--white);font-size:13.5px;font-weight:600;border-radius:6px;transition:background .15s}
+.btn-apply:hover{background:var(--blue-dk)}
+.deadline{font-size:12.5px;color:var(--muted)}
+
+/* Loading / empty */
+.state-msg{text-align:center;padding:60px 24px}
+.state-msg svg{width:44px;height:44px;color:var(--border);margin:0 auto 14px;display:block}
+.state-msg h3{font-size:17px;font-weight:600;color:var(--dark);margin-bottom:6px}
+.state-msg p{font-size:14px;color:var(--muted);margin-bottom:20px}
+
+/* ─────────────────────── OPEN CTA ─────────────────────── */
+.open-cta{padding:72px 0}
+.cta-box{background:linear-gradient(140deg,#0c1526 0%,#0f2156 100%);border-radius:16px;padding:52px 48px;display:flex;align-items:center;justify-content:space-between;gap:32px;flex-wrap:wrap}
+.cta-box h2{font-size:22px;font-weight:700;color:var(--white);margin-bottom:8px}
+.cta-box p{font-size:14.5px;color:rgba(255,255,255,.65);max-width:500px;line-height:1.7}
+.btn-wh{display:inline-flex;align-items:center;padding:12px 24px;background:var(--white);color:var(--dark);font-size:13.5px;font-weight:600;border-radius:6px;white-space:nowrap;transition:opacity .15s;flex-shrink:0}
+.btn-wh:hover{opacity:.9}
+@media(max-width:700px){.cta-box{padding:36px 28px}}
+
+/* ─────────────────────── FOOTER ─────────────────────── */
+.footer{background:var(--dark);color:rgba(255,255,255,.55);padding:52px 0 28px}
+.footer-row{display:flex;flex-wrap:wrap;gap:40px;margin-bottom:36px}
+.footer-brand{flex:1;min-width:180px}
+.footer-brand-name{font-size:17px;font-weight:700;color:var(--white);margin-bottom:8px}
+.footer-brand p{font-size:13px;color:rgba(255,255,255,.45);line-height:1.65}
+.footer-cols{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;flex:2}
+@media(max-width:580px){.footer-cols{grid-template-columns:1fr 1fr}}
+.footer-col h4{font-size:11px;font-weight:600;letter-spacing:.8px;text-transform:uppercase;color:rgba(255,255,255,.35);margin-bottom:12px}
+.footer-col ul{list-style:none;display:flex;flex-direction:column;gap:8px}
+.footer-col a{font-size:13.5px;color:rgba(255,255,255,.55);transition:color .15s}
+.footer-col a:hover{color:var(--white)}
+.footer-bottom{padding-top:22px;border-top:1px solid rgba(255,255,255,.07);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px;font-size:12.5px}
+</style>
+</head>
+<body>
+
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PM5S8LTK" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<!-- ── NAVIGATION ── -->
+<nav class="nav">
+  <div class="wrap nav-row">
+    <a href="/" class="logo">Curative<span class="logo-dot"></span></a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="/ophthalmology">Ophthalmology</a></li>
+      <li><a href="/aesthetics">Aesthetics</a></li>
+      <li><a href="/dentistry">Dentistry</a></li>
+      <li><a href="/about-curative">About</a></li>
+      <li><a href="/blog">News</a></li>
+      <li><a href="/careers" class="active">Careers</a></li>
+    </ul>
+    <a href="/contact" class="nav-btn">Contact Us</a>
+    <button class="nav-hamburger" id="navToggle" aria-label="Toggle navigation">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/>
+      </svg>
+    </button>
+  </div>
+</nav>
+
+<!-- ── HERO ── -->
+<section class="hero">
+  <div class="wrap">
+    <div class="hero-eyebrow"><span></span>Careers at Curative<span></span></div>
+    <h1>Build your career in<br><em>healthcare technology</em></h1>
+    <p class="hero-lead">Join a specialist team bringing advanced medical technology to ophthalmology, aesthetics and digital dentistry across five Asian markets.</p>
+    <div class="hero-pills">
+      <span class="pill">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+        Specialist regional team
+      </span>
+      <span class="pill">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+        Singapore · Malaysia · Thailand · Hong Kong · Indonesia
+      </span>
+      <span class="pill">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+        Ophthalmology · Aesthetics · Dentistry
+      </span>
+    </div>
+  </div>
+</section>
+
+<!-- ── WHY CURATIVE ── -->
+<section class="why">
+  <div class="wrap">
+    <div class="sec-label">Why Join Us</div>
+    <h2 class="sec-head">A career with real regional impact</h2>
+    <div class="benefits">
+      <div class="benefit">
+        <div class="b-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
+        <h3>Regional Exposure</h3>
+        <p>Work across multiple Asian markets and build relationships with leading hospitals, specialist clinics and healthcare institutions.</p>
+      </div>
+      <div class="benefit">
+        <div class="b-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg></div>
+        <h3>Meaningful Work</h3>
+        <p>Support healthcare professionals with solutions that directly contribute to improved patient care across the region.</p>
+      </div>
+      <div class="benefit">
+        <div class="b-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89L17 22l-5-3-5 3 1.523-9.11"/></svg></div>
+        <h3>Specialist Portfolio</h3>
+        <p>Represent respected international brands across ophthalmology, medical aesthetics and advanced dental technology.</p>
+      </div>
+      <div class="benefit">
+        <div class="b-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg></div>
+        <h3>Clinical Learning</h3>
+        <p>Develop deep clinical and technical knowledge through product training, conference exposure and engagement with leading clinicians.</p>
+      </div>
+      <div class="benefit">
+        <div class="b-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
+        <h3>Collaborative Culture</h3>
+        <p>Work closely with a focused team where your initiative and contribution are recognised across a genuinely regional business.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── DIVISIONS ── -->
+<section class="divs">
+  <div class="wrap">
+    <div class="sec-label">Our Divisions</div>
+    <h2 class="sec-head">Where would you like to work?</h2>
+    <div class="divs-grid">
+      <div class="div-card div-ophthal">
+        <div class="div-label">Ophthalmology</div>
+        <h3>Curative Ophthalmology</h3>
+        <p>Premium IOLs, cataract surgery consumables, surgical instruments, OVDs and ophthalmic technologies for eye specialists and surgical facilities across Asia.</p>
+      </div>
+      <div class="div-card div-aesthetics">
+        <div class="div-label">Aesthetics</div>
+        <h3>Curative Aesthetics</h3>
+        <p>Professional dermocosmetics, aesthetic needles, 3D facial imaging and injection-support solutions for aesthetic physicians and clinics.</p>
+      </div>
+      <div class="div-card div-dentistry">
+        <div class="div-label">Dentistry</div>
+        <h3>Curative Dentistry</h3>
+        <p>Digital scanning, CBCT imaging, CAD/CAM, dental 3D printing, implant workflows and biomaterials for forward-thinking dental professionals.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── JOB LISTINGS ── -->
+<section class="listings">
+  <div class="wrap">
+    <div class="listings-top">
+      <div>
+        <div class="sec-label">Open Positions</div>
+        <h2 class="sec-head" style="margin-bottom:0">Current Opportunities</h2>
+      </div>
+    </div>
+
+    <!-- Filters -->
+    <div class="filters" id="filters">
+      <div id="divFilters">
+        <button class="filter-btn active" data-div="all">All Divisions</button>
+        <button class="filter-btn" data-div="Ophthalmology">Ophthalmology</button>
+        <button class="filter-btn" data-div="Aesthetics">Aesthetics</button>
+        <button class="filter-btn" data-div="Dentistry">Dentistry</button>
+        <button class="filter-btn" data-div="Corporate & Operations">Corporate</button>
+      </div>
+      <div class="filters-sep"></div>
+      <div id="locFilters">
+        <button class="filter-btn active" data-loc="all">All Locations</button>
+        <button class="filter-btn" data-loc="Singapore">Singapore</button>
+        <button class="filter-btn" data-loc="Malaysia">Malaysia</button>
+        <button class="filter-btn" data-loc="Thailand">Thailand</button>
+        <button class="filter-btn" data-loc="Hong Kong">Hong Kong</button>
+        <button class="filter-btn" data-loc="Indonesia">Indonesia</button>
+      </div>
+    </div>
+
+    <p class="results-label" id="resultsLabel"></p>
+    <div class="job-list" id="jobList">
+      <div class="state-msg" id="loadMsg">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+          <circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/>
+        </svg>
+        <h3>Loading positions&hellip;</h3>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── OPEN APPLICATION CTA ── -->
+<section class="open-cta">
+  <div class="wrap">
+    <div class="cta-box">
+      <div>
+        <h2>Don't see a suitable role?</h2>
+        <p>We are always interested in speaking with talented individuals in medical sales, clinical applications, technical support and marketing. Send us your profile and we will be in touch when a suitable opportunity arises.</p>
+      </div>
+      <a href="mailto:careers@curative.asia" class="btn-wh">Send Your CV</a>
+    </div>
+  </div>
+</section>
+
+<!-- ── FOOTER ── -->
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer-row">
+      <div class="footer-brand">
+        <div class="footer-brand-name">Curative</div>
+        <p>Medical technology and healthcare solutions across Singapore, Malaysia, Thailand, Hong Kong and Indonesia.</p>
+      </div>
+      <div class="footer-cols">
+        <div class="footer-col">
+          <h4>Divisions</h4>
+          <ul>
+            <li><a href="/ophthalmology">Ophthalmology</a></li>
+            <li><a href="/aesthetics">Aesthetics</a></li>
+            <li><a href="/dentistry">Dentistry</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="/about-curative">About Curative</a></li>
+            <li><a href="/markets">Our Markets</a></li>
+            <li><a href="/blog">News &amp; Insights</a></li>
+            <li><a href="/careers">Careers</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="/contact">Contact Us</a></li>
+            <li><a href="/contact/request-demonstration">Request a Demo</a></li>
+            <li><a href="mailto:enquiries@curative.asia">enquiries@curative.asia</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 Curative Group Pte. Ltd. All rights reserved.</span>
+      <span>curative.asia</span>
+    </div>
+  </div>
+</footer>
+
+<!-- ── JSON-LD ── -->
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@graph":[
+    {
+      "@type":"WebPage",
+      "@id":"https://curative.asia/careers",
+      "url":"https://curative.asia/careers",
+      "name":"Careers at Curative | Medical Technology Roles Across Asia",
+      "description":"Career opportunities at Curative, a regional medical technology company operating across Singapore, Malaysia, Thailand, Hong Kong and Indonesia.",
+      "inLanguage":"en",
+      "publisher":{
+        "@type":"Organization",
+        "name":"Curative Group Pte. Ltd.",
+        "url":"https://curative.asia"
+      }
+    },
+    {
+      "@type":"BreadcrumbList",
+      "itemListElement":[
+        {"@type":"ListItem","position":1,"name":"Home","item":"https://curative.asia"},
+        {"@type":"ListItem","position":2,"name":"Careers","item":"https://curative.asia/careers"}
+      ]
+    }
+  ]
+}
+</script>
+
+<script>
+'use strict';
+
+/* ── State ── */
+let jobs = [];
+let activeDivision = 'all';
+let activeLocation = 'all';
+
+/* ── Fetch ── */
+async function loadJobs() {
+  try {
+    const res = await fetch('/content/jobs.json');
+    if (!res.ok) throw new Error('Network error');
+    const data = await res.json();
+    jobs = (data.jobs || []).filter(j => j.status === 'published');
+    render();
+  } catch {
+    document.getElementById('jobList').innerHTML =
+      '<div class="state-msg"><h3>Unable to load positions</h3><p>Please try refreshing, or contact <a href="mailto:careers@curative.asia">careers@curative.asia</a> directly.</p></div>';
+  }
+}
+
+/* ── Filter ── */
+function filtered() {
+  return jobs.filter(j => {
+    const d = activeDivision === 'all' || j.division === activeDivision;
+    const l = activeLocation  === 'all' || j.location  === activeLocation;
+    return d && l;
+  });
+}
+
+/* ── Render ── */
+function render() {
+  const list = filtered();
+  const el   = document.getElementById('jobList');
+  const lbl  = document.getElementById('resultsLabel');
+
+  if (!jobs.length) {
+    lbl.textContent = '';
+    el.innerHTML = `
+      <div class="state-msg">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+          <path d="M20 7H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2z"/>
+          <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/>
+        </svg>
+        <h3>No open positions right now</h3>
+        <p>We will update this page as new opportunities become available.</p>
+        <a href="mailto:careers@curative.asia" class="btn-apply">Send Your CV</a>
+      </div>`;
+    return;
+  }
+
+  if (!list.length) {
+    lbl.textContent = '';
+    el.innerHTML = `
+      <div class="state-msg">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+          <circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/>
+        </svg>
+        <h3>No positions match your filters</h3>
+        <p>Try selecting a different division or location.</p>
+      </div>`;
+    return;
+  }
+
+  lbl.textContent = list.length === 1 ? '1 position found' : `${list.length} positions found`;
+  el.innerHTML = list.map((job, i) => jobCard(job, i)).join('');
+}
+
+function divTag(division) {
+  const cls = {
+    'Aesthetics':           'aesthetics',
+    'Dentistry':            'dentistry',
+    'Corporate & Operations':'corporate'
+  }[division] || '';
+  return `<span class="tag tag-div ${cls}">${esc(division)}</span>`;
+}
+
+function jobCard(job, i) {
+  const reqs = (job.requirements || []).map(r => `<li>${esc(r)}</li>`).join('');
+  const bens = (job.benefits    || []).map(b => `<li>${esc(b)}</li>`).join('');
+  return `
+    <div class="job-card">
+      <div class="job-header" onclick="toggle(${i})">
+        <div class="job-main">
+          <div class="job-tags">
+            ${divTag(job.division)}
+            <span class="tag tag-loc">${esc(job.location)}</span>
+            <span class="tag tag-type">${esc(job.type)}</span>
+          </div>
+          <div class="job-title">${esc(job.title)}</div>
+          <div class="job-summary">${esc(job.summary)}</div>
+          <div class="job-meta">
+            ${job.posted   ? `<span>Posted ${esc(job.posted)}</span>` : ''}
+            ${job.deadline ? `<span>Deadline: ${esc(job.deadline)}</span>` : ''}
+          </div>
+        </div>
+        <button class="expand-btn" id="btn-${i}" aria-expanded="false" aria-controls="det-${i}">
+          <span>View Details</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+      </div>
+      <div class="job-detail" id="det-${i}" role="region" aria-labelledby="btn-${i}">
+        <div class="detail-body">
+          ${job.description ? `<div class="detail-section"><h4>About the Role</h4><div class="detail-content">${md(job.description)}</div></div>` : ''}
+          ${reqs ? `<div class="detail-section"><h4>Key Requirements</h4><ul>${reqs}</ul></div>` : ''}
+          ${bens ? `<div class="detail-section"><h4>What We Offer</h4><ul>${bens}</ul></div>` : ''}
+          <div class="apply-row">
+            <a href="mailto:${esc(job.email||'careers@curative.asia')}?subject=Application: ${encodeURIComponent(job.title)}" class="btn-apply">Apply for This Role</a>
+            ${job.deadline ? `<span class="deadline">Application deadline: ${esc(job.deadline)}</span>` : ''}
+          </div>
+        </div>
+      </div>
+    </div>`;
+}
+
+function toggle(i) {
+  const det = document.getElementById(`det-${i}`);
+  const btn = document.getElementById(`btn-${i}`);
+  const isOpen = det.classList.contains('open');
+  document.querySelectorAll('.job-detail').forEach(d => d.classList.remove('open'));
+  document.querySelectorAll('.expand-btn').forEach(b => { b.classList.remove('open'); b.setAttribute('aria-expanded','false'); });
+  if (!isOpen) {
+    det.classList.add('open');
+    btn.classList.add('open');
+    btn.setAttribute('aria-expanded','true');
+  }
+}
+
+/* ── Filter handlers ── */
+document.getElementById('divFilters').addEventListener('click', e => {
+  const b = e.target.closest('[data-div]'); if (!b) return;
+  document.querySelectorAll('[data-div]').forEach(x => x.classList.remove('active'));
+  b.classList.add('active');
+  activeDivision = b.dataset.div;
+  render();
+});
+
+document.getElementById('locFilters').addEventListener('click', e => {
+  const b = e.target.closest('[data-loc]'); if (!b) return;
+  document.querySelectorAll('[data-loc]').forEach(x => x.classList.remove('active'));
+  b.classList.add('active');
+  activeLocation = b.dataset.loc;
+  render();
+});
+
+/* ── Mobile nav ── */
+document.getElementById('navToggle').addEventListener('click', () => {
+  document.getElementById('navLinks').classList.toggle('open');
+});
+
+/* ── Helpers ── */
+function esc(s) {
+  if (!s) return '';
+  return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+}
+
+/* Minimal Markdown → HTML (bold, italic, headings, bullets, paragraphs) */
+function md(text) {
+  if (!text) return '';
+  let html = esc(text);
+  html = html.replace(/\*\*(.*?)\*\*/g,'<strong>$1</strong>');
+  html = html.replace(/\*(.*?)\*/g,'<em>$1</em>');
+  html = html.replace(/^### (.+)$/gm,'<h4>$1</h4>');
+  html = html.replace(/^## (.+)$/gm,'<h3>$1</h3>');
+  html = html.replace(/((?:^- .+\n?)+)/gm, m =>
+    '<ul>' + m.replace(/^- (.+)$/gm,'<li>$1</li>') + '</ul>');
+  html = html.replace(/^(?!<[hul])(.+)$/gm,'<p>$1</p>');
+  return html;
+}
+
+/* ── Init ── */
+loadJobs();
+</script>
+
+</body>
+</html>
