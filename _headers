@@ -1,32 +1,18 @@
-# Cloudflare Pages _headers
-# curative.asia — SEO & AI crawler headers
-# Updated: 2026-06-25
+# Cloudflare Pages response headers
 
-# ============================================================
-# SITEMAP — must serve as application/xml for Google Search
-# ============================================================
 /sitemap.xml
   Content-Type: application/xml; charset=utf-8
-  X-Robots-Tag: noindex
-  Cache-Control: public, max-age=3600
+  Cache-Control: no-cache, no-store, must-revalidate
+  X-Content-Type-Options: nosniff
 
-# ============================================================
-# ROBOTS — plain text, correct content-type
-# ============================================================
 /robots.txt
   Content-Type: text/plain; charset=utf-8
-  Cache-Control: public, max-age=3600
+  Cache-Control: no-cache, no-store, must-revalidate
 
-# ============================================================
-# LLMs.TXT — plain text for AI agents
-# ============================================================
 /llms.txt
   Content-Type: text/plain; charset=utf-8
   Cache-Control: public, max-age=3600
 
-# ============================================================
-# ALL HTML PAGES — security + AI agent signal headers
-# ============================================================
 /*.html
   X-Frame-Options: SAMEORIGIN
   X-Content-Type-Options: nosniff
@@ -35,7 +21,6 @@
   Link: <https://curative.asia/llms.txt>; rel="alternate"; type="text/plain"; title="LLMs.txt"
   Link: <https://curative.asia/sitemap.xml>; rel="sitemap"; type="application/xml"
 
-# Index pages (directory URLs)
 /
   X-Frame-Options: SAMEORIGIN
   X-Content-Type-Options: nosniff
@@ -43,49 +28,3 @@
   Permissions-Policy: camera=(), microphone=(), geolocation=()
   Link: <https://curative.asia/llms.txt>; rel="alternate"; type="text/plain"; title="LLMs.txt"
   Link: <https://curative.asia/sitemap.xml>; rel="sitemap"; type="application/xml"
-
-/ophthalmology/
-  X-Frame-Options: SAMEORIGIN
-  X-Content-Type-Options: nosniff
-  Referrer-Policy: strict-origin-when-cross-origin
-  Permissions-Policy: camera=(), microphone=(), geolocation=()
-  Link: <https://curative.asia/llms.txt>; rel="alternate"; type="text/plain"; title="LLMs.txt"
-
-/dentistry/
-  X-Frame-Options: SAMEORIGIN
-  X-Content-Type-Options: nosniff
-  Referrer-Policy: strict-origin-when-cross-origin
-  Permissions-Policy: camera=(), microphone=(), geolocation=()
-  Link: <https://curative.asia/llms.txt>; rel="alternate"; type="text/plain"; title="LLMs.txt"
-
-/dermocosmetics/
-  X-Frame-Options: SAMEORIGIN
-  X-Content-Type-Options: nosniff
-  Referrer-Policy: strict-origin-when-cross-origin
-  Permissions-Policy: camera=(), microphone=(), geolocation=()
-  Link: <https://curative.asia/llms.txt>; rel="alternate"; type="text/plain"; title="LLMs.txt"
-
-/healthcare-it/
-  X-Frame-Options: SAMEORIGIN
-  X-Content-Type-Options: nosniff
-  Referrer-Policy: strict-origin-when-cross-origin
-  Permissions-Policy: camera=(), microphone=(), geolocation=()
-  Link: <https://curative.asia/llms.txt>; rel="alternate"; type="text/plain"; title="LLMs.txt"
-
-/faq/
-  X-Frame-Options: SAMEORIGIN
-  X-Content-Type-Options: nosniff
-  Referrer-Policy: strict-origin-when-cross-origin
-  Permissions-Policy: camera=(), microphone=(), geolocation=()
-  Link: <https://curative.asia/llms.txt>; rel="alternate"; type="text/plain"; title="LLMs.txt"
-
-/privacy/
-  X-Frame-Options: SAMEORIGIN
-  X-Content-Type-Options: nosniff
-  Referrer-Policy: strict-origin-when-cross-origin
-
-# ============================================================
-# PDF BROCHURES (R2 bucket — assets.curative.asia)
-# These are served from a different origin; listed for reference
-# Apply via R2 bucket CORS/headers settings separately
-# ============================================================
