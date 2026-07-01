@@ -301,8 +301,11 @@ ul { list-style: none; }
 .nav-links {
   display: flex;
   align-items: center;
-  gap: 0.15rem;
+  justify-content: space-evenly;
+  flex: 1;
+  gap: 0;
   margin: 0;
+  padding-inline: 1rem;
 }
 .nav-links > li { position: relative; }
 
@@ -1169,7 +1172,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     <!-- Desktop CTAs -->
     <div class="nav-ctas">
-      <a href="/contact?type=demo" class="btn btn-outline btn-sm">Request a Demo</a>
       <a href="/contact" class="btn btn-primary btn-sm">Product Enquiry</a>
     </div>
 
@@ -1217,7 +1219,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </li>
   </ul>
   <div class="mob-ctas">
-    <a href="/contact?type=demo" class="btn btn-primary">Request a Demo</a>
     <a href="/contact" class="btn btn-outline">Product Enquiry</a>
   </div>
 </div>

@@ -67,7 +67,7 @@ p{margin-bottom:1em;}p:last-child{margin-bottom:0;}ul{list-style:none;}
 .site-header{position:sticky;top:0;z-index:900;background:#fff;border-bottom:1px solid var(--c-border);box-shadow:0 2px 12px rgba(11,94,168,.06);height:var(--nav-h);display:flex;align-items:center;}
 .nav-inner{display:flex;align-items:center;justify-content:space-between;width:100%;max-width:1380px;margin-inline:auto;padding-inline:clamp(1.25rem,4vw,2.5rem);}
 .nav-logo{display:flex;align-items:center;gap:.625rem;text-decoration:none;flex-shrink:0;}.nav-logo-text{font-size:1.25rem;font-weight:800;color:var(--c-navy);letter-spacing:-.02em;}.nav-logo-text span{color:var(--c-primary);}
-.nav-links{display:flex;align-items:center;gap:.15rem;margin:0;}.nav-links>li{position:relative;}
+.nav-links{display:flex;align-items:center;flex:1;justify-content:space-evenly;gap:0;padding-inline:1rem;margin:0;}.nav-links>li{position:relative;}
 .nav-link{display:flex;align-items:center;gap:.3rem;padding:.5rem .7rem;font-size:.875rem;font-weight:500;color:var(--c-text);border-radius:var(--radius);cursor:pointer;min-height:48px;background:none;border:none;font-family:"Inter",Arial,sans-serif;text-decoration:none;transition:background .15s,color .15s;white-space:nowrap;}
 .nav-link:hover,.nav-link.active,.nav-link[aria-expanded="true"]{background:var(--c-primary-light);color:var(--c-primary);}
 .nav-link svg.chevron{width:14px;height:14px;transition:transform .2s;}.nav-link[aria-expanded="true"] svg.chevron{transform:rotate(180deg);}
@@ -163,7 +163,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <li><a href="/careers" class="nav-link">Careers</a></li>
       <li><a href="/contact" class="nav-link active">Contact</a></li>
     </ul>
-    <div class="nav-ctas"><a href="/contact?type=demo" class="btn btn-outline btn-sm">Request a Demo</a><a href="/contact" class="btn btn-primary btn-sm">Contact Us</a></div>
+    <div class="nav-ctas"><a href="/contact" class="btn btn-primary btn-sm">Contact Us</a></div>
     <button class="hamburger" id="hamburger-btn" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobile-drawer" onclick="toggleMobileNav()"><span></span><span></span><span></span></button>
   </nav>
 </header>
@@ -173,7 +173,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <a href="/blog" class="mob-nav-link">Blog</a>
       <a href="/careers" class="mob-nav-link">Careers</a>
       <a href="/contact" class="mob-nav-link">Contact</a></li></ul>
-  <div class="mob-ctas"><a href="/contact?type=demo" class="btn btn-primary">Request a Demo</a><a href="/contact" class="btn btn-outline">Product Enquiry</a></div>
+  <div class="mob-ctas"><a href="/contact" class="btn btn-outline">Product Enquiry</a></div>
 </div>
 <nav class="breadcrumb" aria-label="Breadcrumb"><div class="container"><div class="breadcrumb-inner"><a href="/">Home</a><span class="breadcrumb-sep">›</span><span>Contact</span></div></div></nav>
 
