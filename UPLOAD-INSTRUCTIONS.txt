@@ -4,6 +4,7 @@ Upload every file in this folder to the root of the Cloudflare Pages project, re
 
 Important:
 1. Keep the _redirects filename exactly as shown.
-2. Confirm the production domain redirects to https://www.curative.asia/
-3. After deployment, submit https://www.curative.asia/sitemap.xml in Google Search Console.
+2. Confirm the production domain redirects to https://curative.asia/
+3. Submit https://curative.asia/sitemap.xml once in Google Search Console.
 4. Inspect and request indexing for the homepage and each new .html page.
+5. The GitHub workflow .github/workflows/sitemap-notify.yml will notify Google and Bing when sitemap or page files change on main.
