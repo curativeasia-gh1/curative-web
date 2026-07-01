@@ -32,7 +32,7 @@
 
   <!-- News and education -->
   <url><loc>https://curative.asia/blog/</loc><lastmod>2026-07-01</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://curative.asia/blog/?post=monofocal-vs-enhanced-monofocal-vs-trifocal-iols</loc><lastmod>2026-07-01</lastmod><changefreq>yearly</changefreq><priority>0.7</priority></url>
+  <url><loc><![CDATA[https://curative.asia/blog/?post=monofocal-vs-enhanced-monofocal-vs-trifocal-iols]]></loc><lastmod>2026-07-01</lastmod><changefreq>yearly</changefreq><priority>0.7</priority></url>
   <url><loc>https://curative.asia/faq/</loc><lastmod>2026-07-01</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
 
   <!-- Legal -->
