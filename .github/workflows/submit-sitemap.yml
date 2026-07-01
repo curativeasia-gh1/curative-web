@@ -1,0 +1,31 @@
+name: Submit Sitemap
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'sitemap.xml'
+      - 'robots.txt'
+      - '.github/workflows/submit-sitemap.yml'
+  workflow_dispatch:
+
+jobs:
+  submit-sitemap:
+    name: Notify search engines
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check sitemap is live
+        run: |
+          curl -I --fail --location "https://curative.asia/sitemap.xml"
+
+      - name: Notify Google about sitemap
+        continue-on-error: true
+        run: |
+          curl --fail --location "https://www.google.com/ping?sitemap=https://curative.asia/sitemap.xml"
+
+      - name: Notify Bing about sitemap
+        continue-on-error: true
+        run: |
+          curl --fail --location "https://www.bing.com/ping?sitemap=https://curative.asia/sitemap.xml"
