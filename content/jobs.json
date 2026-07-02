@@ -1,3 +1,50 @@
 {
-  "jobs": []
+  "jobs": [
+    {
+      "status": "published",
+      "title": "Regional Sales Specialist — Dental & Aesthetics",
+      "division": "Aesthetics",
+      "location": "Malaysia",
+      "type": "Full-time",
+      "posted": "2 July 2026",
+      "deadline": "Open until filled",
+      "email": "careers@curative.asia",
+      "summary": "Develop dental and aesthetics accounts across Malaysia and Singapore, with focus on clinic engagement, product demonstrations and revenue growth.",
+      "description": "This role supports Curative's regional dental and aesthetics portfolio, including imaging systems, professional skincare, injection-support products and clinic technologies. The role is suitable for a commercially driven candidate who can build relationships with clinics, arrange demonstrations, follow up quotations and coordinate with internal clinical and marketing teams.",
+      "requirements": [
+        "Experience in medical, dental, aesthetics, pharmaceutical or healthcare sales",
+        "Able to manage clinic visits, demonstrations, quotations and follow-up independently",
+        "Good communication skills in English; Mandarin or Bahasa Malaysia is an advantage",
+        "Comfortable travelling for customer visits, training and regional events"
+      ],
+      "benefits": [
+        "Regional exposure across Curative's healthcare portfolio",
+        "Product and clinical training provided",
+        "Performance-based commission structure"
+      ]
+    },
+    {
+      "status": "published",
+      "title": "Senior Clinical Sales Specialist — Ophthalmology",
+      "division": "Ophthalmology",
+      "location": "Singapore",
+      "type": "Full-time",
+      "posted": "2 July 2026",
+      "deadline": "Open until filled",
+      "email": "careers@curative.asia",
+      "summary": "Support ophthalmology customers across IOLs, cataract surgery consumables, surgical instruments and clinical product adoption.",
+      "description": "This role works with eye clinics, hospitals and surgical teams to support Curative's ophthalmology portfolio. Responsibilities include account development, product education, operating theatre support coordination, stock planning and follow-up with doctors, nurses and procurement teams.",
+      "requirements": [
+        "Experience in ophthalmology, medical device sales, clinical applications or operating theatre support",
+        "Strong follow-up discipline with doctors, nurses, purchasing teams and internal operations",
+        "Able to learn technical product details and communicate them clearly",
+        "Singapore healthcare or medical device market experience is preferred"
+      ],
+      "benefits": [
+        "Specialist medical device portfolio",
+        "Clinical training and supplier exposure",
+        "Regional growth opportunity within Curative"
+      ]
+    }
+  ]
 }
