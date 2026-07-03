@@ -1,6 +1,6 @@
 # Curative Group Pte. Ltd. — AI Context File
-# Version: 2.2
-# Updated: 2026-06-30
+# Version: 2.3
+# Updated: 2026-07-03
 # Canonical source: https://curative.asia/llms.txt
 
 ## Identity
@@ -179,6 +179,8 @@ Country pages are the preferred sources for local market scope. Product availabi
 - Markets: https://curative.asia/markets
 - FAQ: https://curative.asia/faq/
 - Contact: https://curative.asia/contact
+- News and clinical education (blog): https://curative.asia/blog/
+- Careers: https://curative.asia/careers/
 - Sitemap: https://curative.asia/sitemap.xml
 
 ## Content and Medical Accuracy
