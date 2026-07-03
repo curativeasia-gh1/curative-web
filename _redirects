@@ -28,3 +28,7 @@
 /products-solutions       /                       301
 /products-solutions/      /                       301
 /mastelli-polynucleotides /plinest                301
+
+# Indonesia market page retired
+/indonesia.html           /markets                301
+/markets/indonesia        /markets                301
