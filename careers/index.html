@@ -435,6 +435,82 @@ let jobs = [];
 let activeDivision = 'all';
 let activeLocation = 'all';
 
+/* ── Google for Jobs structured data ── */
+const COUNTRY_CODES = {
+  'Singapore': 'SG', 'Malaysia': 'MY', 'Thailand': 'TH',
+  'Hong Kong': 'HK', 'Indonesia': 'ID', 'Vietnam': 'VN'
+};
+const EMPLOYMENT_TYPES = {
+  'Full-time': 'FULL_TIME', 'Part-time': 'PART_TIME',
+  'Contract': 'CONTRACTOR', 'Contractor': 'CONTRACTOR',
+  'Temporary': 'TEMPORARY', 'Internship': 'INTERN'
+};
+
+function isoDate(d) {
+  return d.toISOString().slice(0, 10);
+}
+
+function parsePostedDate(str) {
+  const d = str ? new Date(str) : new Date();
+  return isNaN(d.getTime()) ? new Date() : d;
+}
+
+function jobDescriptionHtml(job) {
+  let html = '';
+  if (job.description) html += `<p>${esc(job.description)}</p>`;
+  if (job.requirements && job.requirements.length) {
+    html += '<p><strong>Key Requirements</strong></p><ul>' +
+      job.requirements.map(r => `<li>${esc(r)}</li>`).join('') + '</ul>';
+  }
+  if (job.benefits && job.benefits.length) {
+    html += '<p><strong>What We Offer</strong></p><ul>' +
+      job.benefits.map(b => `<li>${esc(b)}</li>`).join('') + '</ul>';
+  }
+  return html || esc(job.summary || job.title);
+}
+
+function injectJobPostingSchema(jobList) {
+  document.querySelectorAll('script[data-jobposting]').forEach(el => el.remove());
+
+  jobList.forEach((job, i) => {
+    const posted = parsePostedDate(job.posted);
+    const validThrough = new Date(posted);
+    validThrough.setDate(validThrough.getDate() + 90);
+
+    const address = { '@type': 'PostalAddress' };
+    if (job.city) address.addressLocality = job.city;
+    address.addressCountry = COUNTRY_CODES[job.location] || job.location;
+
+    const jsonLd = {
+      '@context': 'https://schema.org/',
+      '@type': 'JobPosting',
+      title: job.title,
+      description: jobDescriptionHtml(job),
+      identifier: {
+        '@type': 'PropertyValue',
+        name: 'Curative',
+        value: `curative-${i}-${job.title.toLowerCase().replace(/[^a-z0-9]+/g, '-')}`
+      },
+      datePosted: isoDate(posted),
+      validThrough: isoDate(validThrough) + 'T23:59:59+08:00',
+      employmentType: EMPLOYMENT_TYPES[job.type] || 'FULL_TIME',
+      hiringOrganization: {
+        '@type': 'Organization',
+        name: 'Curative',
+        sameAs: 'https://curative.asia'
+      },
+      jobLocation: { '@type': 'Place', address },
+      directApply: true
+    };
+
+    const script = document.createElement('script');
+    script.type = 'application/ld+json';
+    script.setAttribute('data-jobposting', i);
+    script.textContent = JSON.stringify(jsonLd);
+    document.head.appendChild(script);
+  });
+}
+
 /* ── Fetch ── */
 async function loadJobs() {
   try {
@@ -443,6 +519,7 @@ async function loadJobs() {
     const data = await res.json();
     jobs = (data.jobs || []).filter(j => j.status === 'published');
     render();
+    injectJobPostingSchema(jobs);
   } catch {
     document.getElementById('jobList').innerHTML =
       '<div class="state-msg"><h3>Unable to load positions</h3><p>Please try refreshing, or contact <a href="mailto:careers@curative.asia">careers@curative.asia</a> directly.</p></div>';
