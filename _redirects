@@ -2,17 +2,24 @@
 /index.html               /                       301
 /about.html               /about-curative        301
 /about/                   /about-curative        301
+/about-curative/          /about-curative        301
 /ophthalmology.html       /ophthalmology/         301
 /medical-aesthetics.html  /aesthetics             301
 /medical-aesthetics/      /aesthetics             301
+/aesthetics/              /aesthetics             301
 /dentistry.html           /dentistry/             301
 /dermocosmetics.html      /dermocosmetics/        301
 /healthcare-it.html       /healthcare-it/         301
 /faq.html                 /faq/                   301
 /contact.html             /contact                301
 /contact/                 /contact                301
+/markets/                 /markets                301
+/resources/               /resources              301
+/education-events/        /education-events       301
 /privacy.html             /privacy/               301
 /privacy-policy.html      /privacy/               301
+/medical-disclaimer/      /medical-disclaimer     301
+/terms-of-use/            /terms-of-use           301
 
 # Legacy product and focus pages
 /hoya-iols.html           /ophthalmology/         301
@@ -20,6 +27,7 @@
 /voptica.html             /ophthalmology/         301
 /facecast.html            /aesthetics             301
 /skinclinic.html          /skinclinic/            301
+/plinest/                 /plinest                301
 
 # Old route structure
 /businessunits            /about-curative         301
@@ -29,6 +37,14 @@
 /products-solutions/      /                       301
 /mastelli-polynucleotides /plinest                301
 
+# Market URL normalisation
+/markets/singapore        /markets/singapore/     301
+/markets/malaysia         /markets/malaysia/      301
+/markets/thailand         /markets/thailand/      301
+/markets/hong-kong        /markets/hong-kong/     301
+/markets/hong-kong-zh     /markets/hong-kong-zh/  301
+
 # Indonesia market page retired
 /indonesia.html           /markets                301
 /markets/indonesia        /markets                301
+/markets/indonesia/       /markets                301
