@@ -440,6 +440,7 @@
       border-radius: 10px;
       background: var(--sc-100);
       flex-shrink: 0;
+      object-fit: cover;
     }
     .hero-product-card:first-child .hpc-icon { background: rgba(255,255,255,0.15); }
     .hpc-name { font-weight: 700; font-size: 0.95rem; color: var(--heading); font-family: var(--font-display); }
@@ -614,6 +615,14 @@
     .product-card:hover {
       border-color: var(--sc-500);
       box-shadow: 0 6px 20px rgba(108,36,118,0.08);
+    }
+    .product-photo {
+      aspect-ratio: 4 / 5;
+      width: calc(100% + 48px);
+      object-fit: contain;
+      background: var(--sc-50);
+      margin: -24px -24px 16px -24px;
+      border-radius: var(--radius) var(--radius) 0 0;
     }
     .product-cat-tag {
       display: inline-block;
@@ -1179,29 +1188,29 @@
     <div class="hero-visual" aria-hidden="true">
       <div class="hero-product-grid">
         <div class="hero-product-card">
-          <div class="hpc-icon"></div>
+          <img class="hpc-icon" src="https://drive.google.com/uc?export=view&id=10PwzUIvuUMDB9cP9BZOkR5x2akE8U2QB" alt="" loading="lazy" onerror="this.style.display='none'">
           <div>
             <div class="hpc-name">Melanyc Range</div>
             <div class="hpc-cat">Hero Pigmentation Programme</div>
           </div>
         </div>
         <div class="hero-product-card">
-          <div class="hpc-icon"></div>
+          <img class="hpc-icon" src="https://drive.google.com/uc?export=view&id=1a-mZaF1yS30KiAyGYD6U65LekixZ8oqe" alt="" loading="lazy" onerror="this.style.display='none'">
           <div class="hpc-name">Ferulast</div>
           <div class="hpc-cat">Antioxidant Serum</div>
         </div>
         <div class="hero-product-card">
-          <div class="hpc-icon"></div>
+          <img class="hpc-icon" src="https://drive.google.com/uc?export=view&id=1Yali1nwtN63_4trCNFvjQ1aOKb2X6Y25" alt="" loading="lazy" onerror="this.style.display='none'">
           <div class="hpc-name">Retiplus</div>
           <div class="hpc-cat">Retinal Night Cream</div>
         </div>
         <div class="hero-product-card">
-          <div class="hpc-icon"></div>
+          <img class="hpc-icon" src="https://drive.google.com/uc?export=view&id=12V86MMfRXQTfgtM47p_ksEF8TJv861Zq" alt="" loading="lazy" onerror="this.style.display='none'">
           <div class="hpc-name">Hialucos</div>
           <div class="hpc-cat">Hydration &amp; Barrier Support</div>
         </div>
         <div class="hero-product-card">
-          <div class="hpc-icon"></div>
+          <img class="hpc-icon" src="https://drive.google.com/uc?export=view&id=1spJDnPSLN6gfizqAGvWs6yn4fO6aUj2f" alt="" loading="lazy" onerror="this.style.display='none'">
           <div class="hpc-name">Syl 100 SPF 50+</div>
           <div class="hpc-cat">Daily Photoprotection</div>
         </div>
@@ -1384,6 +1393,7 @@
     <div class="products-grid">
 
       <div class="product-card">
+        <img class="product-photo" src="https://drive.google.com/uc?export=view&id=10PwzUIvuUMDB9cP9BZOkR5x2akE8U2QB" alt="Melanyc" loading="lazy" onerror="this.remove()">
         <span class="product-cat-tag">Pigmentation · Night Care</span>
         <h3>Melanyc</h3>
         <p class="product-tagline">Intensive night depigmenting cream combining inhibition of melanin formation, epidermal renewal and antioxidant activity.</p>
@@ -1398,6 +1408,7 @@
       </div>
 
       <div class="product-card">
+        <img class="product-photo" src="https://drive.google.com/uc?export=view&id=1BBs6zfAfCdqa1xuhWVnzzUPY570sHlB4" alt="Melanyc Daily" loading="lazy" onerror="this.remove()">
         <span class="product-cat-tag">Pigmentation · Sensitive</span>
         <h3>Melanyc Daily</h3>
         <p class="product-tagline">Daily cosmetic care for melasma and hyperpigmentation, focused on maintenance and prevention of recurrence. Gentler formulation for sensitive skin.</p>
@@ -1411,6 +1422,7 @@
       </div>
 
       <div class="product-card">
+        <img class="product-photo" src="https://drive.google.com/uc?export=view&id=1uI1cin6y2AHXzpEYXnex2Mv2C1k2rVNb" alt="Melanyc Serum" loading="lazy" onerror="this.remove()">
         <span class="product-cat-tag">Pigmentation · All Skin Types</span>
         <h3>Melanyc Serum</h3>
         <p class="product-tagline">Intensive serum targeting the appearance of existing spots, uneven tone and fine lines, with antioxidant and anti-ageing action.</p>
@@ -1425,6 +1437,7 @@
       </div>
 
       <div class="product-card">
+        <img class="product-photo" src="https://drive.google.com/uc?export=view&id=1WEew-EuPDHzfQlkMq-dfy4IbYw-RC6hz" alt="Melanyc Pro" loading="lazy" onerror="this.remove()">
         <span class="product-cat-tag">Pigmentation · Professional Use</span>
         <h3>Melanyc Pro</h3>
         <p class="product-tagline">Intensive cosmetic treatment for hyperpigmentation and melasma, in an anhydrous gel formulation positioned for doctor-led pigmentation protocols.</p>
@@ -1439,6 +1452,7 @@
       </div>
 
       <div class="product-card">
+        <img class="product-photo" src="https://drive.google.com/uc?export=view&id=1a-mZaF1yS30KiAyGYD6U65LekixZ8oqe" alt="Ferulast" loading="lazy" onerror="this.remove()">
         <span class="product-cat-tag">Antioxidant · Recovery</span>
         <h3>Ferulast</h3>
         <p class="product-tagline">Professional photoaging and antioxidant serum indicated for patients post-treatment, supporting antioxidant defence, luminosity and hydration.</p>
@@ -1453,6 +1467,7 @@
       </div>
 
       <div class="product-card">
+        <img class="product-photo" src="https://drive.google.com/uc?export=view&id=1Yali1nwtN63_4trCNFvjQ1aOKb2X6Y25" alt="Retiplus" loading="lazy" onerror="this.remove()">
         <span class="product-cat-tag">Anti-Ageing · Night Care</span>
         <h3>Retiplus</h3>
         <p class="product-tagline">Nourishing night cream with retinal (a next-generation retinoid) supporting skin renewal, visible wrinkle reduction, firming and improved texture.</p>
@@ -1467,6 +1482,7 @@
       </div>
 
       <div class="product-card">
+        <img class="product-photo" src="https://drive.google.com/uc?export=view&id=1mpLGP3KytBNfd5M9YUJmIBaj_e-5reWP" alt="Zalyc Serum" loading="lazy" onerror="this.remove()">
         <span class="product-cat-tag">Acne · Oily Skin</span>
         <h3>Zalyc Serum</h3>
         <p class="product-tagline">Anti-ageing serum combined with sebum-regulating care, addressing oily and combination skin while targeting visible signs of ageing.</p>
@@ -1480,6 +1496,7 @@
       </div>
 
       <div class="product-card">
+        <img class="product-photo" src="https://drive.google.com/uc?export=view&id=11x3UG9EeKq4E3VJLM5o5kM51ZPN36L7q" alt="Restoring Cream" loading="lazy" onerror="this.remove()">
         <span class="product-cat-tag">Recovery · Launching Soon</span>
         <h3>Restoring Cream</h3>
         <p class="product-tagline">Calming and repair cream for stressed, sensitised or recovering skin, indicated post-peel, post-laser and for acne marks, burns and irritations.</p>
@@ -1494,6 +1511,7 @@
       </div>
 
       <div class="product-card">
+        <img class="product-photo" src="https://drive.google.com/uc?export=view&id=12V86MMfRXQTfgtM47p_ksEF8TJv861Zq" alt="Hialucos" loading="lazy" onerror="this.remove()">
         <span class="product-cat-tag">Hydration · Universal Support</span>
         <h3>Hialucos</h3>
         <p class="product-tagline">Oil-free hyaluronic acid treatment for hydration, skin redensification and regeneration — suitable post-peel and as a comforting option for skin with dermatitis.</p>
@@ -1504,6 +1522,7 @@
       </div>
 
       <div class="product-card">
+        <img class="product-photo" src="https://drive.google.com/uc?export=view&id=1ZLjyR3O_U-1bhoKQFctfSjv2M-xM20y0" alt="Rosanic Range" loading="lazy" onerror="this.remove()">
         <span class="product-cat-tag">Sensitive · Rosacea</span>
         <h3>Rosanic Range</h3>
         <p class="product-tagline">A dedicated range for sensitive and rosacea-prone skin, focusing on calming visible redness, restoring comfort and supporting the skin barrier.</p>
@@ -1530,6 +1549,7 @@
       </div>
 
       <div class="product-card">
+        <img class="product-photo" src="https://drive.google.com/uc?export=view&id=1ymET2wSp3cCtSLNat7_3lVs389lG9GZ_" alt="Redensity" loading="lazy" onerror="this.remove()">
         <span class="product-cat-tag">Firming · Redensifying</span>
         <h3>Redensity</h3>
         <p class="product-tagline">Filler-effect cream redensifying the skin by stimulating collagen synthesis, reinforcing dermal structure and restoring visible volume non-invasively.</p>
@@ -1543,6 +1563,7 @@
       </div>
 
       <div class="product-card">
+        <img class="product-photo" src="https://drive.google.com/uc?export=view&id=1sCFE4ciiG6nf_HxDE6ZLoBS-NZNHaM60" alt="Melanyc Eyes" loading="lazy" onerror="this.remove()">
         <span class="product-cat-tag">Pigmentation · Eye Care</span>
         <h3>Melanyc Eyes</h3>
         <p class="product-tagline">Targeted eye contour care addressing the appearance of dark circles and pigmentation in the periorbital area, with biomimetic peptide technology.</p>
@@ -1556,6 +1577,7 @@
       </div>
 
       <div class="product-card">
+        <img class="product-photo" src="https://drive.google.com/uc?export=view&id=1spJDnPSLN6gfizqAGvWs6yn4fO6aUj2f" alt="Syl 100 SPF 50+" loading="lazy" onerror="this.remove()">
         <span class="product-cat-tag">Photoprotection</span>
         <h3>Syl 100 SPF 50+</h3>
         <p class="product-tagline">Very high-factor daily sun protection supporting pigmentation programmes and photoageing prevention. Recommended as part of any pigmentation or anti-ageing routine.</p>
