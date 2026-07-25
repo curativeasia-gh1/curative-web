@@ -55,11 +55,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
    Syne display | Inter body
    ====================================================== */
 :root {
-  --cobalt:        #0057B8;
-  --cobalt-dark:   #003d82;
+  --cobalt:        #004AAD;
+  --cobalt-dark:   #00337F;
   --cobalt-mid:    #0068d6;
-  --cobalt-pale:   #e8f0fb;
-  --purple:        #5C2D82;
+  --cobalt-pale:   #EEF3FA;
+  --purple:        #5C3D82;
   --purple-dark:   #3e1a5c;
   --purple-mid:    #7044a8;
   --purple-pale:   #f0eaf8;
@@ -79,10 +79,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   --white:         #FFFFFF;
   --ff-serif:      'Syne', system-ui, sans-serif;
   --ff-sans:       'Inter', system-ui, sans-serif;
-  --radius-sm:     4px;
-  --radius:        8px;
-  --radius-lg:     12px;
-  --radius-xl:     20px;
+  --radius-sm:     3px;
+  --radius:        3px;
+  --radius-lg:     4px;
+  --radius-xl:     4px;
   --shadow-sm:     0 1px 3px rgba(0,0,0,0.06), 0 1px 2px rgba(0,0,0,0.04);
   --shadow:        0 4px 16px rgba(0,0,0,0.07);
   --shadow-lg:     0 12px 40px rgba(0,0,0,0.10);
@@ -171,9 +171,12 @@ p{color:var(--mid);line-height:1.75}
 .hero-purple{background:linear-gradient(140deg,var(--purple-dark) 0%,var(--purple) 55%,var(--purple-mid) 100%)}
 .hero-teal{background:linear-gradient(140deg,#003d56 0%,var(--teal) 100%)}
 .hero-rose{background:linear-gradient(140deg,#5a0a32 0%,var(--rose) 100%)}
-.hero-dark{background:linear-gradient(140deg,#080f1a 0%,#0f1f35 100%)}
-.hero::before{content:'';position:absolute;inset:0;background-image:radial-gradient(circle at 70% 50%,rgba(255,255,255,0.04) 0%,transparent 60%);pointer-events:none}
-.hero-grid-line{position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,0.025) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,0.025) 1px,transparent 1px);background-size:60px 60px;pointer-events:none}
+.hero-dark{background:var(--white);border-bottom:1px solid var(--border)}
+.hero-dark .hero-badge{background:none;border:none;border-top:1px solid var(--cobalt);border-radius:0;padding:10px 0 0;color:var(--cobalt)}
+.hero-dark .hero-badge span{display:none}
+.hero-dark h1{color:var(--slate)}
+.hero-dark h1 em{color:var(--mid)}
+.hero-dark .hero-sub{color:var(--mid)}
 .hero-content{position:relative;z-index:1;max-width:700px}
 .hero-badge{display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,0.1);border:1px solid rgba(255,255,255,0.18);border-radius:100px;padding:5px 14px 5px 8px;font-size:0.75rem;font-weight:600;letter-spacing:0.05em;color:rgba(255,255,255,0.9);margin-bottom:28px}
 .hero-badge span{width:6px;height:6px;border-radius:50%;background:#4ade80;display:block}
@@ -202,7 +205,7 @@ p{color:var(--mid);line-height:1.75}
 
 /* === CARDS === */
 .card{background:var(--white);border:1px solid var(--border);border-radius:var(--radius-lg);padding:28px;transition:box-shadow var(--transition),border-color var(--transition),transform var(--transition)}
-.card:hover{box-shadow:var(--shadow-lg);border-color:var(--border-mid);transform:translateY(-2px)}
+.card:hover{border-color:var(--border-mid)}
 .card-icon{width:44px;height:44px;border-radius:var(--radius);display:flex;align-items:center;justify-content:center;margin-bottom:18px;flex-shrink:0}
 .card-icon svg{width:22px;height:22px}
 .card-icon-cobalt{background:var(--cobalt-pale)}
@@ -679,7 +682,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </div>
 <main id="main-content">
 <section class="hero hero-dark" aria-label="FAQ page hero">
-  <div class="hero-grid-line" aria-hidden="true"></div>
   <div class="wrap">
     <div class="hero-content">
       <div class="hero-badge"><span aria-hidden="true"></span>Company Information</div>
