@@ -135,8 +135,8 @@
       --section-py: 80px;
       --section-py-sm: 48px;
       --container: 1200px;
-      --radius: 12px;
-      --radius-sm: 8px;
+      --radius: 4px;
+      --radius-sm: 3px;
     }
 
     /* ============================================================
@@ -331,21 +331,9 @@
        HERO SECTION
     ============================================================ */
     .hero {
-      background: linear-gradient(135deg, var(--white) 0%, var(--sc-50) 60%, var(--sc-100) 100%);
+      background: var(--white);
       padding: 72px 0 80px;
       position: relative;
-      overflow: hidden;
-    }
-    .hero::before {
-      content: '';
-      position: absolute;
-      top: -80px;
-      right: -80px;
-      width: 500px;
-      height: 500px;
-      border-radius: 50%;
-      background: radial-gradient(circle, var(--sc-100) 0%, transparent 70%);
-      pointer-events: none;
     }
     .hero-inner {
       display: grid;
@@ -356,24 +344,25 @@
     .hero-badge {
       display: inline-flex;
       align-items: center;
-      gap: 8px;
-      background: var(--sc-100);
-      color: var(--sc-900);
-      font-size: 0.78rem;
+      gap: 10px;
+      background: none;
+      color: var(--sc-800);
+      font-size: 0.75rem;
       font-weight: 600;
-      letter-spacing: 0.1em;
+      letter-spacing: 0.12em;
       text-transform: uppercase;
-      padding: 6px 14px;
-      border-radius: 100px;
+      padding: 0;
+      border-radius: 0;
       margin-bottom: 20px;
     }
     .hero-badge::before {
       content: '';
       display: inline-block;
-      width: 6px;
-      height: 6px;
-      border-radius: 50%;
-      background: var(--sc-900);
+      width: 22px;
+      height: 1px;
+      background: currentColor;
+      opacity: 0.6;
+      border-radius: 0;
     }
     .hero h1 { margin-bottom: 20px; }
     .hero-lead {
@@ -434,14 +423,7 @@
     }
     .hero-product-card:first-child .hpc-name { color: var(--white); }
     .hero-product-card:first-child .hpc-cat { color: var(--sc-300); }
-    .hpc-icon {
-      width: 44px;
-      height: 44px;
-      border-radius: 10px;
-      background: var(--sc-100);
-      flex-shrink: 0;
-    }
-    .hero-product-card:first-child .hpc-icon { background: rgba(255,255,255,0.15); }
+    .hpc-icon { display: none; }
     .hpc-name { font-weight: 700; font-size: 0.95rem; color: var(--heading); font-family: var(--font-display); }
     .hpc-cat { font-size: 0.78rem; color: var(--muted); }
 
@@ -461,11 +443,12 @@
       padding: 28px 24px;
     }
     .pillar-icon {
-      width: 48px;
-      height: 48px;
-      border-radius: 12px;
-      background: var(--sc-100);
-      margin-bottom: 16px;
+      display: block;
+      font-size: 0.8125rem;
+      font-weight: 600;
+      color: var(--sc-700);
+      font-variant-numeric: tabular-nums;
+      margin-bottom: 14px;
     }
     .pillar-card h3 { font-size: 1rem; margin-bottom: 8px; }
     .pillar-card p { font-size: 0.875rem; color: var(--muted); margin: 0; }
@@ -496,8 +479,6 @@
       cursor: default;
     }
     .concern-card:hover {
-      transform: translateY(-3px);
-      box-shadow: 0 8px 24px rgba(108,36,118,0.12);
       border-color: var(--sc-500);
     }
     .concern-card.featured {
@@ -788,11 +769,12 @@
       padding: 28px 24px;
     }
     .support-icon {
-      width: 36px;
-      height: 36px;
-      border-radius: 8px;
-      background: var(--sc-200);
-      margin-bottom: 14px;
+      display: block;
+      font-size: 0.8125rem;
+      font-weight: 600;
+      color: var(--sc-700);
+      font-variant-numeric: tabular-nums;
+      margin-bottom: 12px;
     }
     .support-card h3 { font-size: 1rem; margin-bottom: 8px; }
     .support-card p { font-size: 0.875rem; color: var(--muted); margin: 0; }
@@ -935,7 +917,8 @@
        ENQUIRY FORM
     ============================================================ */
     .enquiry-section {
-      background: linear-gradient(135deg, var(--sc-900) 0%, #4B174F 100%);
+      background: var(--sc-900);
+      border-top: 2px solid var(--sc-500);
       padding: var(--section-py) 0;
     }
     .enquiry-inner {
@@ -1221,22 +1204,22 @@
     </div>
     <div class="pillars">
       <div class="pillar-card">
-        <div class="pillar-icon" aria-hidden="true"></div>
+        <span class="pillar-icon">01</span>
         <h3>Professional Heritage</h3>
         <p>Built for medical-dispensing and professional skincare environments. Formulated to the standards expected by dermatologists and aesthetic clinicians.</p>
       </div>
       <div class="pillar-card">
-        <div class="pillar-icon" aria-hidden="true"></div>
+        <span class="pillar-icon">02</span>
         <h3>Research &amp; Formulation</h3>
         <p>Developed by an in-house R&amp;D team using both established active ingredients and next-generation dermocosmetic technology.</p>
       </div>
       <div class="pillar-card">
-        <div class="pillar-icon" aria-hidden="true"></div>
+        <span class="pillar-icon">03</span>
         <h3>Concern-Led Programmes</h3>
         <p>Products organised around practical skin objectives — pigmentation, acne, ageing, sensitivity and recovery — rather than cosmetic trends.</p>
       </div>
       <div class="pillar-card">
-        <div class="pillar-icon" aria-hidden="true"></div>
+        <span class="pillar-icon">04</span>
         <h3>Clinic-to-Home Continuity</h3>
         <p>Professional cabin treatments supported by daily maintenance and recovery routines, creating a coherent patient journey from clinic to home.</p>
       </div>
@@ -1659,32 +1642,32 @@
     </div>
     <div class="support-grid">
       <div class="support-card">
-        <div class="support-icon" aria-hidden="true"></div>
+        <span class="support-icon">01</span>
         <h3>Starter Range Planning</h3>
         <p>Select a focused launch portfolio by concern and patient profile. Curative can help identify the most relevant products for your clinic's primary indications.</p>
       </div>
       <div class="support-card">
-        <div class="support-icon" aria-hidden="true"></div>
+        <span class="support-icon">02</span>
         <h3>Product &amp; Protocol Training</h3>
         <p>Educate doctors, therapists, nurses and front-desk teams on product selection, protocols, routine building and patient communication.</p>
       </div>
       <div class="support-card">
-        <div class="support-icon" aria-hidden="true"></div>
+        <span class="support-icon">03</span>
         <h3>Retail Programme Development</h3>
         <p>Create clinic-to-home routines and concern-specific bundles to support post-procedure care, maintenance and patient adherence.</p>
       </div>
       <div class="support-card">
-        <div class="support-icon" aria-hidden="true"></div>
+        <span class="support-icon">04</span>
         <h3>Marketing Support</h3>
         <p>Access patient education materials, campaign content and launch resources to introduce SkinClinic to your existing patient base.</p>
       </div>
       <div class="support-card">
-        <div class="support-icon" aria-hidden="true"></div>
+        <span class="support-icon">05</span>
         <h3>Regional Supply</h3>
         <p>Local commercial and logistics support across Singapore, Malaysia, Thailand and Hong Kong. Curative manages inventory planning and order fulfilment.</p>
       </div>
       <div class="support-card">
-        <div class="support-icon" aria-hidden="true"></div>
+        <span class="support-icon">06</span>
         <h3>Dedicated Specialist</h3>
         <p>A dedicated product specialist supports your clinic with ongoing product information, clinical updates and practice development guidance.</p>
       </div>

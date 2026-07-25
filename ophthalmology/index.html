@@ -18,14 +18,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
-:root{--c-primary:#004aad;--c-primary-dark:#003888;--c-primary-light:#EAF4FB;--c-secondary:#27A9E1;--c-navy:#0D2D44;--c-text:#1A2C3D;--c-text-muted:#5A7285;--c-white:#FFFFFF;--c-bg:#F5F8FB;--c-border:#D6E4EE;--c-div:#004aad;--radius:6px;--radius-lg:12px;--shadow-md:0 4px 20px rgba(11,94,168,0.10);--shadow-lg:0 12px 40px rgba(11,94,168,0.13);--nav-h:72px;--section-v:clamp(3.5rem,7vw,6rem);}
+:root{--c-primary:#004AAD;--c-primary-dark:#00337F;--c-primary-light:#EEF3FA;--c-secondary:#27A9E1;--c-navy:#0B2338;--c-ink:#0B1F30;--c-text:#23313D;--c-text-muted:#5B6B78;--c-white:#FFFFFF;--c-bg:#F7F7F4;--c-border:#E2E4E1;--c-border-strong:#C9CCC8;--c-div:#004AAD;--radius:3px;--radius-lg:4px;--shadow-md:0 10px 28px rgba(11,31,48,0.07);--shadow-lg:0 20px 48px rgba(11,31,48,0.10);--nav-h:72px;--section-v:clamp(3.5rem,7vw,6rem);}
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
 html{scroll-behavior:smooth;}
 body{font-family:"Inter",Arial,sans-serif;font-size:clamp(1rem,1.15vw,1.0625rem);color:var(--c-text);background:var(--c-white);line-height:1.65;-webkit-font-smoothing:antialiased;}
 img{max-width:100%;display:block;}
 a{color:var(--c-primary);text-decoration:none;}
-h1,h2,h3,h4{line-height:1.18;font-weight:700;color:var(--c-navy);}
-h1{font-size:clamp(2rem,4.5vw,3.5rem);}
+h1,h2,h3,h4{line-height:1.18;font-weight:700;color:var(--c-ink);letter-spacing:-.02em;}
+h1{font-size:clamp(2rem,4.5vw,3.5rem);letter-spacing:-.03em;}
 h2{font-size:clamp(1.6rem,2.8vw,2.4rem);}
 h3{font-size:clamp(1.15rem,1.8vw,1.45rem);}
 h4{font-size:clamp(1rem,1.3vw,1.15rem);}
@@ -92,13 +92,11 @@ ul{list-style:none;}
 .mob-ctas{margin-top:1.5rem;display:flex;flex-direction:column;gap:.75rem;}
 
 /* PAGE HERO */
-.page-hero{background:linear-gradient(135deg,var(--c-navy) 0%,#0B3D6B 100%);color:#fff;padding-block:clamp(3rem,7vw,6rem);position:relative;overflow:hidden;}
-.page-hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 50% 80% at 100% 50%,rgba(11,94,168,.3) 0%,transparent 70%);pointer-events:none;}
-.page-hero-grid{position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.02) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.02) 1px,transparent 1px);background-size:60px 60px;pointer-events:none;}
-.page-hero-inner{position:relative;z-index:2;max-width:760px;}
-.page-hero .eyebrow{color:var(--c-secondary);}
-.page-hero h1{color:#fff;margin-bottom:1.25rem;font-weight:800;letter-spacing:-.025em;}
-.page-hero p{color:rgba(255,255,255,.78);font-size:clamp(1rem,1.3vw,1.125rem);max-width:600px;margin-bottom:2rem;}
+.page-hero{background:var(--c-white);padding-block:clamp(4rem,8vw,6.5rem) clamp(3rem,6vw,4.5rem);}
+.page-hero-inner{max-width:760px;}
+.page-hero .eyebrow{color:var(--c-primary);}
+.page-hero h1{color:var(--c-ink);margin-bottom:1.25rem;font-weight:800;letter-spacing:-.03em;}
+.page-hero p{color:var(--c-text-muted);font-size:clamp(1rem,1.3vw,1.125rem);max-width:600px;margin-bottom:2rem;}
 
 /* BREADCRUMB */
 .breadcrumb{background:var(--c-bg);border-bottom:1px solid var(--c-border);padding:.875rem 0;}
@@ -108,7 +106,7 @@ ul{list-style:none;}
 .breadcrumb-sep{color:var(--c-border);}
 
 /* SUMMARY BOX */
-.summary-box{background:var(--c-primary-light);border:1px solid #C0D9EE;border-radius:var(--radius-lg);padding:1.75rem 2rem;margin-bottom:3rem;}
+.summary-box{background:var(--c-primary-light);border:1px solid var(--c-border);border-radius:var(--radius-lg);padding:1.75rem 2rem;margin-bottom:3rem;}
 .summary-box h3{font-size:1rem;margin-bottom:1rem;color:var(--c-primary);}
 .summary-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:.625rem;}
 .summary-row{display:flex;gap:.5rem;font-size:.875rem;}
@@ -122,8 +120,8 @@ ul{list-style:none;}
 
 /* PRODUCT CARDS */
 .products-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:2rem;}
-.prod-card{background:#fff;border:1px solid var(--c-border);border-radius:var(--radius-lg);overflow:hidden;transition:box-shadow .22s,transform .22s;display:flex;flex-direction:column;}
-.prod-card:hover{box-shadow:var(--shadow-lg);transform:translateY(-2px);}
+.prod-card{background:#fff;border:1px solid var(--c-border);border-radius:var(--radius-lg);overflow:hidden;transition:border-color .2s;display:flex;flex-direction:column;}
+.prod-card:hover{border-color:var(--c-border-strong);}
 .prod-card-band{height:5px;background:var(--c-primary);}
 .prod-card-band.purple{background:#5C2D82;}
 .prod-card-band.teal{background:#1E8A6E;}
@@ -139,8 +137,7 @@ ul{list-style:none;}
 /* FEATURES LIST */
 .features-2col{display:grid;grid-template-columns:1fr 1fr;gap:1.5rem;}
 .feature-item{display:flex;gap:.875rem;}
-.feature-icon{width:40px;height:40px;background:var(--c-primary-light);border-radius:8px;display:flex;align-items:center;justify-content:center;flex-shrink:0;color:var(--c-primary);}
-.feature-icon svg{width:20px;height:20px;}
+.feature-icon{width:2.75rem;flex-shrink:0;font-size:.8125rem;font-weight:600;letter-spacing:.02em;font-variant-numeric:tabular-nums;color:var(--c-primary);}
 .feature-item h4{font-size:.9375rem;margin-bottom:.25rem;}
 .feature-item p{font-size:.875rem;color:var(--c-text-muted);margin:0;}
 
@@ -161,11 +158,10 @@ ul{list-style:none;}
 .faq-a.open{display:block;}
 
 /* CTA BOX */
-.cta-box{background:linear-gradient(135deg,var(--c-primary),var(--c-primary-dark));border-radius:var(--radius-lg);padding:clamp(2.5rem,5vw,4rem);text-align:center;position:relative;overflow:hidden;}
-.cta-box::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 60% 70% at 80% 50%,rgba(39,169,225,.15) 0%,transparent 70%);pointer-events:none;}
-.cta-box h2{color:#fff;margin-bottom:1rem;position:relative;}
-.cta-box p{color:rgba(255,255,255,.78);max-width:520px;margin-inline:auto;margin-bottom:2rem;position:relative;}
-.cta-box .btn-group{justify-content:center;position:relative;}
+.cta-box{background:var(--c-navy);border-top:2px solid var(--c-secondary);border-radius:var(--radius-lg);padding:clamp(2.5rem,5vw,4rem);text-align:center;}
+.cta-box h2{color:#fff;margin-bottom:1rem;}
+.cta-box p{color:rgba(255,255,255,.78);max-width:520px;margin-inline:auto;margin-bottom:2rem;}
+.cta-box .btn-group{justify-content:center;}
 
 /* DISCLAIMER */
 .disclaimer{background:var(--c-bg);border-top:1px solid var(--c-border);padding-block:1.5rem;}
@@ -291,15 +287,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 <!-- HERO -->
 <section class="page-hero">
-  <div class="page-hero-grid" aria-hidden="true"></div>
   <div class="container">
     <div class="page-hero-inner">
       <span class="eyebrow">Curative Ophthalmology</span>
       <h1>Cataract, Retina and Eye Surgery Solutions Across Asia</h1>
       <p>Curative Ophthalmology provides intraocular lenses, cataract and vitreoretinal surgical systems, reusable instruments, viscoelastic devices, retinal tamponades and customised procedure kits for hospitals, eye centres and ophthalmic surgeons across Singapore, Malaysia, Thailand and Hong Kong.</p>
       <div class="btn-group">
-        <a href="/contact?type=demo&division=ophthalmology" class="btn btn-white">Request a Product Demo</a>
-        <a href="/contact?division=ophthalmology" class="btn btn-outline-white">Speak With a Specialist</a>
+        <a href="/contact?type=demo&division=ophthalmology" class="btn btn-primary">Request a Product Demo</a>
+        <a href="/contact?division=ophthalmology" class="btn btn-outline">Speak With a Specialist</a>
       </div>
     </div>
   </div>
@@ -635,19 +630,19 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
     <div class="features-2col" style="max-width:900px;margin-inline:auto;">
       <div class="feature-item">
-        <div class="feature-icon" style="background:rgba(39,169,225,.15);color:var(--c-secondary);"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg></div>
+        <span class="feature-icon" style="color:var(--c-secondary);">01</span>
         <div><h4 style="color:#fff;">IOL Selection Support</h4><p>Clinical evaluation, injector compatibility guidance and biometry support for surgeons selecting from the Vivinex™ and ArtIOL® portfolios.</p></div>
       </div>
       <div class="feature-item">
-        <div class="feature-icon" style="background:rgba(39,169,225,.15);color:var(--c-secondary);"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"/><circle cx="12" cy="12" r="3"/></svg></div>
+        <span class="feature-icon" style="color:var(--c-secondary);">02</span>
         <div><h4 style="color:#fff;">System Installation &amp; Training</h4><p>Platform assessment, clinical evaluation, installation, user training, consumable selection and technical-service coordination for surgical systems.</p></div>
       </div>
       <div class="feature-item">
-        <div class="feature-icon" style="background:rgba(39,169,225,.15);color:var(--c-secondary);"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"/></svg></div>
+        <span class="feature-icon" style="color:var(--c-secondary);">03</span>
         <div><h4 style="color:#fff;">Custom Instrument Sets</h4><p>Surgeon-specific instrument recommendations, customised surgical sets and replacement instrument coordination across all instrument portfolios.</p></div>
       </div>
       <div class="feature-item">
-        <div class="feature-icon" style="background:rgba(39,169,225,.15);color:var(--c-secondary);"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M9 17V7m0 10a2 2 0 01-2 2H5a2 2 0 01-2-2V7a2 2 0 012-2h2a2 2 0 012 2m0 10a2 2 0 002 2h2a2 2 0 002-2M9 7a2 2 0 012-2h2a2 2 0 012 2m0 10V7m0 10a2 2 0 002 2h2a2 2 0 002-2V7a2 2 0 00-2-2h-2a2 2 0 00-2 2"/></svg></div>
+        <span class="feature-icon" style="color:var(--c-secondary);">04</span>
         <div><h4 style="color:#fff;">Inventory &amp; Supply Planning</h4><p>Collaborative inventory management for IOLs, OVDs, tamponades and consumables to support consistent operating-room availability.</p></div>
       </div>
     </div>

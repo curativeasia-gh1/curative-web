@@ -55,37 +55,37 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
    Syne display | Inter body
    ====================================================== */
 :root {
-  --cobalt:        #0057B8;
-  --cobalt-dark:   #003d82;
-  --cobalt-mid:    #0068d6;
-  --cobalt-pale:   #e8f0fb;
-  --purple:        #5C2D82;
-  --purple-dark:   #3e1a5c;
-  --purple-mid:    #7044a8;
-  --purple-pale:   #f0eaf8;
+  --cobalt:        #004AAD;
+  --cobalt-dark:   #00337F;
+  --cobalt-mid:    #0A56B0;
+  --cobalt-pale:   #EEF3FA;
+  --purple:        #5C3D82;
+  --purple-dark:   #3F2A5A;
+  --purple-mid:    #7C5CA0;
+  --purple-pale:   #F1ECF7;
   --teal:          #0077a8;
   --teal-pale:     #e6f4f9;
   --rose:          #8a1a52;
   --rose-pale:     #f8eaf2;
   --gold:          #B07A1A;
   --gold-pale:     #faf3e0;
-  --slate:         #111827;
-  --slate-mid:     #374151;
-  --mid:           #6B7280;
-  --light:         #9CA3AF;
-  --border:        #E5E7EB;
-  --border-mid:    #D1D5DB;
-  --cream:         #F9FAFB;
+  --slate:         #0B1F30;
+  --slate-mid:     #23313D;
+  --mid:           #5B6B78;
+  --light:         #8A97A2;
+  --border:        #E2E4E1;
+  --border-mid:    #C9CCC8;
+  --cream:         #F7F7F4;
   --white:         #FFFFFF;
   --ff-serif:      'Syne', system-ui, sans-serif;
   --ff-sans:       'Inter', system-ui, sans-serif;
-  --radius-sm:     4px;
-  --radius:        8px;
-  --radius-lg:     12px;
-  --radius-xl:     20px;
-  --shadow-sm:     0 1px 3px rgba(0,0,0,0.06), 0 1px 2px rgba(0,0,0,0.04);
-  --shadow:        0 4px 16px rgba(0,0,0,0.07);
-  --shadow-lg:     0 12px 40px rgba(0,0,0,0.10);
+  --radius-sm:     3px;
+  --radius:        3px;
+  --radius-lg:     4px;
+  --radius-xl:     6px;
+  --shadow-sm:     0 1px 3px rgba(11,31,48,0.06), 0 1px 2px rgba(11,31,48,0.04);
+  --shadow:        0 4px 16px rgba(11,31,48,0.07);
+  --shadow-lg:     0 20px 48px rgba(11,31,48,0.10);
   --max-w:         1160px;
   --nav-h:         68px;
   --transition:    0.18s ease;
@@ -105,8 +105,8 @@ ul{list-style:none}
 .page.active{display:block !important}
 
 /* === TYPOGRAPHY === */
-h1,h2,h3,h4{font-family:var(--ff-serif);line-height:1.2;color:var(--slate);font-weight:700}
-h1{font-size:clamp(2rem,4.5vw,3rem)}
+h1,h2,h3,h4{font-family:var(--ff-serif);line-height:1.2;color:var(--slate);font-weight:700;letter-spacing:-.02em}
+h1{font-size:clamp(2rem,4.5vw,3rem);letter-spacing:-.03em}
 h2{font-size:clamp(1.5rem,3vw,2.25rem)}
 h3{font-size:clamp(1.1rem,2vw,1.4rem);font-family:var(--ff-sans);font-weight:600}
 p{color:var(--mid);line-height:1.75}
@@ -166,20 +166,13 @@ p{color:var(--mid);line-height:1.75}
 .nav-mobile a:hover{color:var(--cobalt)}
 
 /* === HERO === */
-.hero{padding:100px 0 88px;position:relative;overflow:hidden}
-.hero-cobalt{background:linear-gradient(140deg,var(--cobalt-dark) 0%,var(--cobalt) 55%,var(--cobalt-mid) 100%)}
-.hero-purple{background:linear-gradient(140deg,var(--purple-dark) 0%,var(--purple) 55%,var(--purple-mid) 100%)}
-.hero-teal{background:linear-gradient(140deg,#003d56 0%,var(--teal) 100%)}
-.hero-rose{background:linear-gradient(140deg,#5a0a32 0%,var(--rose) 100%)}
-.hero-dark{background:linear-gradient(140deg,#080f1a 0%,#0f1f35 100%)}
-.hero::before{content:'';position:absolute;inset:0;background-image:radial-gradient(circle at 70% 50%,rgba(255,255,255,0.04) 0%,transparent 60%);pointer-events:none}
-.hero-grid-line{position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,0.025) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,0.025) 1px,transparent 1px);background-size:60px 60px;pointer-events:none}
-.hero-content{position:relative;z-index:1;max-width:700px}
-.hero-badge{display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,0.1);border:1px solid rgba(255,255,255,0.18);border-radius:100px;padding:5px 14px 5px 8px;font-size:0.75rem;font-weight:600;letter-spacing:0.05em;color:rgba(255,255,255,0.9);margin-bottom:28px}
+.hero{padding:100px 0 88px;background:var(--white)}
+.hero-content{max-width:700px}
+.hero-badge{display:inline-flex;align-items:center;gap:8px;background:var(--cobalt-pale);border:1px solid var(--border);border-radius:100px;padding:5px 14px 5px 8px;font-size:0.75rem;font-weight:600;letter-spacing:0.05em;color:var(--cobalt);margin-bottom:28px}
 .hero-badge span{width:6px;height:6px;border-radius:50%;background:#4ade80;display:block}
-.hero h1{color:var(--white);font-size:clamp(2.25rem,5vw,3.5rem);line-height:1.1;margin-bottom:20px}
-.hero h1 em{font-style:normal;color:rgba(255,255,255,0.7)}
-.hero-sub{font-size:1.1rem;color:rgba(255,255,255,0.8);max-width:580px;margin-bottom:40px;line-height:1.75;font-weight:300}
+.hero h1{color:var(--slate);font-size:clamp(2.25rem,5vw,3.5rem);line-height:1.1;margin-bottom:20px}
+.hero h1 em{font-style:normal;color:var(--mid)}
+.hero-sub{font-size:1.1rem;color:var(--mid);max-width:580px;margin-bottom:40px;line-height:1.75;font-weight:300}
 .hero-actions{display:flex;gap:12px;flex-wrap:wrap}
 
 /* === BUTTONS === */
@@ -201,18 +194,13 @@ p{color:var(--mid);line-height:1.75}
 .btn-sm{padding:8px 16px;font-size:0.8rem}
 
 /* === CARDS === */
-.card{background:var(--white);border:1px solid var(--border);border-radius:var(--radius-lg);padding:28px;transition:box-shadow var(--transition),border-color var(--transition),transform var(--transition)}
-.card:hover{box-shadow:var(--shadow-lg);border-color:var(--border-mid);transform:translateY(-2px)}
-.card-icon{width:44px;height:44px;border-radius:var(--radius);display:flex;align-items:center;justify-content:center;margin-bottom:18px;flex-shrink:0}
-.card-icon svg{width:22px;height:22px}
-.card-icon-cobalt{background:var(--cobalt-pale)}
-.card-icon-cobalt svg{color:var(--cobalt)}
-.card-icon-purple{background:var(--purple-pale)}
-.card-icon-purple svg{color:var(--purple)}
-.card-icon-teal{background:var(--teal-pale)}
-.card-icon-teal svg{color:var(--teal)}
-.card-icon-rose{background:var(--rose-pale)}
-.card-icon-rose svg{color:var(--rose)}
+.card{background:var(--white);border:1px solid var(--border);border-radius:var(--radius-lg);padding:28px;transition:border-color var(--transition)}
+.card:hover{border-color:var(--border-mid)}
+.card-icon{display:block;font-size:0.8125rem;font-weight:600;letter-spacing:0.02em;font-variant-numeric:tabular-nums;margin-bottom:18px;flex-shrink:0}
+.card-icon-cobalt{color:var(--cobalt)}
+.card-icon-purple{color:var(--purple)}
+.card-icon-teal{color:var(--teal)}
+.card-icon-rose{color:var(--rose)}
 .card h3{margin-bottom:8px;font-size:1rem;font-weight:600;font-family:var(--ff-sans);color:var(--slate)}
 .card p{font-size:0.875rem;color:var(--mid);line-height:1.7}
 .card-link{display:inline-flex;align-items:center;gap:5px;font-size:0.8rem;font-weight:600;color:var(--cobalt);margin-top:16px;transition:gap var(--transition)}
@@ -286,8 +274,7 @@ p{color:var(--mid);line-height:1.75}
 .faq-disclaimer p{font-size:0.82rem;color:var(--slate-mid);line-height:1.7}
 
 /* === CTA PANEL === */
-.cta-panel{background:var(--cobalt-dark);border-radius:var(--radius-xl);padding:56px;text-align:center;position:relative;overflow:hidden}
-.cta-panel::before{content:'';position:absolute;inset:0;background:radial-gradient(circle at 50% 0%,rgba(255,255,255,0.04),transparent 60%);pointer-events:none}
+.cta-panel{background:var(--cobalt-dark);border-top:2px solid var(--cobalt-mid);border-radius:var(--radius-xl);padding:56px;text-align:center}
 .cta-panel h2{color:var(--white);font-size:clamp(1.5rem,2.5vw,2rem);margin-bottom:12px}
 .cta-panel p{color:rgba(255,255,255,0.72);margin-bottom:32px;font-size:1rem}
 .cta-actions{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
@@ -296,8 +283,7 @@ p{color:var(--mid);line-height:1.75}
 .cta-panel-light p{color:var(--mid)}
 
 /* === BUNDLE GRID === */
-.bundle-box{background:linear-gradient(140deg,var(--cobalt-dark),var(--cobalt));border-radius:var(--radius-xl);padding:52px;color:var(--white);position:relative;overflow:hidden}
-.bundle-box::before{content:'';position:absolute;top:-40%;right:-10%;width:500px;height:500px;border-radius:50%;background:rgba(255,255,255,0.03);pointer-events:none}
+.bundle-box{background:var(--cobalt-dark);border-top:2px solid var(--cobalt-mid);border-radius:var(--radius-xl);padding:52px;color:var(--white)}
 .bundle-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:36px}
 .bundle-item{background:rgba(255,255,255,0.08);border:1px solid rgba(255,255,255,0.12);border-radius:var(--radius-lg);padding:20px}
 .bundle-item svg{width:24px;height:24px;color:rgba(255,255,255,0.7);margin-bottom:10px}
@@ -672,16 +658,15 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <p style="margin-top:20px;font-size:.75rem;color:#9CA3AF">Singapore &middot; Malaysia &middot; Thailand &middot; Hong Kong</p>
 </div>
 <main id="main-content">
-<section class="hero" style="background:linear-gradient(140deg,#080f1a 0%,#0f1f35 100%)" aria-label="CTS360 Healthcare IT hero">
-  <div class="hero-grid-line" aria-hidden="true"></div>
+<section class="hero" aria-label="CTS360 Healthcare IT hero">
   <div class="wrap">
     <div class="hero-content">
       <div class="hero-badge"><span aria-hidden="true"></span>CTS360 Healthcare IT Division</div>
       <h1>Healthcare IT &amp; Managed Services<br><em>for Clinic SMEs</em></h1>
       <p class="hero-sub">Curative Technology Solutions 360° — complete healthcare IT for clinics: network infrastructure, cloud solutions, clinical hardware, Synology NAS, cloud EMR, cybersecurity, and AI workflow automation.</p>
       <div class="hero-actions">
-        <a href="https://wa.me/6581946188" class="btn btn-white">Talk to a Solutions Advisor</a>
-        <a href="/contact/" class="btn btn-outline-white">Contact Us</a>
+        <a href="https://wa.me/6581946188" class="btn btn-cobalt">Talk to a Solutions Advisor</a>
+        <a href="/contact/" class="btn btn-outline-cobalt">Contact Us</a>
       </div>
     </div>
   </div>
@@ -702,9 +687,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <div class="wrap">
     <div class="section-heading"><span class="eyebrow">CTS360 Service Pillars</span><h2 id="pillars-heading">Network. Cloud. Hardware.</h2><p>Three integrated disciplines, one managed service provider — designed specifically for healthcare clinic environments.</p></div>
     <div class="grid-3" role="list">
-      <article class="card" role="listitem"><div class="card-icon card-icon-cobalt" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg></div><h3>Network Infrastructure</h3><p>Clinic-grade LAN/WAN setup, structured cabling, Wi-Fi for multi-room environments, VLAN segmentation to isolate clinical and admin traffic, and firewall configuration for PDPA-compliant healthcare networks.</p><div class="pill-row" aria-label="Services"><span class="pill">LAN/WAN</span><span class="pill">VLAN</span><span class="pill">Wi-Fi</span><span class="pill">Firewall</span></div></article>
-      <article class="card" role="listitem"><div class="card-icon card-icon-cobalt" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18 20V10M12 20V4M6 20v-6"/></svg></div><h3>Cloud Solutions</h3><p>Cloud-integrated EMR systems, Synology NAS with hybrid cloud sync, automatic off-site backup, remote access for multi-site clinic groups, and SaaS-based appointment, billing, and clinical documentation platforms.</p><div class="pill-row" aria-label="Services"><span class="pill">Cloud EMR</span><span class="pill">Synology NAS</span><span class="pill">Off-Site Backup</span><span class="pill">Multi-Site</span></div></article>
-      <article class="card" role="listitem"><div class="card-icon card-icon-cobalt" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="4" y="4" width="16" height="16" rx="2"/><path d="M4 10h16M10 4v16"/></svg></div><h3>Clinical Hardware</h3><p>Workstations, clinical label printers (Brother), patient wristband printers, specimen labelling systems, and peripherals — configured, deployed, and supported for healthcare environments with ongoing hardware refresh planning.</p><div class="pill-row" aria-label="Services"><span class="pill">Brother Printers</span><span class="pill">Workstations</span><span class="pill">Peripherals</span><span class="pill">Hardware Refresh</span></div></article>
+      <article class="card" role="listitem"><span class="card-icon card-icon-cobalt" aria-hidden="true">01</span><h3>Network Infrastructure</h3><p>Clinic-grade LAN/WAN setup, structured cabling, Wi-Fi for multi-room environments, VLAN segmentation to isolate clinical and admin traffic, and firewall configuration for PDPA-compliant healthcare networks.</p><div class="pill-row" aria-label="Services"><span class="pill">LAN/WAN</span><span class="pill">VLAN</span><span class="pill">Wi-Fi</span><span class="pill">Firewall</span></div></article>
+      <article class="card" role="listitem"><span class="card-icon card-icon-cobalt" aria-hidden="true">02</span><h3>Cloud Solutions</h3><p>Cloud-integrated EMR systems, Synology NAS with hybrid cloud sync, automatic off-site backup, remote access for multi-site clinic groups, and SaaS-based appointment, billing, and clinical documentation platforms.</p><div class="pill-row" aria-label="Services"><span class="pill">Cloud EMR</span><span class="pill">Synology NAS</span><span class="pill">Off-Site Backup</span><span class="pill">Multi-Site</span></div></article>
+      <article class="card" role="listitem"><span class="card-icon card-icon-cobalt" aria-hidden="true">03</span><h3>Clinical Hardware</h3><p>Workstations, clinical label printers (Brother), patient wristband printers, specimen labelling systems, and peripherals — configured, deployed, and supported for healthcare environments with ongoing hardware refresh planning.</p><div class="pill-row" aria-label="Services"><span class="pill">Brother Printers</span><span class="pill">Workstations</span><span class="pill">Peripherals</span><span class="pill">Hardware Refresh</span></div></article>
     </div>
   </div>
 </section>
