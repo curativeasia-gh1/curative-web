@@ -16,14 +16,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
-:root{--c-primary:#004aad;--c-primary-dark:#003888;--c-primary-light:#EAF4FB;--c-secondary:#27A9E1;--c-dent:#1E8A6E;--c-dent-dark:#125C49;--c-dent-light:#E8F5F1;--c-navy:#0D2D44;--c-text:#1A2C3D;--c-text-muted:#5A7285;--c-white:#FFFFFF;--c-bg:#F5F8FB;--c-border:#D6E4EE;--radius:6px;--radius-lg:12px;--shadow-md:0 4px 20px rgba(30,138,110,0.10);--shadow-lg:0 12px 40px rgba(30,138,110,0.13);--nav-h:72px;--section-v:clamp(3.5rem,7vw,6rem);}
+:root{--c-primary:#004AAD;--c-primary-dark:#00337F;--c-primary-light:#EEF3FA;--c-secondary:#27A9E1;--c-dent:#1E7A63;--c-dent-dark:#134F40;--c-dent-light:#E9F3F0;--c-navy:#0B2338;--c-ink:#0B1F30;--c-text:#23313D;--c-text-muted:#5B6B78;--c-white:#FFFFFF;--c-bg:#F7F7F4;--c-border:#E2E4E1;--c-border-strong:#C9CCC8;--radius:3px;--radius-lg:4px;--shadow-md:0 10px 28px rgba(11,31,48,0.07);--shadow-lg:0 20px 48px rgba(11,31,48,0.10);--nav-h:72px;--section-v:clamp(3.5rem,7vw,6rem);}
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
 html{scroll-behavior:smooth;}
 body{font-family:"Inter",Arial,sans-serif;font-size:clamp(1rem,1.15vw,1.0625rem);color:var(--c-text);background:var(--c-white);line-height:1.65;-webkit-font-smoothing:antialiased;}
 img{max-width:100%;display:block;}
 a{color:var(--c-dent);text-decoration:none;}
-h1,h2,h3,h4{line-height:1.18;font-weight:700;color:var(--c-navy);}
-h1{font-size:clamp(2rem,4.5vw,3.5rem);}h2{font-size:clamp(1.6rem,2.8vw,2.4rem);}h3{font-size:clamp(1.15rem,1.8vw,1.45rem);}h4{font-size:clamp(1rem,1.3vw,1.15rem);}
+h1,h2,h3,h4{line-height:1.18;font-weight:700;color:var(--c-ink);letter-spacing:-.02em;}
+h1{font-size:clamp(2rem,4.5vw,3.5rem);letter-spacing:-.03em;}h2{font-size:clamp(1.6rem,2.8vw,2.4rem);}h3{font-size:clamp(1.15rem,1.8vw,1.45rem);}h4{font-size:clamp(1rem,1.3vw,1.15rem);}
 p{margin-bottom:1em;}p:last-child{margin-bottom:0;}ul{list-style:none;}
 .container{width:100%;max-width:1220px;margin-inline:auto;padding-inline:clamp(1.25rem,4vw,3rem);}
 .section{padding-block:var(--section-v);}.section--alt{background:var(--c-bg);}.section--dent{background:var(--c-dent);color:#fff;}.section--dent h2,.section--dent h3,.section--dent h4{color:#fff;}
@@ -54,22 +54,20 @@ p{margin-bottom:1em;}p:last-child{margin-bottom:0;}ul{list-style:none;}
 .mobile-drawer{display:none;position:fixed;inset:var(--nav-h) 0 0 0;background:#fff;z-index:850;overflow-y:auto;padding:1.5rem 1.25rem 3rem;border-top:1px solid var(--c-border);}.mobile-drawer.is-open{display:block;}
 .mob-nav-item{border-bottom:1px solid var(--c-border);}.mob-nav-link{display:flex;align-items:center;justify-content:space-between;padding:.875rem .25rem;font-size:1rem;font-weight:600;color:var(--c-navy);text-decoration:none;background:none;border:none;width:100%;cursor:pointer;font-family:"Inter",Arial,sans-serif;min-height:48px;}.mob-accordion-body{display:none;padding-bottom:.75rem;}.mob-accordion-body.is-open{display:block;}.mob-sub-link{display:block;padding:.55rem .75rem;font-size:.9375rem;color:var(--c-text);text-decoration:none;border-radius:var(--radius);}.mob-sub-link:hover{background:var(--c-primary-light);color:var(--c-primary);}.mob-ctas{margin-top:1.5rem;display:flex;flex-direction:column;gap:.75rem;}
 /* HERO */
-.page-hero{background:linear-gradient(135deg,#0A3D2E 0%,var(--c-dent) 100%);color:#fff;padding-block:clamp(3rem,7vw,6rem);position:relative;overflow:hidden;}
-.page-hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 50% 80% at 100% 50%,rgba(39,169,225,.1) 0%,transparent 70%);pointer-events:none;}
-.page-hero-grid{position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.025) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.025) 1px,transparent 1px);background-size:60px 60px;pointer-events:none;}
-.page-hero-inner{position:relative;z-index:2;max-width:760px;}
-.page-hero h1{color:#fff;margin-bottom:1.25rem;font-weight:800;letter-spacing:-.025em;}
-.page-hero p{color:rgba(255,255,255,.78);font-size:clamp(1rem,1.3vw,1.125rem);max-width:600px;margin-bottom:2rem;}
+.page-hero{background:var(--c-white);padding-block:clamp(4rem,8vw,6.5rem) clamp(3rem,6vw,4.5rem);}
+.page-hero-inner{max-width:760px;}
+.page-hero h1{color:var(--c-ink);margin-bottom:1.25rem;font-weight:800;letter-spacing:-.03em;}
+.page-hero p{color:var(--c-text-muted);font-size:clamp(1rem,1.3vw,1.125rem);max-width:600px;margin-bottom:2rem;}
 .breadcrumb{background:var(--c-bg);border-bottom:1px solid var(--c-border);padding:.875rem 0;}
 .breadcrumb-inner{display:flex;align-items:center;gap:.5rem;font-size:.8125rem;color:var(--c-text-muted);}.breadcrumb-inner a{color:var(--c-text-muted);}.breadcrumb-inner a:hover{color:var(--c-dent);}.breadcrumb-sep{color:var(--c-border);}
-.summary-box{background:var(--c-dent-light);border:1px solid #B8DDD5;border-radius:var(--radius-lg);padding:1.75rem 2rem;margin-bottom:3rem;}
+.summary-box{background:var(--c-dent-light);border:1px solid var(--c-border);border-radius:var(--radius-lg);padding:1.75rem 2rem;margin-bottom:3rem;}
 .summary-box h3{font-size:1rem;margin-bottom:1rem;color:var(--c-dent);}
 .summary-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:.625rem;}.summary-row{display:flex;gap:.5rem;font-size:.875rem;}.summary-label{font-weight:700;color:var(--c-navy);min-width:120px;flex-shrink:0;}.summary-val{color:var(--c-text-muted);}
 .cat-nav{display:flex;flex-wrap:wrap;gap:.5rem;margin-bottom:3rem;}
 .cat-pill{display:inline-flex;align-items:center;padding:.5rem 1rem;border-radius:50px;font-size:.8125rem;font-weight:600;background:#fff;border:1px solid var(--c-border);color:var(--c-text-muted);cursor:pointer;transition:background .15s,border-color .15s,color .15s;text-decoration:none;min-height:40px;}
 .cat-pill:hover,.cat-pill.active{background:var(--c-dent);border-color:var(--c-dent);color:#fff;}
 .products-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:1.5rem;}
-.prod-card{background:#fff;border:1px solid var(--c-border);border-radius:var(--radius-lg);overflow:hidden;transition:box-shadow .22s,transform .22s;display:flex;flex-direction:column;}.prod-card:hover{box-shadow:var(--shadow-lg);transform:translateY(-2px);}
+.prod-card{background:#fff;border:1px solid var(--c-border);border-radius:var(--radius-lg);overflow:hidden;transition:border-color .2s;display:flex;flex-direction:column;}.prod-card:hover{border-color:var(--c-border-strong);}
 .prod-card-band{height:5px;background:var(--c-dent);}
 .prod-card-body{padding:1.5rem;flex:1;display:flex;flex-direction:column;}
 .prod-card-cat{font-size:.7rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--c-dent);margin-bottom:.5rem;}
@@ -92,9 +90,8 @@ p{margin-bottom:1em;}p:last-child{margin-bottom:0;}ul{list-style:none;}
 .faq-list{display:flex;flex-direction:column;gap:.75rem;}.faq-item{border:1px solid var(--c-border);border-radius:var(--radius-lg);overflow:hidden;}
 .faq-q{display:flex;justify-content:space-between;align-items:center;padding:1.125rem 1.5rem;font-weight:600;font-size:.9375rem;cursor:pointer;background:#fff;border:none;width:100%;text-align:left;font-family:"Inter",Arial,sans-serif;color:var(--c-navy);min-height:56px;}.faq-q:hover{background:var(--c-bg);}.faq-q svg{width:18px;height:18px;flex-shrink:0;transition:transform .2s;color:var(--c-dent);}.faq-q.open svg{transform:rotate(180deg);}
 .faq-a{display:none;padding:0 1.5rem 1.25rem;font-size:.9375rem;color:var(--c-text-muted);}.faq-a.open{display:block;}
-.cta-box{background:linear-gradient(135deg,var(--c-dent),var(--c-dent-dark));border-radius:var(--radius-lg);padding:clamp(2.5rem,5vw,4rem);text-align:center;position:relative;overflow:hidden;}
-.cta-box::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 60% 70% at 80% 50%,rgba(39,169,225,.1) 0%,transparent 70%);pointer-events:none;}
-.cta-box h2{color:#fff;margin-bottom:1rem;position:relative;}.cta-box p{color:rgba(255,255,255,.78);max-width:520px;margin-inline:auto;margin-bottom:2rem;position:relative;}.cta-box .btn-group{justify-content:center;position:relative;}
+.cta-box{background:var(--c-navy);border-top:2px solid var(--c-secondary);border-radius:var(--radius-lg);padding:clamp(2.5rem,5vw,4rem);text-align:center;}
+.cta-box h2{color:#fff;margin-bottom:1rem;}.cta-box p{color:rgba(255,255,255,.78);max-width:520px;margin-inline:auto;margin-bottom:2rem;}.cta-box .btn-group{justify-content:center;}
 .disclaimer{background:var(--c-bg);border-top:1px solid var(--c-border);padding-block:1.5rem;}.disclaimer p{font-size:.8125rem;color:var(--c-text-muted);max-width:960px;margin-inline:auto;text-align:center;line-height:1.6;margin-bottom:0;}
 .site-footer{background:var(--c-navy);color:rgba(255,255,255,.7);padding-top:3.5rem;padding-bottom:2rem;}
 .footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:2.5rem;margin-bottom:2.5rem;}
@@ -172,12 +169,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 <main id="main-content">
 <section class="page-hero">
-  <div class="page-hero-grid" aria-hidden="true"></div>
   <div class="container"><div class="page-hero-inner">
-    <span class="eyebrow" style="color:rgba(255,255,255,.7);">Curative Dentistry</span>
+    <span class="eyebrow">Curative Dentistry</span>
     <h1>Digital Dental, Orthodontic and Maxillofacial Solutions Across Asia</h1>
     <p>Curative Dentistry provides digital imaging, intraoral scanning, 3D facial scanning, CBCT, CAD/CAM, 3D printing, dental chairs, surgical lighting and full-arch implant workflow solutions for dental professionals across Singapore, Malaysia and Hong Kong.</p>
-    <div class="btn-group"><a href="/contact?type=demo&division=dentistry" class="btn btn-white">Request a Product Demo</a><a href="/contact?division=dentistry" class="btn btn-outline-white">Speak With a Specialist</a></div>
+    <div class="btn-group"><a href="/contact?type=demo&division=dentistry" class="btn btn-dent">Request a Product Demo</a><a href="/contact?division=dentistry" class="btn btn-outline-dent">Speak With a Specialist</a></div>
   </div></div>
 </section>
 
