@@ -47,42 +47,43 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-FWHEV0CL1D"></script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Syne:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
 /* ======================================================
    DESIGN SYSTEM — CURATIVE GROUP
-   Cobalt #0057B8 primary | Purple #5C2D82 accent
+   Cobalt #004AAD primary | Purple #5C3D82 accent
    Syne display | Inter body
    ====================================================== */
 :root {
-  --cobalt:        #0057B8;
-  --cobalt-dark:   #003d82;
-  --cobalt-mid:    #0068d6;
-  --cobalt-pale:   #e8f0fb;
-  --purple:        #5C2D82;
+  --cobalt:        #004AAD;
+  --cobalt-dark:   #00337F;
+  --cobalt-mid:    #27A9E1;
+  --cobalt-pale:   #EEF3FA;
+  --purple:        #5C3D82;
   --purple-dark:   #3e1a5c;
   --purple-mid:    #7044a8;
   --purple-pale:   #f0eaf8;
-  --teal:          #0077a8;
+  --teal:          #1E7A63;
   --teal-pale:     #e6f4f9;
   --rose:          #8a1a52;
   --rose-pale:     #f8eaf2;
   --gold:          #B07A1A;
   --gold-pale:     #faf3e0;
-  --slate:         #111827;
-  --slate-mid:     #374151;
-  --mid:           #6B7280;
-  --light:         #9CA3AF;
-  --border:        #E5E7EB;
-  --border-mid:    #D1D5DB;
-  --cream:         #F9FAFB;
+  --navy:          #0B2338;
+  --slate:         #0B1F30;
+  --slate-mid:     #23313D;
+  --mid:           #5B6B78;
+  --light:         #5B6B78;
+  --border:        #E2E4E1;
+  --border-mid:    #C9CCC8;
+  --cream:         #F7F7F4;
   --white:         #FFFFFF;
-  --ff-serif:      'Syne', system-ui, sans-serif;
+  --ff-serif:      'Inter', system-ui, sans-serif;
   --ff-sans:       'Inter', system-ui, sans-serif;
-  --radius-sm:     4px;
-  --radius:        8px;
-  --radius-lg:     12px;
-  --radius-xl:     20px;
+  --radius-sm:     3px;
+  --radius:        3px;
+  --radius-lg:     4px;
+  --radius-xl:     4px;
   --shadow-sm:     0 1px 3px rgba(0,0,0,0.06), 0 1px 2px rgba(0,0,0,0.04);
   --shadow:        0 4px 16px rgba(0,0,0,0.07);
   --shadow-lg:     0 12px 40px rgba(0,0,0,0.10);
@@ -166,20 +167,15 @@ p{color:var(--mid);line-height:1.75}
 .nav-mobile a:hover{color:var(--cobalt)}
 
 /* === HERO === */
-.hero{padding:100px 0 88px;position:relative;overflow:hidden}
-.hero-cobalt{background:linear-gradient(140deg,var(--cobalt-dark) 0%,var(--cobalt) 55%,var(--cobalt-mid) 100%)}
-.hero-purple{background:linear-gradient(140deg,var(--purple-dark) 0%,var(--purple) 55%,var(--purple-mid) 100%)}
-.hero-teal{background:linear-gradient(140deg,#003d56 0%,var(--teal) 100%)}
-.hero-rose{background:linear-gradient(140deg,#5a0a32 0%,var(--rose) 100%)}
-.hero-dark{background:linear-gradient(140deg,#080f1a 0%,#0f1f35 100%)}
-.hero::before{content:'';position:absolute;inset:0;background-image:radial-gradient(circle at 70% 50%,rgba(255,255,255,0.04) 0%,transparent 60%);pointer-events:none}
-.hero-grid-line{position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,0.025) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,0.025) 1px,transparent 1px);background-size:60px 60px;pointer-events:none}
+.hero{padding:100px 0 88px;position:relative;overflow:hidden;background:var(--white)}
+.hero-cobalt,.hero-purple,.hero-teal,.hero-rose,.hero-dark{background:var(--white)}
 .hero-content{position:relative;z-index:1;max-width:700px}
-.hero-badge{display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,0.1);border:1px solid rgba(255,255,255,0.18);border-radius:100px;padding:5px 14px 5px 8px;font-size:0.75rem;font-weight:600;letter-spacing:0.05em;color:rgba(255,255,255,0.9);margin-bottom:28px}
-.hero-badge span{width:6px;height:6px;border-radius:50%;background:#4ade80;display:block}
-.hero h1{color:var(--white);font-size:clamp(2.25rem,5vw,3.5rem);line-height:1.1;margin-bottom:20px}
-.hero h1 em{font-style:normal;color:rgba(255,255,255,0.7)}
-.hero-sub{font-size:1.1rem;color:rgba(255,255,255,0.8);max-width:580px;margin-bottom:40px;line-height:1.75;font-weight:300}
+.hero-badge{display:inline-flex;align-items:center;gap:10px;background:none;border:none;border-radius:0;padding:0;font-size:0.75rem;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;color:var(--cobalt);margin-bottom:20px}
+.hero-badge::before{content:'';display:block;width:22px;height:1px;background:currentColor;opacity:0.6}
+.hero-badge span{display:none}
+.hero h1{color:var(--slate);font-size:clamp(2.25rem,5vw,3.5rem);line-height:1.1;letter-spacing:-0.02em;margin-bottom:20px}
+.hero h1 em{font-style:normal;color:var(--mid)}
+.hero-sub{font-size:1.1rem;color:var(--mid);max-width:580px;margin-bottom:40px;line-height:1.75;font-weight:300}
 .hero-actions{display:flex;gap:12px;flex-wrap:wrap}
 
 /* === BUTTONS === */
@@ -201,27 +197,22 @@ p{color:var(--mid);line-height:1.75}
 .btn-sm{padding:8px 16px;font-size:0.8rem}
 
 /* === CARDS === */
-.card{background:var(--white);border:1px solid var(--border);border-radius:var(--radius-lg);padding:28px;transition:box-shadow var(--transition),border-color var(--transition),transform var(--transition)}
-.card:hover{box-shadow:var(--shadow-lg);border-color:var(--border-mid);transform:translateY(-2px)}
-.card-icon{width:44px;height:44px;border-radius:var(--radius);display:flex;align-items:center;justify-content:center;margin-bottom:18px;flex-shrink:0}
-.card-icon svg{width:22px;height:22px}
-.card-icon-cobalt{background:var(--cobalt-pale)}
-.card-icon-cobalt svg{color:var(--cobalt)}
-.card-icon-purple{background:var(--purple-pale)}
-.card-icon-purple svg{color:var(--purple)}
-.card-icon-teal{background:var(--teal-pale)}
-.card-icon-teal svg{color:var(--teal)}
-.card-icon-rose{background:var(--rose-pale)}
-.card-icon-rose svg{color:var(--rose)}
+.card{background:var(--white);border:1px solid var(--border);border-radius:var(--radius-lg);padding:28px;transition:border-color var(--transition)}
+.card:hover{border-color:var(--border-mid)}
+.card-icon{display:block;font-size:0.8125rem;font-weight:600;letter-spacing:0.02em;font-variant-numeric:tabular-nums;margin-bottom:0.875rem}
+.card-icon-cobalt{color:var(--cobalt)}
+.card-icon-purple{color:var(--purple)}
+.card-icon-teal{color:var(--teal)}
+.card-icon-rose{color:var(--rose)}
 .card h3{margin-bottom:8px;font-size:1rem;font-weight:600;font-family:var(--ff-sans);color:var(--slate)}
 .card p{font-size:0.875rem;color:var(--mid);line-height:1.7}
 .card-link{display:inline-flex;align-items:center;gap:5px;font-size:0.8rem;font-weight:600;color:var(--cobalt);margin-top:16px;transition:gap var(--transition)}
 .card-link:hover{gap:9px}
 
 /* Division cards */
-.div-card{background:var(--white);border:1px solid var(--border);border-radius:var(--radius-xl);padding:36px;cursor:pointer;transition:all var(--transition);display:flex;flex-direction:column;position:relative;overflow:hidden}
-.div-card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:var(--cobalt);transform:scaleX(0);transform-origin:left;transition:transform 0.25s ease}
-.div-card:hover{box-shadow:var(--shadow-lg);border-color:rgba(0,87,184,0.2);transform:translateY(-3px)}
+.div-card{background:var(--white);border:1px solid var(--border);border-radius:var(--radius-lg);padding:36px;cursor:pointer;transition:border-color var(--transition);display:flex;flex-direction:column;position:relative;overflow:hidden}
+.div-card::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:var(--cobalt);transform:scaleX(0);transform-origin:left;transition:transform 0.25s ease}
+.div-card:hover{border-color:var(--border-mid)}
 .div-card:hover::before{transform:scaleX(1)}
 .div-card.v-purple::before{background:var(--purple)}
 .div-card.v-teal::before{background:var(--teal)}
@@ -230,7 +221,7 @@ p{color:var(--mid);line-height:1.75}
 .div-card h3{font-size:1.1rem;font-weight:600;margin-bottom:10px;margin-top:16px;font-family:var(--ff-sans)}
 .div-card p{font-size:0.875rem;color:var(--mid);line-height:1.7;flex:1}
 .pill-row{display:flex;flex-wrap:wrap;gap:6px;margin-top:18px}
-.pill{font-size:0.68rem;font-weight:600;letter-spacing:0.03em;background:var(--cream);color:var(--mid);border:1px solid var(--border);border-radius:100px;padding:3px 10px}
+.pill{font-size:0.68rem;font-weight:600;letter-spacing:0.03em;background:var(--cream);color:var(--mid);border:1px solid var(--border);border-radius:3px;padding:3px 10px}
 
 /* Brand tags */
 .tag{display:inline-flex;align-items:center;font-size:0.72rem;font-weight:600;background:var(--cobalt-pale);color:var(--cobalt);border-radius:var(--radius-sm);padding:3px 9px;margin:2px}
@@ -240,18 +231,16 @@ p{color:var(--mid);line-height:1.75}
 .feature-block{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center}
 .feature-block.flip{direction:rtl}
 .feature-block.flip>*{direction:ltr}
-.feature-visual{background:var(--cream);border-radius:var(--radius-xl);border:1px solid var(--border);overflow:hidden;aspect-ratio:4/3;display:flex;align-items:center;justify-content:center}
-.feature-visual-purple{background:linear-gradient(135deg,var(--purple-pale),#dcc8f4)}
-.feature-visual-teal{background:linear-gradient(135deg,var(--teal-pale),#b3dff0)}
-.feature-visual-cobalt{background:linear-gradient(135deg,var(--cobalt-pale),#b8d4f5)}
+.feature-visual{background:var(--cream);border-radius:var(--radius-lg);border:1px solid var(--border);overflow:hidden;aspect-ratio:4/3;display:flex;align-items:center;justify-content:center}
+.feature-visual-purple,.feature-visual-teal,.feature-visual-cobalt{background:var(--cream)}
 .feature-visual svg{width:80px;height:80px;opacity:0.25}
 .feature-text .eyebrow{margin-bottom:10px}
 .feature-text h2{font-size:clamp(1.5rem,2.5vw,2rem);margin-bottom:14px}
 .feature-text p{font-size:0.95rem;margin-bottom:14px;max-width:520px}
 .check-list{margin:20px 0 28px}
 .check-list li{font-size:0.875rem;color:var(--mid);padding:5px 0 5px 22px;position:relative}
-.check-list li::before{content:'';position:absolute;left:0;top:10px;width:14px;height:14px;background-image:url("data:image/svg+xml,%3Csvg width='14' height='14' viewBox='0 0 14 14' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='7' cy='7' r='7' fill='%230057B8' fill-opacity='0.12'/%3E%3Cpath d='M4 7L6 9L10 5' stroke='%230057B8' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E")}
-.check-list.purple li::before{background-image:url("data:image/svg+xml,%3Csvg width='14' height='14' viewBox='0 0 14 14' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='7' cy='7' r='7' fill='%235C2D82' fill-opacity='0.12'/%3E%3Cpath d='M4 7L6 9L10 5' stroke='%235C2D82' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E")}
+.check-list li::before{content:'';position:absolute;left:0;top:10px;width:14px;height:14px;background-image:url("data:image/svg+xml,%3Csvg width='14' height='14' viewBox='0 0 14 14' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='7' cy='7' r='7' fill='%23004AAD' fill-opacity='0.12'/%3E%3Cpath d='M4 7L6 9L10 5' stroke='%23004AAD' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E")}
+.check-list.purple li::before{background-image:url("data:image/svg+xml,%3Csvg width='14' height='14' viewBox='0 0 14 14' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='7' cy='7' r='7' fill='%235C3D82' fill-opacity='0.12'/%3E%3Cpath d='M4 7L6 9L10 5' stroke='%235C3D82' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E")}
 
 /* === STAT ROW === */
 .stat-row{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--border);border:1px solid var(--border);border-radius:var(--radius-lg);overflow:hidden}
@@ -286,18 +275,16 @@ p{color:var(--mid);line-height:1.75}
 .faq-disclaimer p{font-size:0.82rem;color:var(--slate-mid);line-height:1.7}
 
 /* === CTA PANEL === */
-.cta-panel{background:var(--cobalt-dark);border-radius:var(--radius-xl);padding:56px;text-align:center;position:relative;overflow:hidden}
-.cta-panel::before{content:'';position:absolute;inset:0;background:radial-gradient(circle at 50% 0%,rgba(255,255,255,0.04),transparent 60%);pointer-events:none}
+.cta-panel{background:var(--navy);border-top:2px solid var(--cobalt-mid);border-radius:var(--radius-lg);padding:56px;text-align:center;position:relative;overflow:hidden}
 .cta-panel h2{color:var(--white);font-size:clamp(1.5rem,2.5vw,2rem);margin-bottom:12px}
 .cta-panel p{color:rgba(255,255,255,0.72);margin-bottom:32px;font-size:1rem}
 .cta-actions{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
-.cta-panel-light{background:var(--cream);border:1px solid var(--border)}
+.cta-panel-light{background:var(--cream);border:1px solid var(--border);border-top:1px solid var(--border)}
 .cta-panel-light h2{color:var(--slate)}
 .cta-panel-light p{color:var(--mid)}
 
 /* === BUNDLE GRID === */
-.bundle-box{background:linear-gradient(140deg,var(--cobalt-dark),var(--cobalt));border-radius:var(--radius-xl);padding:52px;color:var(--white);position:relative;overflow:hidden}
-.bundle-box::before{content:'';position:absolute;top:-40%;right:-10%;width:500px;height:500px;border-radius:50%;background:rgba(255,255,255,0.03);pointer-events:none}
+.bundle-box{background:var(--navy);border-top:2px solid var(--cobalt-mid);border-radius:var(--radius-lg);padding:52px;color:var(--white);position:relative;overflow:hidden}
 .bundle-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:36px}
 .bundle-item{background:rgba(255,255,255,0.08);border:1px solid rgba(255,255,255,0.12);border-radius:var(--radius-lg);padding:20px}
 .bundle-item svg{width:24px;height:24px;color:rgba(255,255,255,0.7);margin-bottom:10px}
@@ -306,7 +293,7 @@ p{color:var(--mid);line-height:1.75}
 
 /* === MARKET TAGS === */
 .market-row{display:flex;gap:8px;flex-wrap:wrap;margin:14px 0}
-.mkt{display:inline-flex;align-items:center;gap:6px;font-size:0.75rem;font-weight:600;background:var(--cobalt-pale);color:var(--cobalt);border-radius:100px;padding:5px 13px;border:1px solid rgba(0,87,184,0.15)}
+.mkt{display:inline-flex;align-items:center;gap:6px;font-size:0.75rem;font-weight:600;background:var(--cobalt-pale);color:var(--cobalt);border-radius:3px;padding:5px 13px;border:1px solid rgba(0,87,184,0.15)}
 
 /* === CONTACT === */
 .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:52px;align-items:start}
@@ -631,9 +618,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) --><nav class="nav" role="navigation" aria-label="Main navigation">
   <div class="nav-inner">
     <a href="/" class="nav-logo" aria-label="Curative Group home"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 148 36" fill="none" style="height:36px;width:auto">
-  <rect width="36" height="36" rx="7" fill="#0057B8"/>
+  <rect width="36" height="36" rx="7" fill="#004AAD"/>
   <path d="M9 18c0-4.97 4.03-9 9-9 2.7 0 5.1 1.18 6.77 3.06L22.1 14.5c-1.13-1.4-2.82-2.3-4.74-2.3-3.35 0-6.07 2.72-6.07 6.07s2.72 6.07 6.07 6.07c1.92 0 3.61-.9 4.74-2.3l2.67 2.44C23.1 26.4 20.7 27 18 27c-4.97 0-9-4.03-9-9z" fill="white"/>
-  <text x="46" y="24" font-family="Georgia,serif" font-size="15" font-weight="700" fill="#0057B8">Curative</text>
+  <text x="46" y="24" font-family="Georgia,serif" font-size="15" font-weight="700" fill="#004AAD">Curative</text>
   <text x="46" y="33" font-family="system-ui,sans-serif" font-size="8.5" font-weight="600" fill="#9CA3AF" letter-spacing="0.12em">GROUP</text>
 </svg></a>
     <div class="nav-menu">
@@ -673,15 +660,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </div>
 <main id="main-content">
 <section class="hero hero-rose" aria-label="Dermocosmetics division hero">
-  <div class="hero-grid-line" aria-hidden="true"></div>
   <div class="wrap">
     <div class="hero-content">
       <div class="hero-badge"><span aria-hidden="true"></span>Dermocosmetics Division</div>
       <h1>Clinical Dermocosmetics Distributor<br><em>Exclusive for ASEAN</em></h1>
       <p class="hero-sub">Exclusive ASEAN distributor for SkinClinic Spain — five therapeutic ranges plus exosome and NAD&#x207A; skin boosters for dermatologists, aesthetic clinics, and medical-grade skincare programmes.</p>
       <div class="hero-actions">
-        <a href="https://wa.me/6581946188" class="btn btn-white">Request Catalogue</a>
-        <a href="/contact/" class="btn btn-outline-white">Contact Us</a>
+        <a href="https://wa.me/6581946188" class="btn btn-cobalt">Request Catalogue</a>
+        <a href="/contact/" class="btn btn-outline-cobalt">Contact Us</a>
       </div>
     </div>
   </div>
@@ -725,13 +711,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div class="section-heading"><span class="eyebrow">Skin Boosters</span><h2 id="boosters-heading">Exosome &amp; NAD&#x207A; Skin Booster Technology</h2><p>Advanced skin boosters for topical application or microneedling protocols with Dr. Pen A20.</p></div>
     <div class="grid-2" role="list">
       <article class="card" role="listitem">
-        <div class="card-icon card-icon-rose" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+        <span class="card-icon card-icon-rose">01</span>
         <h3>EXOCEAN — Exosome Skin Booster</h3>
         <p>Exosome-based skin booster for topical or microneedling application. Supports cellular regeneration, skin barrier restoration, and anti-inflammatory recovery — effective as a standalone treatment or post-procedure adjunct.</p>
         <div class="pill-row" aria-label="Technology"><span class="pill">Exosome Technology</span><span class="pill">Topical / Microneedling</span><span class="pill">Barrier Restoration</span></div>
       </article>
       <article class="card" role="listitem">
-        <div class="card-icon card-icon-rose" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg></div>
+        <span class="card-icon card-icon-rose">02</span>
         <h3>AURORA NAD+ — Cellular Energy Booster</h3>
         <p>NAD&#x207A; skin booster for topical or microneedling application. Supports mitochondrial activity, cellular energy renewal, and anti-ageing protocols at the epidermal level — used alone or combined with EXOCEAN for synergistic effect.</p>
         <div class="pill-row" aria-label="Technology"><span class="pill">NAD+ Technology</span><span class="pill">Cellular Energy</span><span class="pill">Anti-ageing</span></div>
