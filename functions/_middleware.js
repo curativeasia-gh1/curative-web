@@ -1,9 +1,15 @@
-// Injects the Klaviyo onsite tracking snippet before </body> on every
-// HTML page served by this site. Single source of truth — do not paste
-// this snippet into individual HTML files, edit it here instead.
+// Two responsibilities, both handled at the edge via Cloudflare Pages
+// Functions since this site has no build step / shared template file:
 //
-// Runs at the edge via Cloudflare Pages Functions (HTMLRewriter), since
-// this site has no build step / shared template file to hook into.
+// 1. Redirect www.curative.asia -> curative.asia (301, path + query preserved).
+//    curative.asia (apex) is the canonical host everywhere - sitemap.xml,
+//    every canonical tag, robots.txt, and all internal links assume it.
+//    This must run FIRST and short-circuit before anything else, so a
+//    request to the wrong host never reaches page content at all.
+//
+// 2. Inject the Klaviyo onsite tracking snippet before </body> on every
+//    HTML page served by this site. Single source of truth - do not paste
+//    this snippet into individual HTML files, edit it here instead.
 
 const KLAVIYO_SNIPPET = `
 <script async type='text/javascript' src='https://static.klaviyo.com/onsite/js/U4G4mP/klaviyo.js?company_id=U4G4mP'></script>
@@ -22,6 +28,13 @@ class BodyEndInjector {
 }
 
 export async function onRequest(context) {
+  const url = new URL(context.request.url);
+
+  if (url.hostname === "www.curative.asia") {
+    url.hostname = "curative.asia";
+    return Response.redirect(url.toString(), 301);
+  }
+
   const response = await context.next();
 
   const contentType = response.headers.get("content-type") || "";
