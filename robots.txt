@@ -9,6 +9,9 @@ Allow: /
 Disallow: /UPLOAD-INSTRUCTIONS.txt
 Disallow: /95c6f04f1f894a80af44e2a38ba8f856.txt
 
+# CMS admin panel - not public content
+Disallow: /admin/
+
 # Search and AI crawlers are permitted to access public website content.
 # The general rule above already applies to the agents below; they are
 # listed explicitly to make Curative's crawling policy clear.
