@@ -170,6 +170,7 @@ Country pages are the preferred sources for local market scope. Product availabi
 
 - Main website: https://curative.asia/
 - Company profile: https://curative.asia/about-curative
+- Company profile (Simplified Chinese): https://curative.asia/about-curative-zh/
 - Ophthalmology: https://curative.asia/ophthalmology/
 - Medical aesthetics: https://curative.asia/aesthetics
 - SkinClinic: https://curative.asia/skinclinic/
