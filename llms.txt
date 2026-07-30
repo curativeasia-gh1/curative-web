@@ -113,7 +113,6 @@ Curative Dentistry supplies digital dentistry, diagnostic imaging and treatment-
 
 Main categories include:
 - intraoral scanners;
-- dental CBCT and panoramic imaging;
 - 3D facial scanners;
 - digital implant and prosthetic workflows;
 - dental CAD/CAM and milling;
@@ -123,7 +122,6 @@ Main categories include:
 Selected brands and platforms include:
 - FaceCast MDS for dental, orthodontic and maxillofacial facial-scanning workflows.
 - RAY digital dentistry systems, including selected intraoral scanning, facial scanning, milling and related workflow technologies.
-- Genoray dental CBCT systems.
 - Dentis dental equipment and surgical lighting.
 - OrthoApnea dental sleep-medicine solutions.
 - Selected dental biomaterials and implant-workflow products.
