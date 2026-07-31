@@ -1,4 +1,4 @@
-name: Submit Sitemap
+name: Validate Sitemap
 
 on:
   push:
@@ -7,25 +7,48 @@ on:
     paths:
       - 'sitemap.xml'
       - 'robots.txt'
+      - '_headers'
+      - '.github/workflows/submit-sitemap.yml'
+  pull_request:
+    paths:
+      - 'sitemap.xml'
+      - 'robots.txt'
+      - '_headers'
       - '.github/workflows/submit-sitemap.yml'
   workflow_dispatch:
 
 jobs:
-  submit-sitemap:
-    name: Notify search engines
+  validate-sitemap:
+    name: Validate sitemap files
     runs-on: ubuntu-latest
 
     steps:
-      - name: Check sitemap is live
-        run: |
-          curl -I --fail --location "https://curative.asia/sitemap.xml"
+      - name: Check out repository
+        uses: actions/checkout@v4
 
-      - name: Notify Google about sitemap
-        continue-on-error: true
+      - name: Validate sitemap XML
         run: |
-          curl --fail --location "https://www.google.com/ping?sitemap=https://curative.asia/sitemap.xml"
+          sudo apt-get update
+          sudo apt-get install -y libxml2-utils
+          xmllint --noout sitemap.xml
 
-      - name: Notify Bing about sitemap
-        continue-on-error: true
+      - name: Confirm robots.txt references sitemap
         run: |
-          curl --fail --location "https://www.bing.com/ping?sitemap=https://curative.asia/sitemap.xml"
+          grep -Fxq 'Sitemap: https://curative.asia/sitemap.xml' robots.txt
+
+      - name: Check live sitemap response
+        if: github.event_name != 'pull_request'
+        run: |
+          headers="$(mktemp)"
+          body="$(mktemp)"
+          status="$(curl --silent --show-error --location --dump-header "$headers" --output "$body" --write-out '%{http_code}' https://curative.asia/sitemap.xml)"
+
+          test "$status" = "200"
+          grep -iEq '^content-type: (application|text)/(xml|xml;)' "$headers"
+          xmllint --noout "$body"
+
+      - name: Check live robots.txt response
+        if: github.event_name != 'pull_request'
+        run: |
+          curl --silent --show-error --fail --location https://curative.asia/robots.txt \
+            | grep -Fq 'Sitemap: https://curative.asia/sitemap.xml'
