@@ -98,5 +98,5 @@ Allow: /
 User-agent: EasouSpider
 Allow: /
 
+Sitemap: https://curative.asia/sitemap_index.xml
 Sitemap: https://curative.asia/sitemap.xml
-Sitemap: https://curative.asia/sitemap.txt
