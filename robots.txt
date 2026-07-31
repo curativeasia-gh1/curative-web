@@ -1,6 +1,6 @@
 # robots.txt — curative.asia
 # Curative Group Pte. Ltd.
-# Updated: 2026-07-03
+# Updated: 2026-07-31
 
 User-agent: *
 Allow: /
@@ -99,3 +99,4 @@ User-agent: EasouSpider
 Allow: /
 
 Sitemap: https://curative.asia/sitemap.xml
+Sitemap: https://curative.asia/sitemap.txt

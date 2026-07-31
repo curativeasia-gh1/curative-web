@@ -5,6 +5,11 @@
   Cache-Control: no-cache, no-store, must-revalidate
   X-Content-Type-Options: nosniff
 
+/sitemap.txt
+  Content-Type: text/plain; charset=utf-8
+  Cache-Control: no-cache, no-store, must-revalidate
+  X-Content-Type-Options: nosniff
+
 /robots.txt
   Content-Type: text/plain; charset=utf-8
   Cache-Control: no-cache, no-store, must-revalidate

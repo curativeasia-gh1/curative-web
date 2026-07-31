@@ -1,4 +1,4 @@
-name: Submit Sitemap
+name: Validate Sitemaps
 
 on:
   push:
@@ -6,26 +6,66 @@ on:
       - main
     paths:
       - 'sitemap.xml'
+      - 'sitemap.txt'
       - 'robots.txt'
+      - '_headers'
+      - '.github/workflows/submit-sitemap.yml'
+  pull_request:
+    paths:
+      - 'sitemap.xml'
+      - 'sitemap.txt'
+      - 'robots.txt'
+      - '_headers'
       - '.github/workflows/submit-sitemap.yml'
   workflow_dispatch:
 
 jobs:
-  submit-sitemap:
-    name: Notify search engines
+  validate-sitemaps:
+    name: Validate sitemap files
     runs-on: ubuntu-latest
 
     steps:
-      - name: Check sitemap is live
-        run: |
-          curl -I --fail --location "https://curative.asia/sitemap.xml"
+      - name: Check out repository
+        uses: actions/checkout@v4
 
-      - name: Notify Google about sitemap
-        continue-on-error: true
+      - name: Install XML tools
         run: |
-          curl --fail --location "https://www.google.com/ping?sitemap=https://curative.asia/sitemap.xml"
+          sudo apt-get update
+          sudo apt-get install -y libxml2-utils
 
-      - name: Notify Bing about sitemap
-        continue-on-error: true
+      - name: Validate XML sitemap
+        run: xmllint --noout sitemap.xml
+
+      - name: Validate text sitemap
         run: |
-          curl --fail --location "https://www.bing.com/ping?sitemap=https://curative.asia/sitemap.xml"
+          test -s sitemap.txt
+          ! grep -Ev '^https://curative\.asia/[^[:space:]]*$' sitemap.txt
+
+      - name: Confirm robots.txt references both sitemaps
+        run: |
+          grep -Fxq 'Sitemap: https://curative.asia/sitemap.xml' robots.txt
+          grep -Fxq 'Sitemap: https://curative.asia/sitemap.txt' robots.txt
+
+      - name: Check live XML sitemap response
+        if: github.event_name != 'pull_request'
+        run: |
+          headers="$(mktemp)"
+          body="$(mktemp)"
+          status="$(curl --silent --show-error --location --dump-header "$headers" --output "$body" --write-out '%{http_code}' https://curative.asia/sitemap.xml)"
+
+          test "$status" = "200"
+          grep -iEq '^content-type: (application|text)/xml([;[:space:]]|$)' "$headers"
+          xmllint --noout "$body"
+
+      - name: Check live text sitemap response
+        if: github.event_name != 'pull_request'
+        run: |
+          curl --silent --show-error --fail --location https://curative.asia/sitemap.txt \
+            | grep -Fxq 'https://curative.asia/'
+
+      - name: Check live robots.txt response
+        if: github.event_name != 'pull_request'
+        run: |
+          robots="$(curl --silent --show-error --fail --location https://curative.asia/robots.txt)"
+          grep -Fq 'Sitemap: https://curative.asia/sitemap.xml' <<< "$robots"
+          grep -Fq 'Sitemap: https://curative.asia/sitemap.txt' <<< "$robots"
