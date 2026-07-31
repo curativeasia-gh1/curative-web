@@ -5,8 +5,8 @@
   Cache-Control: no-cache, no-store, must-revalidate
   X-Content-Type-Options: nosniff
 
-/sitemap.txt
-  Content-Type: text/plain; charset=utf-8
+/sitemap_index.xml
+  Content-Type: application/xml; charset=utf-8
   Cache-Control: no-cache, no-store, must-revalidate
   X-Content-Type-Options: nosniff
 
@@ -24,7 +24,7 @@
   Referrer-Policy: strict-origin-when-cross-origin
   Permissions-Policy: camera=(), microphone=(), geolocation=()
   Link: <https://curative.asia/llms.txt>; rel="alternate"; type="text/plain"; title="LLMs.txt"
-  Link: <https://curative.asia/sitemap.xml>; rel="sitemap"; type="application/xml"
+  Link: <https://curative.asia/sitemap_index.xml>; rel="sitemap"; type="application/xml"
 
 /
   X-Frame-Options: SAMEORIGIN
@@ -32,4 +32,4 @@
   Referrer-Policy: strict-origin-when-cross-origin
   Permissions-Policy: camera=(), microphone=(), geolocation=()
   Link: <https://curative.asia/llms.txt>; rel="alternate"; type="text/plain"; title="LLMs.txt"
-  Link: <https://curative.asia/sitemap.xml>; rel="sitemap"; type="application/xml"
+  Link: <https://curative.asia/sitemap_index.xml>; rel="sitemap"; type="application/xml"
