@@ -6,14 +6,14 @@ on:
       - main
     paths:
       - 'sitemap.xml'
-      - 'sitemap.txt'
+      - 'sitemap_index.xml'
       - 'robots.txt'
       - '_headers'
       - '.github/workflows/submit-sitemap.yml'
   pull_request:
     paths:
       - 'sitemap.xml'
-      - 'sitemap.txt'
+      - 'sitemap_index.xml'
       - 'robots.txt'
       - '_headers'
       - '.github/workflows/submit-sitemap.yml'
@@ -33,39 +33,45 @@ jobs:
           sudo apt-get update
           sudo apt-get install -y libxml2-utils
 
-      - name: Validate XML sitemap
-        run: xmllint --noout sitemap.xml
-
-      - name: Validate text sitemap
+      - name: Validate XML sitemap and sitemap index
         run: |
-          test -s sitemap.txt
-          ! grep -Ev '^https://curative\.asia/[^[:space:]]*$' sitemap.txt
+          xmllint --noout sitemap.xml
+          xmllint --noout sitemap_index.xml
 
-      - name: Confirm robots.txt references both sitemaps
+      - name: Confirm sitemap index points to sitemap.xml
         run: |
+          grep -Fq '<loc>https://curative.asia/sitemap.xml</loc>' sitemap_index.xml
+
+      - name: Confirm robots.txt references XML sitemaps
+        run: |
+          grep -Fxq 'Sitemap: https://curative.asia/sitemap_index.xml' robots.txt
           grep -Fxq 'Sitemap: https://curative.asia/sitemap.xml' robots.txt
-          grep -Fxq 'Sitemap: https://curative.asia/sitemap.txt' robots.txt
 
       - name: Check live XML sitemap response
         if: github.event_name != 'pull_request'
         run: |
           headers="$(mktemp)"
           body="$(mktemp)"
-          status="$(curl --silent --show-error --location --dump-header "$headers" --output "$body" --write-out '%{http_code}' https://curative.asia/sitemap.xml)"
+          status="$(curl --silent --show-error --location --user-agent 'Googlebot/2.1 (+http://www.google.com/bot.html)' --dump-header "$headers" --output "$body" --write-out '%{http_code}' https://curative.asia/sitemap.xml)"
 
           test "$status" = "200"
           grep -iEq '^content-type: (application|text)/xml([;[:space:]]|$)' "$headers"
           xmllint --noout "$body"
 
-      - name: Check live text sitemap response
+      - name: Check live sitemap index response
         if: github.event_name != 'pull_request'
         run: |
-          curl --silent --show-error --fail --location https://curative.asia/sitemap.txt \
-            | grep -Fxq 'https://curative.asia/'
+          headers="$(mktemp)"
+          body="$(mktemp)"
+          status="$(curl --silent --show-error --location --user-agent 'Googlebot/2.1 (+http://www.google.com/bot.html)' --dump-header "$headers" --output "$body" --write-out '%{http_code}' https://curative.asia/sitemap_index.xml)"
+
+          test "$status" = "200"
+          grep -iEq '^content-type: (application|text)/xml([;[:space:]]|$)' "$headers"
+          xmllint --noout "$body"
 
       - name: Check live robots.txt response
         if: github.event_name != 'pull_request'
         run: |
-          robots="$(curl --silent --show-error --fail --location https://curative.asia/robots.txt)"
+          robots="$(curl --silent --show-error --fail --location --user-agent 'Googlebot/2.1 (+http://www.google.com/bot.html)' https://curative.asia/robots.txt)"
+          grep -Fq 'Sitemap: https://curative.asia/sitemap_index.xml' <<< "$robots"
           grep -Fq 'Sitemap: https://curative.asia/sitemap.xml' <<< "$robots"
-          grep -Fq 'Sitemap: https://curative.asia/sitemap.txt' <<< "$robots"
