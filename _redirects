@@ -58,3 +58,7 @@
 /indonesia.html           /markets                301
 /markets/indonesia        /markets                301
 /markets/indonesia/       /markets                301
+
+# Dental Labs division moved to its own top-level page
+/dentistry/digital-lab-services   /dental-labs/    301
+/dentistry/digital-lab-services/  /dental-labs/    301
