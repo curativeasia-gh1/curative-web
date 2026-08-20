@@ -1,6 +1,6 @@
 # robots.txt — curative.asia
 # Curative Group Pte. Ltd.
-# Updated: 2026-07-03
+# Updated: 2026-07-31
 
 User-agent: *
 Allow: /
@@ -67,4 +67,36 @@ Allow: /
 User-agent: CCBot
 Allow: /
 
+# Chinese search and AI-answer-engine crawlers are permitted, consistent
+# with the general Allow: / rule above. Listed explicitly to support
+# AEO submission for the Simplified Chinese pages.
+
+User-agent: Baiduspider
+Allow: /
+
+User-agent: Baiduspider-render
+Allow: /
+
+User-agent: Bytespider
+Allow: /
+
+User-agent: Sogou web spider
+Allow: /
+
+User-agent: Sogou inst spider
+Allow: /
+
+User-agent: YisouSpider
+Allow: /
+
+User-agent: PetalBot
+Allow: /
+
+User-agent: 360Spider
+Allow: /
+
+User-agent: EasouSpider
+Allow: /
+
+Sitemap: https://curative.asia/sitemap_index.xml
 Sitemap: https://curative.asia/sitemap.xml

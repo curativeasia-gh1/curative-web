@@ -14,8 +14,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <meta name="format-detection" content="telephone=no">
 
 <!-- ═══ PRIMARY SEO ═══ -->
-<title>Singapore | Healthcare & MedTech Market | Curative Asia</title>
-<meta name="description" content="Curative serves Singapore's ophthalmology, medical aesthetics and digital dentistry sectors with specialist medical devices, professional skincare and clinical support.">
+<title>Singapore | Healthcare & MedTech Market | Curative Asia</title><meta property="og:image" content="https://curative.asia/og-image.svg"><meta name="twitter:title" content="Singapore | Healthcare & MedTech Market | Curative Asia"><meta name="twitter:description" content="Curative serves Singapore's ophthalmology, aesthetics and digital dentistry sectors with specialist devices, professional skincare and clinical support."><meta name="twitter:image" content="https://curative.asia/og-image.svg">
+<meta name="description" content="Curative serves Singapore's ophthalmology, aesthetics and digital dentistry sectors with specialist devices, professional skincare and clinical support.">
 <meta name="robots" content="index, follow">
 <link rel="canonical" href="https://curative.asia/markets/singapore">
 
@@ -155,7 +155,7 @@ a:hover { text-decoration: underline; }
   font-weight: 600;
   color: #374151;
   padding: 8px 12px;
-  border-radius: 6px;
+  border-radius: 3px;
   transition: color 0.15s, background 0.15s;
   white-space: nowrap;
 }
@@ -172,7 +172,7 @@ a:hover { text-decoration: underline; }
   font-family: 'Inter', sans-serif;
   font-weight: 600;
   font-size: 0.82rem;
-  border-radius: 8px;
+  border-radius: 3px;
   padding: 9px 18px;
   cursor: pointer;
   border: none;
@@ -189,7 +189,7 @@ a:hover { text-decoration: underline; }
 .btn--outline-white { background: transparent; color: #fff; border: 1.5px solid rgba(255,255,255,0.6); }
 .btn--outline-white:hover { border-color: #fff; background: rgba(255,255,255,0.08); text-decoration: none; color: #fff; }
 .btn--sm { padding: 7px 14px; font-size: 0.78rem; }
-.btn--lg { padding: 14px 28px; font-size: 0.92rem; border-radius: 10px; }
+.btn--lg { padding: 14px 28px; font-size: 0.92rem; border-radius: 3px; }
 .navbar__toggle {
   display: none;
   flex-direction: column;
@@ -221,7 +221,7 @@ a:hover { text-decoration: underline; }
   font-weight: 600;
   color: #374151;
   padding: 12px 16px;
-  border-radius: 8px;
+  border-radius: 3px;
 }
 .mobile-nav a:hover { background: #eef3ff; color: #004aad; }
 .mobile-nav__ctas { display: flex; flex-direction: column; gap: 8px; margin-top: 12px; }
@@ -231,61 +231,53 @@ a:hover { text-decoration: underline; }
 
 /* ─── HERO ─── */
 .hero {
-  background: linear-gradient(135deg, #001f5c 0%, #004aad 60%, #0066cc 100%);
-  color: #fff;
+  background: #fff;
+  color: #23313d;
   padding: 72px 0 64px;
   position: relative;
-  overflow: hidden;
-}
-.hero::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
 }
 .hero__inner {
   position: relative;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1.15fr 0.85fr;
   gap: 64px;
-  align-items: center;
+  align-items: start;
 }
 .hero__breadcrumb {
   font-size: 0.75rem;
   font-weight: 500;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: rgba(255,255,255,0.7);
+  color: #5b6b78;
   margin-bottom: 20px;
 }
-.hero__breadcrumb a { color: rgba(255,255,255,0.7); }
-.hero__breadcrumb a:hover { color: #fff; text-decoration: none; }
+.hero__breadcrumb a { color: #5b6b78; }
+.hero__breadcrumb a:hover { color: #004aad; text-decoration: none; }
 .hero__label {
-  display: inline-block;
-  background: rgba(255,255,255,0.12);
-  border: 1px solid rgba(255,255,255,0.25);
-  color: #fff;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.625rem;
+  color: #004aad;
   font-size: 0.72rem;
   font-weight: 700;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  padding: 5px 14px;
-  border-radius: 40px;
   margin-bottom: 18px;
 }
+.hero__label::before { content: ''; display: block; width: 22px; height: 1px; background: currentColor; opacity: 0.6; }
 .hero h1 {
   font-family: 'Inter', sans-serif;
   font-weight: 800;
   font-size: clamp(1.9rem, 4vw, 3rem);
   line-height: 1.08;
   letter-spacing: -0.03em;
-  color: #fff;
+  color: #0b1f30;
   margin-bottom: 20px;
   max-width: 560px;
 }
 .hero__intro {
   font-size: 1.05rem;
-  color: rgba(255,255,255,0.88);
+  color: #5b6b78;
   max-width: 520px;
   margin-bottom: 32px;
   line-height: 1.75;
@@ -293,41 +285,40 @@ a:hover { text-decoration: underline; }
 }
 .hero__ctas { display: flex; gap: 12px; flex-wrap: wrap; }
 
-/* Hero stat panel */
+/* Hero stat panel — plain rule-separated list, matches index.html's hero-panel */
 .hero__panel {
-  background: rgba(255,255,255,0.07);
-  border: 1px solid rgba(255,255,255,0.15);
-  border-radius: 20px;
-  padding: 36px 32px;
+  border-top: 1px solid #0b1f30;
+  margin-top: 0.5rem;
+  padding: 0;
   display: flex;
   flex-direction: column;
-  gap: 28px;
+  gap: 0;
 }
 .hero__stat-row {
   display: flex;
   flex-direction: column;
   gap: 4px;
-  padding-bottom: 24px;
-  border-bottom: 1px solid rgba(255,255,255,0.1);
+  padding: 22px 0;
+  border-bottom: 1px solid #e2e4e1;
 }
-.hero__stat-row:last-child { border-bottom: none; padding-bottom: 0; }
+.hero__stat-row:last-child { border-bottom: none; }
 .hero__stat-num {
   font-family: 'Inter', sans-serif;
   font-weight: 800;
   font-size: 2rem;
   letter-spacing: -0.04em;
-  color: #fff;
+  color: #0b1f30;
   line-height: 1;
 }
 .hero__stat-label {
   font-size: 0.78rem;
   font-weight: 500;
-  color: rgba(255,255,255,0.6);
+  color: #5b6b78;
   line-height: 1.4;
 }
 .hero__stat-source {
   font-size: 0.68rem;
-  color: rgba(255,255,255,0.35);
+  color: #98a4ac;
   margin-top: 2px;
 }
 
@@ -389,7 +380,7 @@ a:hover { text-decoration: underline; }
 /* ─── SECTIONS ─── */
 .section { padding: 72px 0; }
 .section--alt { background: #f8faff; }
-.section--dark { background: #001f5c; color: #fff; }
+.section--dark { background: #0b2338; color: #fff; }
 
 .section__eyebrow {
   font-size: 0.72rem;
@@ -441,15 +432,14 @@ a:hover { text-decoration: underline; }
 }
 .sector-card {
   border: 1px solid #e5ecf8;
-  border-radius: 14px;
+  border-radius: 4px;
   padding: 32px 28px;
   background: #fff;
-  transition: box-shadow 0.2s, border-color 0.2s;
+  transition: border-color 0.2s;
   position: relative;
   overflow: hidden;
 }
 .sector-card:hover {
-  box-shadow: 0 6px 24px rgba(0,74,173,0.10);
   border-color: #b8cff5;
 }
 .sector-card__accent {
@@ -518,7 +508,7 @@ a:hover { text-decoration: underline; }
 .role-item {
   background: rgba(255,255,255,0.06);
   border: 1px solid rgba(255,255,255,0.12);
-  border-radius: 12px;
+  border-radius: 4px;
   padding: 20px 22px;
 }
 .role-item__title {
@@ -543,13 +533,12 @@ a:hover { text-decoration: underline; }
 }
 .division-card {
   border: 1px solid #e5ecf8;
-  border-radius: 14px;
+  border-radius: 4px;
   padding: 28px 24px;
   background: #fff;
-  transition: box-shadow 0.2s, border-color 0.2s;
+  transition: border-color 0.2s;
 }
 .division-card:hover {
-  box-shadow: 0 4px 20px rgba(0,74,173,0.09);
   border-color: #b8cff5;
   text-decoration: none;
 }
@@ -639,14 +628,15 @@ a:hover { text-decoration: underline; }
   font-size: 0.75rem;
   color: #9ca3af;
   line-height: 1.65;
-  border-radius: 0 6px 6px 0;
+  border-radius: 0 4px 4px 0;
 }
 .references p { margin-bottom: 0.25rem; }
 .references p:last-child { margin-bottom: 0; }
 
 /* ─── FINAL CTA ─── */
 .final-cta {
-  background: linear-gradient(135deg, #001f5c 0%, #004aad 100%);
+  background: #0b2338;
+  border-top: 2px solid #27a9e1;
   color: #fff;
   text-align: center;
   padding: 80px 0;
@@ -800,19 +790,19 @@ a:hover { text-decoration: underline; }
 <nav class="navbar" role="navigation" aria-label="Main navigation">
   <div class="container">
     <div class="navbar__inner">
-      <a href="https://www.curative.asia/" class="navbar__brand">Curative.</a>
+      <a href="https://curative.asia/" class="navbar__brand">Curative.</a>
       <ul class="navbar__nav" role="list">
-        <li><a href="https://www.curative.asia/">Home</a></li>
-        <li><a href="https://www.curative.asia/about-curative">About</a></li>
-        <li><a href="https://www.curative.asia/aesthetics">Medical Aesthetics</a></li>
-        <li><a href="https://www.curative.asia/ophthalmology">Ophthalmology</a></li>
-        <li><a href="https://www.curative.asia/dentistry">Dentistry</a></li>
-        <li><a href="https://www.curative.asia/markets" aria-current="page">Markets</a></li>
-        <li><a href="https://www.curative.asia/contact">Contact</a></li>
+        <li><a href="https://curative.asia/">Home</a></li>
+        <li><a href="https://curative.asia/about-curative">About</a></li>
+        <li><a href="https://curative.asia/aesthetics">Medical Aesthetics</a></li>
+        <li><a href="https://curative.asia/ophthalmology">Ophthalmology</a></li>
+        <li><a href="https://curative.asia/dentistry">Dentistry</a></li>
+        <li><a href="https://curative.asia/markets" aria-current="page">Markets</a></li>
+        <li><a href="https://curative.asia/contact">Contact</a></li>
       </ul>
       <div class="navbar__ctas">
-        <a href="https://www.curative.asia/contact?type=demo" class="btn btn--primary btn--sm">Request a Demo</a>
-        <a href="https://www.curative.asia/contact" class="btn btn--ghost btn--sm">Product Enquiry</a>
+        <a href="https://curative.asia/contact?type=demo" class="btn btn--primary btn--sm">Request a Demo</a>
+        <a href="https://curative.asia/contact" class="btn btn--ghost btn--sm">Product Enquiry</a>
       </div>
       <button class="navbar__toggle" aria-label="Open menu" id="navToggle">
         <span></span><span></span><span></span>
@@ -822,16 +812,16 @@ a:hover { text-decoration: underline; }
 </nav>
 
 <div class="mobile-nav" id="mobileNav" role="dialog" aria-label="Mobile navigation">
-  <a href="https://www.curative.asia/">Home</a>
-  <a href="https://www.curative.asia/about-curative">About</a>
-  <a href="https://www.curative.asia/aesthetics">Medical Aesthetics</a>
-  <a href="https://www.curative.asia/ophthalmology">Ophthalmology</a>
-  <a href="https://www.curative.asia/dentistry">Dentistry</a>
-  <a href="https://www.curative.asia/markets">Markets</a>
-  <a href="https://www.curative.asia/contact">Contact</a>
+  <a href="https://curative.asia/">Home</a>
+  <a href="https://curative.asia/about-curative">About</a>
+  <a href="https://curative.asia/aesthetics">Medical Aesthetics</a>
+  <a href="https://curative.asia/ophthalmology">Ophthalmology</a>
+  <a href="https://curative.asia/dentistry">Dentistry</a>
+  <a href="https://curative.asia/markets">Markets</a>
+  <a href="https://curative.asia/contact">Contact</a>
   <div class="mobile-nav__ctas">
-    <a href="https://www.curative.asia/contact?type=demo" class="btn btn--primary">Request a Demo</a>
-    <a href="https://www.curative.asia/contact" class="btn btn--ghost">Product Enquiry</a>
+    <a href="https://curative.asia/contact?type=demo" class="btn btn--primary">Request a Demo</a>
+    <a href="https://curative.asia/contact" class="btn btn--ghost">Product Enquiry</a>
   </div>
 </div>
 
@@ -843,16 +833,16 @@ a:hover { text-decoration: underline; }
     <div class="hero__inner">
       <div>
         <nav class="hero__breadcrumb" aria-label="Breadcrumb">
-          <a href="https://www.curative.asia/">Home</a> &rsaquo;
-          <a href="https://www.curative.asia/markets">Markets</a> &rsaquo;
+          <a href="https://curative.asia/">Home</a> &rsaquo;
+          <a href="https://curative.asia/markets">Markets</a> &rsaquo;
           Singapore
         </nav>
         <div class="hero__label">Curative Market</div>
         <h1 id="hero-heading">Singapore</h1>
         <p class="hero__intro">A leading healthcare and medical technology hub in Asia. Curative's founding market and regional base, serving ophthalmology, medical aesthetics and digital dentistry.</p>
         <div class="hero__ctas">
-          <a href="https://www.curative.asia/contact?market=singapore&type=demo" class="btn btn--white btn--lg">Arrange a Meeting</a>
-          <a href="#curative-sg" class="btn btn--outline-white btn--lg">Curative in Singapore</a>
+          <a href="https://curative.asia/contact?market=singapore&type=demo" class="btn btn--primary btn--lg">Arrange a Meeting</a>
+          <a href="#curative-sg" class="btn btn--ghost btn--lg">Curative in Singapore</a>
         </div>
       </div>
       <div class="hero__panel" aria-label="Singapore at a glance">
@@ -980,7 +970,6 @@ a:hover { text-decoration: underline; }
         <p class="sector-card__desc">Singapore's dental sector includes public institutions, specialist centres, independent clinics and expanding dental groups. Clinics are increasingly adopting digital technologies to improve diagnosis, treatment planning, patient communication and restorative workflows.</p>
         <div class="sector-card__tags">
           <span class="tag">Intraoral Scanning</span>
-          <span class="tag">CBCT Imaging</span>
           <span class="tag">Facial Scanning</span>
           <span class="tag">CAD/CAM</span>
           <span class="tag">Digital Implant</span>
@@ -1037,24 +1026,24 @@ a:hover { text-decoration: underline; }
     <p class="section__lead">Curative distributes specialist healthcare technologies across three divisions in Singapore. Product availability is subject to local regulatory status. Contact the Singapore team for current product lists and availability.</p>
     <div class="divisions-grid">
 
-      <a href="https://www.curative.asia/ophthalmology" class="division-card" style="display:block;">
+      <a href="https://curative.asia/ophthalmology" class="division-card" style="display:block;">
         <div class="division-card__eyebrow">Division</div>
         <div class="division-card__title">Curative Ophthalmology</div>
         <p class="division-card__desc">Intraocular lenses, cataract surgery consumables, ophthalmic viscoelastic devices, vitreoretinal surgical products, reusable instruments and custom procedure solutions.</p>
         <div class="division-card__link">Explore Ophthalmology &rsaquo;</div>
       </a>
 
-      <a href="https://www.curative.asia/aesthetics" class="division-card" style="display:block;">
+      <a href="https://curative.asia/aesthetics" class="division-card" style="display:block;">
         <div class="division-card__eyebrow">Division</div>
         <div class="division-card__title">Curative Medical Aesthetics</div>
         <p class="division-card__desc">Professional dermocosmetics, 3D facial scanning, aesthetic needles and cannulas, and injection-support products for aesthetic clinics, dermatologists and plastic surgeons.</p>
         <div class="division-card__link">Explore Medical Aesthetics &rsaquo;</div>
       </a>
 
-      <a href="https://www.curative.asia/dentistry" class="division-card" style="display:block;">
+      <a href="https://curative.asia/dentistry" class="division-card" style="display:block;">
         <div class="division-card__eyebrow">Division</div>
         <div class="division-card__title">Curative Dentistry &amp; 3D Imaging</div>
-        <p class="division-card__desc">Intraoral scanners, CBCT imaging, 3D facial scanners, dental milling, CAD/CAM, implant workflow solutions and dental biomaterials for modern dental practices.</p>
+        <p class="division-card__desc">Intraoral scanners, 3D facial scanners, dental milling, CAD/CAM, implant workflow solutions and dental biomaterials for modern dental practices.</p>
         <div class="division-card__link">Explore Dentistry &rsaquo;</div>
       </a>
 
@@ -1147,8 +1136,8 @@ a:hover { text-decoration: underline; }
     <h2 id="cta-heading" class="final-cta__title">Work with Curative in Singapore.</h2>
     <p class="final-cta__sub">Speak with the Singapore team about product demonstrations, clinical evaluations and supply arrangements.</p>
     <div class="final-cta__actions">
-      <a href="https://www.curative.asia/contact?market=singapore&type=demo" class="btn btn--white btn--lg">Request a Demonstration</a>
-      <a href="https://www.curative.asia/contact?market=singapore" class="btn btn--outline-white btn--lg">Product Enquiry</a>
+      <a href="https://curative.asia/contact?market=singapore&type=demo" class="btn btn--white btn--lg">Request a Demonstration</a>
+      <a href="https://curative.asia/contact?market=singapore" class="btn btn--outline-white btn--lg">Product Enquiry</a>
     </div>
   </div>
 </section>
@@ -1166,26 +1155,26 @@ a:hover { text-decoration: underline; }
       <div>
         <div class="footer__col-title">Divisions</div>
         <ul class="footer__links" role="list">
-          <li><a href="https://www.curative.asia/ophthalmology">Ophthalmology</a></li>
-          <li><a href="https://www.curative.asia/aesthetics">Medical Aesthetics</a></li>
-          <li><a href="https://www.curative.asia/dentistry">Dentistry &amp; Imaging</a></li>
+          <li><a href="https://curative.asia/ophthalmology">Ophthalmology</a></li>
+          <li><a href="https://curative.asia/aesthetics">Medical Aesthetics</a></li>
+          <li><a href="https://curative.asia/dentistry">Dentistry &amp; Imaging</a></li>
         </ul>
       </div>
       <div>
         <div class="footer__col-title">Markets</div>
         <ul class="footer__links" role="list">
-          <li><a href="https://www.curative.asia/markets/singapore">Singapore</a></li>
-          <li><a href="https://www.curative.asia/markets/malaysia">Malaysia</a></li>
-          <li><a href="https://www.curative.asia/markets/thailand">Thailand</a></li>
-          <li><a href="https://www.curative.asia/markets/hong-kong">Hong Kong</a></li>
+          <li><a href="https://curative.asia/markets/singapore">Singapore</a></li>
+          <li><a href="https://curative.asia/markets/malaysia">Malaysia</a></li>
+          <li><a href="https://curative.asia/markets/thailand">Thailand</a></li>
+          <li><a href="https://curative.asia/markets/hong-kong">Hong Kong</a></li>
           
         </ul>
       </div>
       <div>
         <div class="footer__col-title">Contact</div>
         <ul class="footer__links" role="list">
-          <li><a href="https://www.curative.asia/contact?type=demo">Request a Demo</a></li>
-          <li><a href="https://www.curative.asia/contact">Product Enquiry</a></li>
+          <li><a href="https://curative.asia/contact?type=demo">Request a Demo</a></li>
+          <li><a href="https://curative.asia/contact">Product Enquiry</a></li>
           <li><a href="tel:+6581946188">+65 8194 6188</a></li>
           <li><a href="mailto:sales@curative.asia">sales@curative.asia</a></li>
         </ul>
@@ -1193,7 +1182,7 @@ a:hover { text-decoration: underline; }
     </div>
     <div class="footer__bottom">
       <span>© 2026 Curative Group Pte. Ltd. All rights reserved.</span>
-      <span><a href="https://www.curative.asia/privacy">Privacy Policy</a></span>
+      <span><a href="https://curative.asia/privacy">Privacy Policy</a></span>
     </div>
   </div>
 </footer>

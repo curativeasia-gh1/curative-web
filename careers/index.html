@@ -7,7 +7,7 @@
 
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Careers at Curative | Medical Technology Roles Across Asia</title>
+<title>Careers at Curative | Medical Technology Roles Across Asia</title><meta property="og:image" content="https://curative.asia/og-image.svg"><meta name="twitter:title" content="Careers at Curative | Medical Technology Roles Across Asia"><meta name="twitter:description" content="Join the Curative team across Asia. We are recruiting in ophthalmology, medical aesthetics and digital dentistry across Singapore, Malaysia, Thailand and Hong Kong."><meta name="twitter:image" content="https://curative.asia/og-image.svg">
 <meta name="description" content="Join the Curative team across Asia. We are recruiting in ophthalmology, medical aesthetics and digital dentistry across Singapore, Malaysia, Thailand and Hong Kong.">
 <link rel="canonical" href="https://curative.asia/careers">
 <meta property="og:title" content="Careers at Curative | Medical Technology Roles Across Asia">
@@ -29,24 +29,24 @@ a{text-decoration:none;color:inherit}
 
 /* ── Tokens ── */
 :root{
-  --blue:#004aad;
-  --blue-dk:#00368a;
-  --blue-lt:#e6eef8;
-  --purple:#6d2077;
-  --purple-lt:#f2eaf5;
-  --green:#166534;
-  --green-lt:#dcfce7;
-  --dark:#0c1526;
-  --body:#1e293b;
-  --mid:#475569;
-  --muted:#64748b;
-  --border:#e2e8f0;
-  --surface:#f8fafc;
+  --blue:#004AAD;
+  --blue-dk:#00337F;
+  --blue-lt:#EEF3FA;
+  --purple:#5C3D82;
+  --purple-lt:#F3EFF7;
+  --green:#1E7A63;
+  --green-lt:#E9F3F0;
+  --dark:#0B1F30;
+  --body:#23313D;
+  --mid:#5B6B78;
+  --muted:#5B6B78;
+  --border:#E2E4E1;
+  --surface:#F7F7F4;
   --white:#ffffff;
-  --r:8px;
-  --r-lg:14px;
-  --sh:0 1px 3px rgba(0,0,0,.07),0 4px 12px rgba(0,0,0,.05);
-  --sh-h:0 4px 16px rgba(0,0,0,.1),0 8px 28px rgba(0,0,0,.07);
+  --r:3px;
+  --r-lg:4px;
+  --sh:0 10px 28px rgba(11,31,48,.07);
+  --sh-h:0 20px 48px rgba(11,31,48,.10);
 }
 
 /* ── Base ── */
@@ -73,25 +73,24 @@ body{font-family:'Inter',system-ui,sans-serif;font-size:16px;line-height:1.65;co
 }
 
 /* ─────────────────────── HERO ─────────────────────── */
-.hero{background:linear-gradient(140deg,#0c1526 0%,#0f2156 55%,#1a0a33 100%);color:var(--white);padding:88px 0 76px}
-.hero-eyebrow{display:inline-flex;align-items:center;gap:8px;font-size:11.5px;font-weight:600;letter-spacing:1.2px;text-transform:uppercase;color:rgba(255,255,255,.5);margin-bottom:18px}
-.hero-eyebrow span{width:24px;height:1px;background:rgba(255,255,255,.3)}
-.hero h1{font-size:clamp(26px,4.5vw,46px);font-weight:800;line-height:1.15;letter-spacing:-.8px;margin-bottom:18px;max-width:680px}
-.hero h1 em{font-style:normal;color:#93c5fd}
-.hero-lead{font-size:16.5px;line-height:1.7;color:rgba(255,255,255,.68);max-width:560px;margin-bottom:36px}
+.hero{background:var(--white);color:var(--body);padding:88px 0 76px;border-bottom:1px solid var(--border)}
+.hero-eyebrow{display:inline-flex;align-items:center;gap:8px;font-size:11.5px;font-weight:600;letter-spacing:1.2px;text-transform:uppercase;color:var(--blue);margin-bottom:18px}
+.hero-eyebrow span{width:24px;height:1px;background:currentColor;opacity:.6}
+.hero h1{font-size:clamp(26px,4.5vw,46px);font-weight:800;line-height:1.15;letter-spacing:-.03em;margin-bottom:18px;max-width:680px;color:var(--dark)}
+.hero h1 em{font-style:normal;color:var(--blue)}
+.hero-lead{font-size:16.5px;line-height:1.7;color:var(--muted);max-width:560px;margin-bottom:36px}
 .hero-pills{display:flex;flex-wrap:wrap;gap:10px}
-.pill{display:inline-flex;align-items:center;gap:7px;padding:7px 14px;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.12);border-radius:20px;font-size:13px;color:rgba(255,255,255,.7)}
-.pill svg{width:14px;height:14px;color:#93c5fd;flex-shrink:0}
+.pill{display:inline-flex;align-items:center;gap:7px;padding:7px 14px;background:var(--surface);border:1px solid var(--border);border-radius:20px;font-size:13px;color:var(--mid)}
+.pill svg{width:14px;height:14px;color:var(--blue);flex-shrink:0}
 
 /* ─────────────────────── WHY CURATIVE ─────────────────────── */
 .why{padding:80px 0;background:var(--surface)}
 .sec-label{font-size:11.5px;font-weight:600;letter-spacing:1.2px;text-transform:uppercase;color:var(--purple);margin-bottom:10px}
-.sec-head{font-size:clamp(20px,2.8vw,30px);font-weight:700;color:var(--dark);letter-spacing:-.3px;margin-bottom:44px}
+.sec-head{font-size:clamp(20px,2.8vw,30px);font-weight:700;color:var(--dark);letter-spacing:-.02em;margin-bottom:44px}
 .benefits{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:20px}
-.benefit{background:var(--white);border:1px solid var(--border);border-radius:var(--r-lg);padding:28px 22px;transition:box-shadow .2s}
-.benefit:hover{box-shadow:var(--sh)}
-.b-icon{width:42px;height:42px;border-radius:10px;background:var(--blue-lt);display:flex;align-items:center;justify-content:center;margin-bottom:16px}
-.b-icon svg{width:20px;height:20px;color:var(--blue)}
+.benefit{background:var(--white);border:1px solid var(--border);border-radius:var(--r-lg);padding:28px 22px;transition:border-color .2s}
+.benefit:hover{border-color:#C9CCC8}
+.b-icon{display:block;font-size:13px;font-weight:600;letter-spacing:.02em;color:var(--blue);font-variant-numeric:tabular-nums;margin-bottom:14px}
 .benefit h3{font-size:14.5px;font-weight:600;color:var(--dark);margin-bottom:7px}
 .benefit p{font-size:13.5px;color:var(--muted);line-height:1.6}
 
@@ -103,11 +102,11 @@ body{font-family:'Inter',system-ui,sans-serif;font-size:16px;line-height:1.65;co
 .div-card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px}
 .div-ophthal::before{background:var(--blue)}
 .div-aesthetics::before{background:var(--purple)}
-.div-dentistry::before{background:#15803d}
+.div-dentistry::before{background:var(--green)}
 .div-label{font-size:11px;font-weight:600;letter-spacing:.8px;text-transform:uppercase;margin-bottom:7px}
 .div-ophthal .div-label{color:var(--blue)}
 .div-aesthetics .div-label{color:var(--purple)}
-.div-dentistry .div-label{color:#15803d}
+.div-dentistry .div-label{color:var(--green)}
 .div-card h3{font-size:15px;font-weight:600;color:var(--dark);margin-bottom:9px}
 .div-card p{font-size:13.5px;color:var(--muted);line-height:1.6}
 
@@ -168,7 +167,7 @@ body{font-family:'Inter',system-ui,sans-serif;font-size:16px;line-height:1.65;co
 
 /* ─────────────────────── OPEN CTA ─────────────────────── */
 .open-cta{padding:72px 0}
-.cta-box{background:linear-gradient(140deg,#0c1526 0%,#0f2156 100%);border-radius:16px;padding:52px 48px;display:flex;align-items:center;justify-content:space-between;gap:32px;flex-wrap:wrap}
+.cta-box{background:var(--dark);border-top:2px solid #27A9E1;border-radius:var(--r-lg);padding:52px 48px;display:flex;align-items:center;justify-content:space-between;gap:32px;flex-wrap:wrap}
 .cta-box h2{font-size:22px;font-weight:700;color:var(--white);margin-bottom:8px}
 .cta-box p{font-size:14.5px;color:rgba(255,255,255,.65);max-width:500px;line-height:1.7}
 .btn-wh{display:inline-flex;align-items:center;padding:12px 24px;background:var(--white);color:var(--dark);font-size:13.5px;font-weight:600;border-radius:6px;white-space:nowrap;transition:opacity .15s;flex-shrink:0}
@@ -256,27 +255,27 @@ body{font-family:'Inter',system-ui,sans-serif;font-size:16px;line-height:1.65;co
     <h2 class="sec-head">A career with real regional impact</h2>
     <div class="benefits">
       <div class="benefit">
-        <div class="b-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
+        <span class="b-icon">01</span>
         <h3>Regional Exposure</h3>
         <p>Work across multiple Asian markets and build relationships with leading hospitals, specialist clinics and healthcare institutions.</p>
       </div>
       <div class="benefit">
-        <div class="b-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg></div>
+        <span class="b-icon">02</span>
         <h3>Meaningful Work</h3>
         <p>Support healthcare professionals with solutions that directly contribute to improved patient care across the region.</p>
       </div>
       <div class="benefit">
-        <div class="b-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89L17 22l-5-3-5 3 1.523-9.11"/></svg></div>
+        <span class="b-icon">03</span>
         <h3>Specialist Portfolio</h3>
         <p>Represent respected international brands across ophthalmology, medical aesthetics and advanced dental technology.</p>
       </div>
       <div class="benefit">
-        <div class="b-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg></div>
+        <span class="b-icon">04</span>
         <h3>Clinical Learning</h3>
         <p>Develop deep clinical and technical knowledge through product training, conference exposure and engagement with leading clinicians.</p>
       </div>
       <div class="benefit">
-        <div class="b-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
+        <span class="b-icon">05</span>
         <h3>Collaborative Culture</h3>
         <p>Work closely with a focused team where your initiative and contribution are recognised across a genuinely regional business.</p>
       </div>
@@ -303,7 +302,7 @@ body{font-family:'Inter',system-ui,sans-serif;font-size:16px;line-height:1.65;co
       <div class="div-card div-dentistry">
         <div class="div-label">Dentistry</div>
         <h3>Curative Dentistry</h3>
-        <p>Digital scanning, CBCT imaging, CAD/CAM, dental 3D printing, implant workflows and biomaterials for forward-thinking dental professionals.</p>
+        <p>Digital scanning, CAD/CAM, dental 3D printing, implant workflows and biomaterials for forward-thinking dental professionals.</p>
       </div>
     </div>
   </div>

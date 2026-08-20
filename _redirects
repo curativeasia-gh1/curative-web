@@ -8,6 +8,7 @@
 /medical-aesthetics/      /aesthetics             301
 /aesthetics/              /aesthetics             301
 /dentistry.html           /dentistry/             301
+/dentistry                /dentistry/             301
 /dermocosmetics.html      /dermocosmetics/        301
 /healthcare-it.html       /healthcare-it/         301
 /faq.html                 /faq/                   301
@@ -44,7 +45,20 @@
 /markets/hong-kong        /markets/hong-kong/     301
 /markets/hong-kong-zh     /markets/hong-kong-zh/  301
 
+# Legacy standalone market pages (were served as live duplicate content,
+# mitigated only by a canonical tag - redirect outright instead)
+/singapore.html           /markets/singapore/     301
+/singapore                /markets/singapore/     301
+/thailand.html            /markets/thailand/      301
+/thailand                 /markets/thailand/      301
+/thailand-th.html         /markets/thailand-th/   301
+/thailand-th              /markets/thailand-th/   301
+
 # Indonesia market page retired
 /indonesia.html           /markets                301
 /markets/indonesia        /markets                301
 /markets/indonesia/       /markets                301
+
+# Dental Labs division moved to its own top-level page
+/dentistry/digital-lab-services   /dental-labs/    301
+/dentistry/digital-lab-services/  /dental-labs/    301
