@@ -110,6 +110,109 @@ p{margin-bottom:1em;}p:last-child{margin-bottom:0;}ul{list-style:none;}
 .demand-tags{display:flex;gap:.4rem;margin-bottom:.5rem;flex-wrap:wrap;}
 .demand-tag{font-size:.6875rem;font-weight:700;letter-spacing:.04em;padding:.15rem .5rem;border-radius:50px;border:1px solid var(--c-border-strong);color:var(--c-text-muted);}
 .demand-tag.is-strong{background:var(--c-dent-light);border-color:var(--c-dent);color:var(--c-dent-dark);}
+
+/* ============================================================
+   DESIGN UPGRADE — appended enhancement layer.
+   Additive only: no original rule removed. Content, headings,
+   links, anchors and JSON-LD are untouched. Nav/footer chrome
+   left as-is for cross-page consistency.
+   ============================================================ */
+:root{
+  --radius-card:12px;--radius-btn:7px;--radius-pill:999px;
+  --shadow-card:0 1px 2px rgba(11,35,56,.04),0 10px 26px rgba(11,35,56,.06);
+  --shadow-card-hover:0 2px 6px rgba(11,35,56,.06),0 20px 44px rgba(11,35,56,.11);
+  --ease:cubic-bezier(.4,0,.2,1);
+  --hero-1:#0D2A44;--hero-2:#0B2338;--hero-3:#08192A;
+}
+::selection{background:var(--c-dent);color:#fff;}
+a:focus-visible{outline:2px solid var(--c-dent);outline-offset:2px;border-radius:2px;}
+/* anchor jumps land clear of the sticky header */
+section[id],[id].feature-item{scroll-margin-top:calc(var(--nav-h) + 1.25rem);}
+
+/* Eyebrow as a labelled device (auto-adapts to background via currentColor) */
+.eyebrow{display:inline-flex;align-items:center;letter-spacing:.12em;}
+.eyebrow::before{content:"";width:24px;height:2px;background:currentColor;margin-right:.65rem;flex:none;}
+.section-header.centered .eyebrow{justify-content:center;}
+.section-header.centered .eyebrow::after{content:"";width:24px;height:2px;background:currentColor;margin-left:.65rem;flex:none;}
+
+/* Buttons: intentional radius scale + tactile press */
+.btn{border-radius:var(--radius-btn);letter-spacing:.005em;transition:background .18s var(--ease),color .18s var(--ease),border-color .18s var(--ease),box-shadow .18s var(--ease),transform .06s var(--ease);}
+.btn:active{transform:translateY(1px);}
+.btn-dent{box-shadow:0 6px 16px rgba(30,122,99,.18);}
+.btn-dent:hover{box-shadow:0 8px 22px rgba(30,122,99,.26);}
+
+/* ---------- HERO (navy, the one bold moment) ---------- */
+.page-hero{position:relative;overflow:hidden;}
+.page-hero--dark{background:linear-gradient(158deg,var(--hero-1) 0%,var(--hero-2) 52%,var(--hero-3) 100%);}
+.page-hero--dark .page-hero-inner{position:relative;z-index:2;max-width:820px;}
+.page-hero--dark .eyebrow{color:var(--c-secondary);}
+.page-hero--dark h1{color:#fff;font-size:clamp(2.15rem,4.9vw,3.7rem);line-height:1.06;letter-spacing:-.035em;max-width:19ch;}
+.page-hero--dark p{color:rgba(255,255,255,.82);font-size:clamp(1.02rem,1.35vw,1.18rem);max-width:60ch;}
+.hero-motif{position:absolute;top:50%;right:clamp(-40px,-2vw,0px);transform:translateY(-50%);width:min(44%,480px);color:#fff;opacity:.15;z-index:1;pointer-events:none;}
+.hero-motif svg{width:100%;height:auto;}
+@media(max-width:900px){.hero-motif{display:none;}}
+
+/* ---------- DIVISION SUMMARY -> datasheet card ---------- */
+.summary-box{background:#fff;border:1px solid var(--c-border);border-radius:var(--radius-card);padding:0;overflow:hidden;box-shadow:var(--shadow-card);}
+.summary-box h2{margin:0;padding:.95rem 1.6rem;background:var(--c-navy);color:#fff;font-size:.78rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;}
+.summary-grid{padding:.75rem 1.6rem 1.35rem;column-gap:2.5rem;}
+.summary-row{padding:.7rem 0;border-bottom:1px solid var(--c-border);align-items:baseline;}
+.summary-label{letter-spacing:.02em;text-transform:uppercase;font-size:.68rem;color:var(--c-text-muted);min-width:118px;}
+.summary-val{color:var(--c-ink);font-weight:500;}
+
+/* ---------- CATEGORY INDEX ---------- */
+.cat-pill{font-weight:600;color:var(--c-text);transition:background .18s var(--ease),color .18s var(--ease),border-color .18s var(--ease);}
+.cat-pill:hover{background:var(--c-dent-light);border-color:var(--c-dent);color:var(--c-dent-dark);}
+.cat-pill.active{background:var(--c-navy);border-color:var(--c-navy);color:#fff;}
+.cat-pill.active:hover{background:var(--c-navy);color:#fff;}
+
+/* ---------- WORKFLOW 01–04 ---------- */
+.workflow-steps{gap:1rem;}
+.workflow-steps::before{top:31px;left:12%;right:12%;height:2px;opacity:.28;background:linear-gradient(90deg,transparent,var(--c-dent) 14%,var(--c-dent) 86%,transparent);}
+.wf-num{width:62px;height:62px;background:#fff;border:2px solid var(--c-dent);color:var(--c-dent-dark);font-size:1.05rem;letter-spacing:.02em;box-shadow:0 6px 16px rgba(30,122,99,.14);}
+.wf-num::before{content:"0";}
+.wf-label{font-size:.9rem;letter-spacing:-.01em;}
+.wf-sub{max-width:22ch;margin-inline:auto;}
+
+/* ---------- PRODUCT CARDS ---------- */
+.products-grid{gap:1.35rem;}
+.prod-card{border-radius:var(--radius-card);box-shadow:var(--shadow-card);transition:border-color .2s var(--ease),box-shadow .2s var(--ease);}
+.prod-card:hover{border-color:var(--c-dent);box-shadow:var(--shadow-card-hover);}
+.prod-card-band{height:4px;background:var(--c-border);transition:background .2s var(--ease);}
+.prod-card:hover .prod-card-band{background:var(--c-dent);}
+.prod-card-body{padding:1.6rem;}
+.prod-card-cat{display:inline-block;align-self:flex-start;background:var(--c-dent-light);color:var(--c-dent-dark);padding:.28rem .62rem;border-radius:var(--radius-pill);font-size:.64rem;letter-spacing:.07em;margin-bottom:.75rem;}
+.prod-card h3{letter-spacing:-.015em;line-height:1.25;}
+.prod-card-footer{padding-top:1rem;}
+/* Popular flag */
+.prod-card.is-popular{border-color:var(--c-dent);box-shadow:0 2px 6px rgba(30,122,99,.07),0 18px 40px rgba(30,122,99,.13);}
+.prod-card.is-popular .prod-card-band{background:var(--c-dent);}
+.popular-badge{background:var(--c-dent);box-shadow:0 2px 6px rgba(30,122,99,.25);}
+/* Demand tags as a strength meter */
+.demand-tag{display:inline-flex;align-items:center;gap:.4rem;border-radius:var(--radius-pill);padding:.22rem .6rem;font-size:.66rem;letter-spacing:.01em;}
+.demand-tag::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--c-border-strong);flex:none;}
+.demand-tag.is-strong::before{background:var(--c-dent);}
+
+/* ---------- SERVICE AREAS -> card grid ---------- */
+#service-areas .feature-item{background:#fff;border:1px solid var(--c-border);border-radius:var(--radius-card);padding:1.3rem 1.35rem;box-shadow:var(--shadow-card);transition:border-color .2s var(--ease),box-shadow .2s var(--ease);}
+#service-areas .feature-item:hover{border-color:var(--c-border-strong);box-shadow:var(--shadow-card-hover);}
+#service-areas .feature-item h4{color:var(--c-navy);}
+.feature-icon{border-radius:10px;}
+
+/* ---------- FAQ ---------- */
+.faq-item{border-radius:var(--radius-btn);transition:border-color .18s var(--ease),box-shadow .18s var(--ease);}
+.faq-item:has(.faq-q.open){border-color:var(--c-dent);box-shadow:0 8px 22px rgba(30,122,99,.08);}
+.faq-q.open{color:var(--c-dent-dark);}
+
+/* ---------- CTA ---------- */
+.cta-box{border-radius:var(--radius-card);box-shadow:var(--shadow-lg);}
+
+/* ---------- responsive polish ---------- */
+@media(max-width:600px){
+  .summary-grid{padding-inline:1.2rem;}
+  .summary-box h2{padding-inline:1.2rem;}
+  .prod-card-body{padding:1.35rem;}
+}
 </style>
 <meta property="og:image" content="https://curative.asia/og-image.svg">
 <meta property="og:image:width" content="1200">
@@ -306,12 +409,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <nav class="breadcrumb" aria-label="Breadcrumb"><div class="container"><div class="breadcrumb-inner"><a href="/">Home</a><span class="breadcrumb-sep">›</span><span>Dental Labs</span></div></div></nav>
 
 <main id="main-content">
-<section class="page-hero">
+<section class="page-hero page-hero--dark">
+  <div class="hero-motif" aria-hidden="true"><svg viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M60 250C70 190 95 140 130 120C165 100 200 98 200 98C200 98 235 100 270 120C305 140 330 190 340 250" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><g stroke="currentColor" stroke-width="1.3"><rect x="52" y="238" width="16" height="22" rx="4"/><rect x="84" y="158" width="16" height="22" rx="4"/><rect x="124" y="114" width="16" height="22" rx="4"/><rect x="192" y="88" width="16" height="22" rx="4"/><rect x="260" y="114" width="16" height="22" rx="4"/><rect x="300" y="158" width="16" height="22" rx="4"/><rect x="332" y="238" width="16" height="22" rx="4"/></g><path d="M30 300A190 190 0 0 1 370 300" stroke="currentColor" stroke-width="1" stroke-dasharray="2 7"/><path d="M55 330A165 165 0 0 1 345 330" stroke="currentColor" stroke-width="1" opacity="0.55"/><circle cx="200" cy="300" r="3" fill="currentColor"/></svg></div>
   <div class="container"><div class="page-hero-inner">
     <span class="eyebrow">Curative Dental Labs</span>
     <h1>Digital Dental Lab Services for Practices Across Malaysia &amp; Singapore</h1>
     <p>Curative's digital lab network designs and fabricates crowns, implant guides, smile design cases and retention appliances for dental practices &mdash; completing the manufacture and delivery stages of your digital workflow, starting with Kuala Lumpur &amp; Selangor.</p>
-    <div class="btn-group"><a href="/contact?division=dentistry&service=digital-lab" class="btn btn-dent">Talk to Curative</a><a href="https://assets.curative.asia/curative-dental-labs-brochure.pdf" class="btn btn-outline-dent" target="_blank" rel="noopener">Download Brochure</a><a href="#popular" class="btn btn-outline-dent">See Our Treatments</a></div>
+    <div class="btn-group"><a href="/contact?division=dentistry&service=digital-lab" class="btn btn-white">Talk to Curative</a><a href="https://assets.curative.asia/curative-dental-labs-brochure.pdf" class="btn btn-outline-white" target="_blank" rel="noopener">Download Brochure</a><a href="#popular" class="btn btn-outline-white">See Our Treatments</a></div>
   </div></div>
 </section>
 
