@@ -34,6 +34,8 @@
 /businessunits            /about-curative         301
 /businessunits/           /about-curative         301
 /businessunits/aesthetics /aesthetics             301
+/businessunits/eye        /ophthalmology/         301
+/businessunits/*          /about-curative         301
 /products-solutions       /                       301
 /products-solutions/      /                       301
 /mastelli-polynucleotides /plinest                301
