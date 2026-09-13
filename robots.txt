@@ -1,5 +1,5 @@
 # robots.txt — curative.asia
-# Curative Group Pte. Ltd.
+# Curative Pte. Ltd.
 # Updated: 2026-07-31
 
 User-agent: *
