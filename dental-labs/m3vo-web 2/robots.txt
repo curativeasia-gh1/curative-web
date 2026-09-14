@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://m3vo.com/sitemap.xml
