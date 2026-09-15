@@ -1,36 +1,17 @@
-name: Notify Search Engines of Sitemap Updates
+name: Validate Sitemaps After Content Updates
 
 on:
   push:
-    branches:
-      - main
+    branches: [main]
     paths:
-      - sitemap.xml
-      - robots.txt
       - "**/*.html"
-      - "blog/**"
-      - "markets/**"
-      - "ophthalmology/**"
-      - "aesthetics/**"
-      - "dentistry/**"
-      - "dermocosmetics/**"
-      - "healthcare-it/**"
+      - ".github/workflows/sitemap-notify.yml"
+  pull_request:
+    paths:
+      - "**/*.html"
+      - ".github/workflows/sitemap-notify.yml"
   workflow_dispatch:
 
 jobs:
-  notify-sitemap:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Check live sitemap
-        run: |
-          curl -fsSL "https://curative.asia/sitemap.xml" | head -n 20
-
-      - name: Notify Google of sitemap update
-        run: |
-          curl -fsS -o /dev/null -w "Google sitemap ping HTTP %{http_code}\n" \
-            "https://www.google.com/ping?sitemap=https%3A%2F%2Fcurative.asia%2Fsitemap.xml" || true
-
-      - name: Notify Bing of sitemap update
-        run: |
-          curl -fsS -o /dev/null -w "Bing sitemap ping HTTP %{http_code}\n" \
-            "https://www.bing.com/ping?sitemap=https%3A%2F%2Fcurative.asia%2Fsitemap.xml" || true
+  validate-sitemaps:
+    uses: ./.github/workflows/submit-sitemap.yml
