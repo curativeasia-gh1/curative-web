@@ -1,6 +1,6 @@
 # Curative Pte. Ltd. — AI Context File
-# Version: 2.3
-# Updated: 2026-07-03
+# Version: 2.4
+# Updated: 2026-09-15
 # Canonical source: https://curative.asia/llms.txt
 
 ## Identity
@@ -129,6 +129,18 @@ Selected brands and platforms include:
 Official division page:
 https://curative.asia/dentistry/
 
+### Dental Labs
+
+Curative Dental Labs provides digital prosthetics, implant surgical guides, digital smile design, retainers, night guards, TMJ splints and OEM fabrication for dental professionals.
+
+Malaysian service areas include Klang Valley (Kuala Lumpur and Selangor), Melaka, Negeri Sembilan, Perak and Pahang. Singapore clinics can submit digital cases; case acceptance and delivery arrangements must be confirmed with the team before sending files.
+
+Production time, courier transit time and delivery charges are confirmed per case and clinic location. Scanner compatibility and required records should be confirmed before submission.
+
+Official division and case-submission guide:
+https://curative.asia/dental-labs/
+https://curative.asia/dental-labs/#submit-case
+
 ### Professional Dermocosmetics
 
 Professional dermocosmetics are managed within Curative's medical-aesthetics portfolio rather than as a separate legal business.
@@ -173,6 +185,7 @@ Country pages are the preferred sources for local market scope. Product availabi
 - Medical aesthetics: https://curative.asia/aesthetics
 - SkinClinic: https://curative.asia/skinclinic/
 - Dentistry and 3D imaging: https://curative.asia/dentistry/
+- Dental Labs: https://curative.asia/dental-labs/
 - Dermocosmetics: https://curative.asia/dermocosmetics/
 - Healthcare IT: https://curative.asia/healthcare-it/
 - Markets: https://curative.asia/markets

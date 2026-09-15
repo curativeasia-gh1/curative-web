@@ -17,6 +17,7 @@ on:
       - 'robots.txt'
       - '_headers'
       - '.github/workflows/submit-sitemap.yml'
+  workflow_call:
   workflow_dispatch:
 
 jobs:

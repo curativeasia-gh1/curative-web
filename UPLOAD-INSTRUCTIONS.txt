@@ -7,4 +7,5 @@ Important:
 2. Confirm the production domain redirects to https://curative.asia/
 3. Submit https://curative.asia/sitemap.xml once in Google Search Console.
 4. Inspect and request indexing for the homepage and each new .html page.
-5. The GitHub workflow .github/workflows/sitemap-notify.yml will notify Google and Bing when sitemap or page files change on main.
+5. GitHub workflows validate sitemap files and check live responses after relevant updates on main. These checks do not submit URLs or guarantee indexing. Submit the sitemap through Google Search Console and Bing Webmaster Tools.
+6. Update a page's sitemap lastmod date when its content changes substantially.
