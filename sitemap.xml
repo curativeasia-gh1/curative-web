@@ -2,12 +2,12 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
   <!-- Core -->
-  <url><loc>https://curative.asia/</loc><lastmod>2026-07-03</lastmod><changefreq>weekly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://curative.asia/</loc><lastmod>2026-09-18</lastmod><changefreq>weekly</changefreq><priority>1.0</priority></url>
   <url><loc>https://curative.asia/about-curative</loc><lastmod>2026-07-03</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://curative.asia/about-curative-zh/</loc><lastmod>2026-07-29</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://curative.asia/contact</loc><lastmod>2026-07-03</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://curative.asia/markets</loc><lastmod>2026-07-03</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://curative.asia/resources</loc><lastmod>2026-07-03</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://curative.asia/resources</loc><lastmod>2026-09-18</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://curative.asia/education-events</loc><lastmod>2026-07-03</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://curative.asia/careers/</loc><lastmod>2026-07-03</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
 
@@ -33,13 +33,13 @@
   <url><loc>https://curative.asia/markets/hong-kong-zh/</loc><lastmod>2026-07-03</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
 
   <!-- News and education -->
-  <url><loc>https://curative.asia/blog/</loc><lastmod>2026-08-12</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://curative.asia/blog/monofocal-vs-enhanced-monofocal-vs-trifocal-iols/</loc><lastmod>2026-07-03</lastmod><changefreq>yearly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://curative.asia/blog/</loc><lastmod>2026-09-18</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://curative.asia/blog/monofocal-vs-enhanced-monofocal-vs-trifocal-iols/</loc><lastmod>2026-09-18</lastmod><changefreq>yearly</changefreq><priority>0.7</priority></url>
   <url><loc>https://curative.asia/blog/digital-treatment-simulation-case-acceptance/</loc><lastmod>2026-07-03</lastmod><changefreq>yearly</changefreq><priority>0.7</priority></url>
   <url><loc>https://curative.asia/blog/3d-vs-2d-cephalometric-analysis/</loc><lastmod>2026-07-03</lastmod><changefreq>yearly</changefreq><priority>0.7</priority></url>
   <url><loc>https://curative.asia/blog/exosomes-aesthetic-medicine-2026/</loc><lastmod>2026-07-03</lastmod><changefreq>yearly</changefreq><priority>0.7</priority></url>
   <url><loc>https://curative.asia/blog/nad-plus-skin-longevity/</loc><lastmod>2026-07-03</lastmod><changefreq>yearly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://curative.asia/faq/</loc><lastmod>2026-08-12</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://curative.asia/faq/</loc><lastmod>2026-09-18</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
 
   <!-- Legal -->
   <url><loc>https://curative.asia/privacy/</loc><lastmod>2026-07-03</lastmod><changefreq>yearly</changefreq><priority>0.2</priority></url>

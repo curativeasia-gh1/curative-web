@@ -1,6 +1,6 @@
 # Curative Pte. Ltd. — AI Context File
 # Version: 2.4
-# Updated: 2026-09-15
+# Updated: 2026-09-18
 # Canonical source: https://curative.asia/llms.txt
 
 ## Identity
@@ -57,6 +57,8 @@ Its activities include:
 Products are intended for qualified healthcare professionals, clinics, hospitals, laboratories, distributors or other appropriate professional users, subject to local laws and product classifications.
 
 ## Core Divisions
+
+Curative presents three core divisions: Ophthalmology, Medical Aesthetics, and Dentistry & Digital Imaging. Dedicated pages also describe dermocosmetics, dental laboratory services and healthcare IT. These related offerings do not change the core division count.
 
 ### Ophthalmology
 
@@ -128,6 +130,8 @@ Selected brands and platforms include:
 
 Official division page:
 https://curative.asia/dentistry/
+
+## Related Services
 
 ### Dental Labs
 
